@@ -154,7 +154,33 @@
       "score": 72,
       "release": null,
       "status": "in-progress"
+    },
+    {
+      "version": "0.11.0",
+      "milestone": "M11",
+      "date": "2026-11-01",
+      "title": "Framing, Molten Cores and the Gate",
+      "summary": "The scored frame now encloses the fight: an interior rampart with a ruined arch and gate sits behind the melee, so the battle reads in front of architecture rather than on an open field. Every lava field carries one offset molten core with dark crust islands, white-hot cracks and three directional flow seams, over a cooler grey floor and wider basalt plates. The west, east and north lanes gained authored ruin, conifer, crystal and brazier clumps, while the barracks-spawn, attack-move and upgrade loop from M10 is unchanged.",
+      "note": "Independent review: 75.2 weighted (M10: 72.25). Layout 78, Terrain 77, Units 71, VFX 67, HUD 83, Pixel art 69. The gate stays blocked on Units/VFX. Three review rounds: 73.8 → 74.6 → 75.2. Wall plinth absorbed after scoring. The most binding item is VFX: the nova is still a smooth cyan gradient web with hard white alpha-square glows, and the unit melee remains a fused-outline carpet with no front line or attack pose.",
+      "screenshot": "visual/m11-framing.png",
+      "gallery": [
+        {
+          "src": "visual/m11-framing-west.png",
+          "caption": "The west courtyard: causeway, wall ring, barracks and the new interior rampart."
+        },
+        {
+          "src": "visual/m11-framing-north.png",
+          "caption": "2× detail of the NW gate: ruined arch, brazier and crenellated wall run."
+        },
+        {
+          "src": "visual/m11-framing-closeup.png",
+          "caption": "2× altar melee, showing the molten lava and swordsman silhouettes."
+        }
+      ],
+      "score": 75.2,
+      "release": null,
+      "status": "in-progress"
     }
   ],
-  "generatedAt": "2026-11-01T17:31:15.903Z"
+  "generatedAt": "2026-11-01T18:18:06.512Z"
 }
