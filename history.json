@@ -1,6 +1,6 @@
 {
   "footer": "Ember Arena — built in the browser with three.js. No Blender on the server.",
-  "latestPlay": "versions/v0.1.1/?site=1",
+  "liveUrl": null,
   "review": null,
   "versions": [
     {
@@ -10,23 +10,9 @@
       "title": "Bootstrap",
       "summary": "The first browser-native arena: eight team portals, a central lava pool, 64 sprite units, a 640×360 pixel-art pass and a HUD shell.",
       "note": "Independent review: 35/100. A solid pipeline baseline, but the arena is still a small blockout in a black void. M1 focuses on framing, lighting and the 32×32 octagonal layout.",
-      "screenshot": "visual/v0.1.0.png",
+      "screenshot": "visual/m0.png",
       "score": 35,
       "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.1.0",
-      "play": "versions/v0.1.0/?site=1",
-      "status": "released"
-    },
-    {
-      "version": "0.1.1",
-      "milestone": "M0.1",
-      "date": "2026-11-01",
-      "title": "Robustness & Visual History",
-      "summary": "Deterministic simulation contract, architecture/data tests, golden hash, release automation, Dependabot, GLB download fallback and the public visual-history site.",
-      "note": "Visual output is unchanged from M0. This release makes the project safer to iterate on and gives every future milestone a screenshot timeline.",
-      "screenshot": "visual/v0.1.1.png",
-      "score": 35,
-      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.1.1",
-      "play": "versions/v0.1.1/?site=1",
       "status": "released"
     },
     {
@@ -90,9 +76,5 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T12:14:30.308Z",
-  "release": {
-    "version": "0.1.1",
-    "date": "2026-11-01"
-  }
+  "generatedAt": "2026-11-01T12:17:33.083Z"
 }
