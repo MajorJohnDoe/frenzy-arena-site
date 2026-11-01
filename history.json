@@ -180,7 +180,29 @@
       "score": 75.2,
       "release": null,
       "status": "in-progress"
+    },
+    {
+      "version": "0.12.0",
+      "milestone": "M12",
+      "date": "2026-11-01",
+      "title": "Stepped Nova and Atmosphere",
+      "summary": "The altar nova is now an opaque, dark-outlined, per-pixel stepped ice star with flat value bands over a dim ground ring, and the frame is closed by a stepped edge vignette while enlarged lava embers sit alongside wing-confined dust and visible brazier, torch and gate cast pools. The altar crystal is rebuilt as a faceted, dark-outlined shard with a visible split, and the clipped alpha-square glow helpers are gone. The M10/M11 match loop, enclosure and lava craft are unchanged.",
+      "note": "Independent review: 77.1 weighted (M11: 75.2, +1.9). Layout 78, Terrain 77, Units 71, VFX 79, HUD 83, Pixel art 70. VFX clears the task's ≥75 bar (79). Gate still blocked on Units 71 (task 017) and VFX 79; the task's total ≥83 was unreachable from a 15%-weight category. Nova measured 750 → 15 ice colours with 2 px transitions; vignette corner/inset ratio 0.773 with every edge band darker than M11; embers 526 → 714 hot dots; gate cast light +33.9 L; no alpha squares; world 6-bit colours 736 vs M11 737. 331 units, 5 draw calls, 60 FPS, console clean.",
+      "screenshot": "visual/m12-atmosphere.png",
+      "gallery": [
+        {
+          "src": "visual/m12-atmosphere-closeup.png",
+          "caption": "2× altar detail at cam=31,31: the opaque stepped ice star, faceted crystal and hard value bands."
+        },
+        {
+          "src": "visual/m12-atmosphere-west.png",
+          "caption": "West courtyard at cam=14,32: lava embers, brazier cast pools, wall/gate craft and the stepped vignette."
+        }
+      ],
+      "score": 77.1,
+      "release": null,
+      "status": "in-progress"
     }
   ],
-  "generatedAt": "2026-11-01T18:18:06.512Z"
+  "generatedAt": "2026-11-01T19:02:19.667Z"
 }
