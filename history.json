@@ -276,9 +276,35 @@
       "score": 80.1,
       "release": null,
       "status": "released"
+    },
+    {
+      "version": "0.16.0",
+      "milestone": "M16",
+      "date": "2026-11-01",
+      "title": "Composition Recovery",
+      "summary": "The empty east outer third is now an authored redoubt camp: a 124×212 px stone watchtower, five tents, two supply carts, three palisades, dead trees, rubble and two war banners on both shoulders of the east lane, with a wrecked siege engine and four war-kit piles bridging the 65 px gap from the rank to the camp. A two-step war memorial with a fallen crimson standard, broken swords and a brass rune closes the south approach off the lane and below the altar nova. Every new prop carries a one-canvas-pixel contour and 1 px grain on tent canvas, cart boards, palisade stakes and tower courses, plus stronger contact shadows and an AO strip under each body. The composition measure recovered with them: quiet 16×16 cells 640 → 517 and east field coverage 63.7% → 70.7%.",
+      "note": "Independent review: 80.90 weighted (M15: 80.10, +0.80) — the first review with every category at or above 80. Layout 80 (+3), Terrain 80 (+1), Units 82, VFX 80, HUD 83, Pixel art 80. Task 024 clears its own bar with no margin: quiet cells 517 ≤ 593, east coverage 70.74% ≥ 68.9%, Layout 80 ≥ 80. HUD, units, VFX and the west crop are pixel-identical, so the whole delta is the prop pass. Performance: 5 draw calls and 848 quads at 207 units, 53.8 FPS at the scored frame (nova active) and 59.8 FPS at the 255-unit cap on the headless SwiftShader probe, console clean, golden sim hash unchanged 3198708409. What still binds: the 92%-quiet NE strip (x 940–1150 / y 90–185 — the camp landed at y 195–470); one dark material ramp across canvas, wood and carts; prop/unit outline fusion where the wreck sits in the east rank and the memorial cuts the south rank; and the flat wall facade, mauve plates and lava seams that task 025 ramparts and the terrain/lava pass own. The remaining ~9.1 points are shared across six categories at 80–83.",
+      "screenshot": "visual/m16-composition.png",
+      "gallery": [
+        {
+          "src": "visual/m16-composition-east.png",
+          "caption": "East redoubt at cam=38,26: the watchtower, palisade posts, A-frame tents, carts and both war banners, with the siege wreck and war litter bridging the rank to the camp gate."
+        },
+        {
+          "src": "visual/m16-composition-west.png",
+          "caption": "West courtyard at cam=14,32: the unchanged wall ring, causeway and marching archers, pixel-identical to M15 and the control crop for the east recovery."
+        },
+        {
+          "src": "visual/m16-composition-south.png",
+          "caption": "South memorial at cam=35,35&zoom=2: the two-step plinth, fallen crimson standard, broken swords and brass rune, drawn in front of the south rank."
+        }
+      ],
+      "score": 80.9,
+      "release": null,
+      "status": "released"
     }
   ],
-  "generatedAt": "2026-11-01T21:30:47.928Z",
+  "generatedAt": "2026-11-01T22:04:04.358Z",
   "captures": [
     {
       "file": "visual/m9-staging.png",
@@ -286,7 +312,7 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m9-staging-closeup.png",
@@ -294,7 +320,7 @@
       "bytes": 171033,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m8.png",
@@ -302,7 +328,7 @@
       "bytes": 524848,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m8-review-closeup.png",
@@ -310,7 +336,7 @@
       "bytes": 217478,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m8-review-capture.png",
@@ -318,7 +344,7 @@
       "bytes": 616312,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m8-perf.png",
@@ -326,7 +352,7 @@
       "bytes": 322143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m8-perf-closeup.png",
@@ -334,7 +360,7 @@
       "bytes": 192656,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m8-closeup.png",
@@ -342,7 +368,7 @@
       "bytes": 202147,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m7.png",
@@ -350,7 +376,7 @@
       "bytes": 791693,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m7-closeup.png",
@@ -358,7 +384,7 @@
       "bytes": 275412,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m6.png",
@@ -366,7 +392,7 @@
       "bytes": 707649,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m6-ember.png",
@@ -374,7 +400,7 @@
       "bytes": 420767,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m5.png",
@@ -382,7 +408,7 @@
       "bytes": 667478,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m4.png",
@@ -390,7 +416,7 @@
       "bytes": 668213,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m3.png",
@@ -398,7 +424,7 @@
       "bytes": 654748,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m2.png",
@@ -406,7 +432,39 @@
       "bytes": 522598,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
+    },
+    {
+      "file": "visual/m16-composition.png",
+      "name": "m16-composition.png",
+      "bytes": 553131,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T22:03:46.000Z"
+    },
+    {
+      "file": "visual/m16-composition-west.png",
+      "name": "m16-composition-west.png",
+      "bytes": 464904,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T22:03:46.000Z"
+    },
+    {
+      "file": "visual/m16-composition-south.png",
+      "name": "m16-composition-south.png",
+      "bytes": 221455,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T22:03:46.000Z"
+    },
+    {
+      "file": "visual/m16-composition-east.png",
+      "name": "m16-composition-east.png",
+      "bytes": 489598,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m15-units.png",
@@ -414,7 +472,7 @@
       "bytes": 562393,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m15-units-west.png",
@@ -422,7 +480,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m15-units-sword-sheet.png",
@@ -430,7 +488,7 @@
       "bytes": 75837,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m15-units-closeup.png",
@@ -438,7 +496,7 @@
       "bytes": 222143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m15-units-archer-sheet.png",
@@ -446,7 +504,7 @@
       "bytes": 65100,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m14-1to1.png",
@@ -454,7 +512,7 @@
       "bytes": 548070,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m14-1to1-west.png",
@@ -462,7 +520,7 @@
       "bytes": 461755,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m14-1to1-closeup.png",
@@ -470,7 +528,7 @@
       "bytes": 214421,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m13-units.png",
@@ -478,7 +536,7 @@
       "bytes": 323089,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m13-units-west.png",
@@ -486,7 +544,7 @@
       "bytes": 279154,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m13-units-closeup.png",
@@ -494,7 +552,7 @@
       "bytes": 173309,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m12-atmosphere.png",
@@ -502,7 +560,7 @@
       "bytes": 324034,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m12-atmosphere-west.png",
@@ -510,7 +568,7 @@
       "bytes": 282731,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m12-atmosphere-closeup.png",
@@ -518,7 +576,7 @@
       "bytes": 175927,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m11-framing.png",
@@ -526,7 +584,7 @@
       "bytes": 326835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m11-framing-west.png",
@@ -534,7 +592,7 @@
       "bytes": 278061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m11-framing-north.png",
@@ -542,7 +600,7 @@
       "bytes": 160561,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m11-framing-closeup.png",
@@ -550,7 +608,7 @@
       "bytes": 169496,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m10-step0.png",
@@ -558,7 +616,7 @@
       "bytes": 309820,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m10-footmen.png",
@@ -566,7 +624,7 @@
       "bytes": 331146,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m10-footmen-west.png",
@@ -574,7 +632,7 @@
       "bytes": 288030,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m10-footmen-closeup.png",
@@ -582,7 +640,7 @@
       "bytes": 171814,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m1.png",
@@ -590,7 +648,7 @@
       "bytes": 519162,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
     {
       "file": "visual/m0.png",
@@ -598,7 +656,7 @@
       "bytes": 286922,
       "width": 1236,
       "height": 695,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     }
   ],
   "live": {
@@ -608,11 +666,11 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T21:30:34.000Z"
+      "takenAt": "2026-11-01T22:03:46.000Z"
     },
-    "milestone": "M15",
-    "title": "Pre-Rendered 16-Direction Units",
-    "score": 80.1,
-    "updatedAt": "2026-11-01T21:30:34.000Z"
+    "milestone": "M16",
+    "title": "Composition Recovery",
+    "score": 80.9,
+    "updatedAt": "2026-11-01T22:03:46.000Z"
   }
 }
