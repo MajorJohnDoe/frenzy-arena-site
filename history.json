@@ -74,7 +74,55 @@
       "score": 61,
       "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.5.0",
       "status": "released"
+    },
+    {
+      "version": "0.6.0",
+      "milestone": "M6",
+      "date": "In progress",
+      "title": "Pixel-Tilemap Reboot",
+      "summary": "A 2D 2:1 pixel-art tilemap on a 64x64 pannable RTS map: four corner bases, four edge bases, four lava pools, a central plaza and an altar.",
+      "note": "The 3D renderer is retired. Work starts with a 1280x720 pipeline spike, then terrain, bases, units, VFX and a canvas pixel HUD. The timeline keeps every earlier capture.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "in-progress"
+    },
+    {
+      "version": "0.7.0",
+      "milestone": "M7",
+      "date": "Planned",
+      "title": "Pixel Art Pass",
+      "summary": "Authored stone, lava, cliff and grass tiles; eight bases; 4-direction units and heroes; spell sheets and a canvas pixel HUD.",
+      "note": "Planned. Target: reference-level material, unit identity, spell scale and HUD density.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    },
+    {
+      "version": "0.9.0",
+      "milestone": "M8",
+      "date": "Planned",
+      "title": "90% Gate",
+      "summary": "Composition, density, palette, animation and final polish on the pixel renderer.",
+      "note": "Planned. Gate: weighted score >= 90 with no category below 80, 60 FPS at 1280x720 while panning.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    },
+    {
+      "version": "1.0.0",
+      "milestone": "M9",
+      "date": "Planned",
+      "title": "Rust-Ready Reference",
+      "summary": "Frozen schemas, asset manifest, deterministic traces and a port plan for a Rust/WASM core.",
+      "note": "Planned. No Rust or networking work starts before the visual gate is signed off.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T13:37:36.397Z"
+  "generatedAt": "2026-11-01T13:43:43.653Z"
 }
