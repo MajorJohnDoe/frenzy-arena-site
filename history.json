@@ -42,26 +42,26 @@
     {
       "version": "0.4.0",
       "milestone": "M3",
-      "date": "Planned",
+      "date": "2026-11-01",
       "title": "Terrain Art Pass",
-      "summary": "Cracked stone, lava crust, crystals, conifers, ruined structures and a stronger dark-fantasy palette.",
-      "note": "Planned. Environment checklist and palette from docs/ART_DIRECTION.md.",
-      "screenshot": null,
-      "score": null,
-      "release": null,
-      "status": "planned"
+      "summary": "Mid-value stone, a 2.5× lava basin, taller cliffs, outlying huts and unified violet portals.",
+      "note": "Estimated ~61/100. Bloom, damage numbers and elemental bursts landed in the next pass.",
+      "screenshot": "visual/m3.png",
+      "score": 61,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.4.0",
+      "status": "released"
     },
     {
       "version": "0.5.0",
       "milestone": "M4",
-      "date": "Planned",
+      "date": "2026-11-01",
       "title": "VFX and Feel",
-      "summary": "Portal energy, lava glow, combat bursts, damage text, outlines and a more readable pixel-art presentation.",
-      "note": "Planned. One low-cost composite pass, no heavy GPU effects.",
-      "screenshot": null,
-      "score": null,
-      "release": null,
-      "status": "planned"
+      "summary": "Quarter-res bloom, lightning/fire/poison spells, death bursts, outlined damage text and arrow trails.",
+      "note": "Estimated ~64/100. 280 units at 144 FPS and 72 draw calls. HUD/minimap polish is next.",
+      "screenshot": "visual/m4.png",
+      "score": 64,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.4.0",
+      "status": "released"
     },
     {
       "version": "0.6.0",
@@ -76,5 +76,5 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T12:51:11.779Z"
+  "generatedAt": "2026-11-01T13:03:26.861Z"
 }
