@@ -69,12 +69,12 @@
       "date": "2026-11-01",
       "title": "HUD and Minimap",
       "summary": "Clickable team selection, a real minimap, original SVG ability art, command grid and four central violet barriers.",
-      "note": "Estimated ~68/100. The 90% gate is not met yet: unit identity, terrain material and large-scale VFX remain.",
+      "note": "Independent review: 61/100. The minimap, altar, bloom and HUD improved, but terrain material and unit identity still hold the gate. Estimated 71-74 after the six prioritized fixes.",
       "screenshot": "visual/m5.png",
-      "score": 68,
+      "score": 61,
       "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.5.0",
       "status": "released"
     }
   ],
-  "generatedAt": "2026-11-01T13:08:55.987Z"
+  "generatedAt": "2026-11-01T13:12:27.711Z"
 }
