@@ -202,7 +202,29 @@
       "score": 77.1,
       "release": null,
       "status": "in-progress"
+    },
+    {
+      "version": "0.13.0",
+      "milestone": "M13",
+      "date": "2026-11-01",
+      "title": "Readable Ranks and Per-Unit Fill",
+      "summary": "Every unit is now a single cropped quad with a tight baked contact shadow, cutting the frame from 4,528 to ~2,990 px per unit (−34%) with the feet anchor unchanged. The design cap moved 400 → 256 so the t=25 plaza holds 207 soldiers who read as ranks instead of a carpet, carried by full-face team shields, an attack/guard stance while fighting, and 11×2 green/amber/red health bars on a staggered baseline. Damage numerals stack vertically and cap at 16.",
+      "note": "Independent review: 78.35 weighted (M12: 77.1, +1.25). Layout 77 (−1), Terrain 77, Units 80 (+9), VFX 79, HUD 83, Pixel art 71. Units clears the 017 bar at exactly the floor, but the gate needs 90 with no category below 80, so Layout, Terrain, VFX and Pixel art still block it; the layout drop is the price of the cap and must be recovered with props, not atmosphere. Measured 60.0 FPS at the capture (221 units, 1,110 quads) and at t=92 (242 units, 1,014 quads), 5 draw calls, console clean, golden hash unchanged at 3198708409.",
+      "screenshot": "visual/m13-units.png",
+      "gallery": [
+        {
+          "src": "visual/m13-units-closeup.png",
+          "caption": "2× altar detail at cam=31,31: cropped single-quad soldiers with baked contact shadows, full-face team shields, staggered health bars and the guard/attack stance."
+        },
+        {
+          "src": "visual/m13-units-west.png",
+          "caption": "West courtyard at cam=14,32: sparse ranks and lit floor between neighbours after the 400 → 256 cap, with the wall ring, causeway and lava field unchanged."
+        }
+      ],
+      "score": 78.35,
+      "release": null,
+      "status": "in-progress"
     }
   ],
-  "generatedAt": "2026-11-01T19:02:19.667Z"
+  "generatedAt": "2026-11-01T19:36:01.996Z"
 }
