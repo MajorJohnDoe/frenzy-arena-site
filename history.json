@@ -326,11 +326,11 @@
         }
       ],
       "score": 82.65,
-      "release": null,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.17.0",
       "status": "released"
     }
   ],
-  "generatedAt": "2026-11-01T23:11:16.013Z",
+  "generatedAt": "2026-11-01T23:11:36.754Z",
   "captures": [
     {
       "file": "visual/m9-staging.png",
@@ -338,7 +338,7 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m9-staging-closeup.png",
@@ -346,7 +346,7 @@
       "bytes": 171033,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m8.png",
@@ -354,7 +354,7 @@
       "bytes": 524848,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m8-review-closeup.png",
@@ -362,7 +362,7 @@
       "bytes": 217478,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m8-review-capture.png",
@@ -370,7 +370,7 @@
       "bytes": 616312,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m8-perf.png",
@@ -378,7 +378,7 @@
       "bytes": 322143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m8-perf-closeup.png",
@@ -386,7 +386,7 @@
       "bytes": 192656,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m8-closeup.png",
@@ -394,7 +394,7 @@
       "bytes": 202147,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m7.png",
@@ -402,7 +402,7 @@
       "bytes": 791693,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m7-closeup.png",
@@ -410,7 +410,7 @@
       "bytes": 275412,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m6.png",
@@ -418,7 +418,7 @@
       "bytes": 707649,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m6-ember.png",
@@ -426,7 +426,7 @@
       "bytes": 420767,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m5.png",
@@ -434,7 +434,7 @@
       "bytes": 667478,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m4.png",
@@ -442,7 +442,7 @@
       "bytes": 668213,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m3.png",
@@ -450,7 +450,7 @@
       "bytes": 654748,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m2.png",
@@ -458,7 +458,7 @@
       "bytes": 522598,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m17-ramparts.png",
@@ -466,7 +466,7 @@
       "bytes": 569929,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m17-ramparts-west.png",
@@ -474,7 +474,7 @@
       "bytes": 476019,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m17-ramparts-ring.png",
@@ -482,7 +482,7 @@
       "bytes": 502483,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate.png",
@@ -490,7 +490,7 @@
       "bytes": 213254,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate-2x.png",
@@ -498,7 +498,7 @@
       "bytes": 211166,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m17-isometric-ramparts.png",
@@ -506,7 +506,7 @@
       "bytes": 566632,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m16-composition.png",
@@ -514,7 +514,7 @@
       "bytes": 553131,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m16-composition-west.png",
@@ -522,7 +522,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m16-composition-south.png",
@@ -530,7 +530,7 @@
       "bytes": 221455,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m16-composition-east.png",
@@ -538,7 +538,7 @@
       "bytes": 489598,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m15-units.png",
@@ -546,7 +546,7 @@
       "bytes": 562393,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m15-units-west.png",
@@ -554,7 +554,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m15-units-sword-sheet.png",
@@ -562,7 +562,7 @@
       "bytes": 75837,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m15-units-closeup.png",
@@ -570,7 +570,7 @@
       "bytes": 222143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m15-units-archer-sheet.png",
@@ -578,7 +578,7 @@
       "bytes": 65100,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m14-1to1.png",
@@ -586,7 +586,7 @@
       "bytes": 548070,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m14-1to1-west.png",
@@ -594,7 +594,7 @@
       "bytes": 461755,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m14-1to1-closeup.png",
@@ -602,7 +602,7 @@
       "bytes": 214421,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m13-units.png",
@@ -610,7 +610,7 @@
       "bytes": 323089,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m13-units-west.png",
@@ -618,7 +618,7 @@
       "bytes": 279154,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m13-units-closeup.png",
@@ -626,7 +626,7 @@
       "bytes": 173309,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m12-atmosphere.png",
@@ -634,7 +634,7 @@
       "bytes": 324034,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m12-atmosphere-west.png",
@@ -642,7 +642,7 @@
       "bytes": 282731,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m12-atmosphere-closeup.png",
@@ -650,7 +650,7 @@
       "bytes": 175927,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m11-framing.png",
@@ -658,7 +658,7 @@
       "bytes": 326835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m11-framing-west.png",
@@ -666,7 +666,7 @@
       "bytes": 278061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m11-framing-north.png",
@@ -674,7 +674,7 @@
       "bytes": 160561,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m11-framing-closeup.png",
@@ -682,7 +682,7 @@
       "bytes": 169496,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m10-step0.png",
@@ -690,7 +690,7 @@
       "bytes": 309820,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m10-footmen.png",
@@ -698,7 +698,7 @@
       "bytes": 331146,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m10-footmen-west.png",
@@ -706,7 +706,7 @@
       "bytes": 288030,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m10-footmen-closeup.png",
@@ -714,7 +714,7 @@
       "bytes": 171814,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m1.png",
@@ -722,7 +722,7 @@
       "bytes": 519162,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     {
       "file": "visual/m0.png",
@@ -730,7 +730,7 @@
       "bytes": 286922,
       "width": 1236,
       "height": 695,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     }
   ],
   "live": {
@@ -740,11 +740,11 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T23:11:01.000Z"
+      "takenAt": "2026-11-01T23:11:24.000Z"
     },
     "milestone": "M17",
     "title": "Isometric Ramparts",
     "score": 82.65,
-    "updatedAt": "2026-11-01T23:11:01.000Z"
+    "updatedAt": "2026-11-01T23:11:24.000Z"
   }
 }
