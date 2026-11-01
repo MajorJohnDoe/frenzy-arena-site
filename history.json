@@ -302,9 +302,35 @@
       "score": 80.9,
       "release": null,
       "status": "released"
+    },
+    {
+      "version": "0.17.0",
+      "milestone": "M17",
+      "date": "2026-11-01",
+      "title": "Isometric Ramparts",
+      "summary": "The wall ring is no longer a flat screen-space elevation: every collidable wall tile now places one isometric block with a 64×32 top diamond, only the side faces that no neighbouring wall covers, and a crest on the exposed edge, so a run along +x or +z joins as one continuous wall. Under it sits a 6 px foundation plinth with a chamfer lip, and above it a continuous 9 px merlon crest on a 3 px base course, with a broken toothed crest on ruined runs and cornices and arrow loops on towers and jambs. The gate is now a real gatehouse — a 128 px segmental arch with two voussoir courses, a broken crown with fallen blocks, a lit tunnel and two torch pools — where the tunnel is baked so units walk over it while the masonry above sorts over them. Walkway, lit face and shadow face were pulled down to L 55, L 53–57 and L 43 so the walls stop being the brightest large surface in the frame, and runs no longer read as stacked cards.",
+      "note": "Independent review: 82.65 weighted (M16 80.90, +1.75) — Layout 83 (+3), Terrain 85 (+5), Units 82, VFX 81 (+1), HUD 83, Pixel art 80; three passes read 82.20 → 82.10 → 82.65. Acceptance evidence: the data test asserts one rampart block per collidable wall tile from the same `mapGeometry` tiles the simulation collides with; a 1× crop shows the wall receding at 2:1 with a lit top and both faces; ring corners turn; and a unit in front of the wall draws over it while a unit behind the gate draws behind the jamb. Performance: 5 draw calls, 892 quads at 207 units (M16 848) and 854 at the 255-unit cap, SwiftShader 45.8–55.4 FPS at the scored frame (noisy software GL) and 51.4 FPS at the cap, golden sim hash unchanged 3198708409, console clean. What still binds: a comb-like merlon module, a walkway only ΔL3 above its lit face, one 1–2 px dark join at the ruin/gate tower, and the empty west-middle field; the remaining gate points are in units, VFX, HUD weight and layout, not masonry.",
+      "screenshot": "visual/m17-isometric-ramparts.png",
+      "gallery": [
+        {
+          "src": "visual/m17-ramparts-ring.png",
+          "caption": "Outer ring at cam=23,29: continuous runs with no per-tile seam, corners that turn, the 6 px foundation plinth and the continuous merlon crest."
+        },
+        {
+          "src": "visual/m17-ramparts-gate-2x.png",
+          "caption": "Gatehouse at cam=27,28&zoom=2: the segmental arch with two voussoir courses, a torch-lit threshold, a broken crown with fallen blocks and the baked tunnel."
+        },
+        {
+          "src": "visual/m17-ramparts.png",
+          "caption": "The first checkpoint pass of the same task at the scored camera (cam=32,32), kept as the before/after pair inside this milestone."
+        }
+      ],
+      "score": 82.65,
+      "release": null,
+      "status": "released"
     }
   ],
-  "generatedAt": "2026-11-01T22:32:35.396Z",
+  "generatedAt": "2026-11-01T23:11:16.013Z",
   "captures": [
     {
       "file": "visual/m9-staging.png",
@@ -312,7 +338,7 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m9-staging-closeup.png",
@@ -320,7 +346,7 @@
       "bytes": 171033,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m8.png",
@@ -328,7 +354,7 @@
       "bytes": 524848,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m8-review-closeup.png",
@@ -336,7 +362,7 @@
       "bytes": 217478,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m8-review-capture.png",
@@ -344,7 +370,7 @@
       "bytes": 616312,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m8-perf.png",
@@ -352,7 +378,7 @@
       "bytes": 322143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m8-perf-closeup.png",
@@ -360,7 +386,7 @@
       "bytes": 192656,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m8-closeup.png",
@@ -368,7 +394,7 @@
       "bytes": 202147,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m7.png",
@@ -376,7 +402,7 @@
       "bytes": 791693,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m7-closeup.png",
@@ -384,7 +410,7 @@
       "bytes": 275412,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m6.png",
@@ -392,7 +418,7 @@
       "bytes": 707649,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m6-ember.png",
@@ -400,7 +426,7 @@
       "bytes": 420767,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m5.png",
@@ -408,7 +434,7 @@
       "bytes": 667478,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m4.png",
@@ -416,7 +442,7 @@
       "bytes": 668213,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m3.png",
@@ -424,7 +450,7 @@
       "bytes": 654748,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m2.png",
@@ -432,7 +458,7 @@
       "bytes": 522598,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m17-ramparts.png",
@@ -440,7 +466,7 @@
       "bytes": 569929,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m17-ramparts-west.png",
@@ -448,7 +474,15 @@
       "bytes": 476019,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
+    },
+    {
+      "file": "visual/m17-ramparts-ring.png",
+      "name": "m17-ramparts-ring.png",
+      "bytes": 502483,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate.png",
@@ -456,7 +490,23 @@
       "bytes": 213254,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
+    },
+    {
+      "file": "visual/m17-ramparts-gate-2x.png",
+      "name": "m17-ramparts-gate-2x.png",
+      "bytes": 211166,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T23:11:01.000Z"
+    },
+    {
+      "file": "visual/m17-isometric-ramparts.png",
+      "name": "m17-isometric-ramparts.png",
+      "bytes": 566632,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m16-composition.png",
@@ -464,7 +514,7 @@
       "bytes": 553131,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m16-composition-west.png",
@@ -472,7 +522,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m16-composition-south.png",
@@ -480,7 +530,7 @@
       "bytes": 221455,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m16-composition-east.png",
@@ -488,7 +538,7 @@
       "bytes": 489598,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m15-units.png",
@@ -496,7 +546,7 @@
       "bytes": 562393,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m15-units-west.png",
@@ -504,7 +554,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m15-units-sword-sheet.png",
@@ -512,7 +562,7 @@
       "bytes": 75837,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m15-units-closeup.png",
@@ -520,7 +570,7 @@
       "bytes": 222143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m15-units-archer-sheet.png",
@@ -528,7 +578,7 @@
       "bytes": 65100,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m14-1to1.png",
@@ -536,7 +586,7 @@
       "bytes": 548070,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m14-1to1-west.png",
@@ -544,7 +594,7 @@
       "bytes": 461755,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m14-1to1-closeup.png",
@@ -552,7 +602,7 @@
       "bytes": 214421,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m13-units.png",
@@ -560,7 +610,7 @@
       "bytes": 323089,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m13-units-west.png",
@@ -568,7 +618,7 @@
       "bytes": 279154,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m13-units-closeup.png",
@@ -576,7 +626,7 @@
       "bytes": 173309,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m12-atmosphere.png",
@@ -584,7 +634,7 @@
       "bytes": 324034,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m12-atmosphere-west.png",
@@ -592,7 +642,7 @@
       "bytes": 282731,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m12-atmosphere-closeup.png",
@@ -600,7 +650,7 @@
       "bytes": 175927,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m11-framing.png",
@@ -608,7 +658,7 @@
       "bytes": 326835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m11-framing-west.png",
@@ -616,7 +666,7 @@
       "bytes": 278061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m11-framing-north.png",
@@ -624,7 +674,7 @@
       "bytes": 160561,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m11-framing-closeup.png",
@@ -632,7 +682,7 @@
       "bytes": 169496,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m10-step0.png",
@@ -640,7 +690,7 @@
       "bytes": 309820,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m10-footmen.png",
@@ -648,7 +698,7 @@
       "bytes": 331146,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m10-footmen-west.png",
@@ -656,7 +706,7 @@
       "bytes": 288030,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m10-footmen-closeup.png",
@@ -664,7 +714,7 @@
       "bytes": 171814,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m1.png",
@@ -672,7 +722,7 @@
       "bytes": 519162,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
     {
       "file": "visual/m0.png",
@@ -680,7 +730,7 @@
       "bytes": 286922,
       "width": 1236,
       "height": 695,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     }
   ],
   "live": {
@@ -690,11 +740,11 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T22:32:20.000Z"
+      "takenAt": "2026-11-01T23:11:01.000Z"
     },
-    "milestone": "M16",
-    "title": "Composition Recovery",
-    "score": 80.9,
-    "updatedAt": "2026-11-01T22:32:20.000Z"
+    "milestone": "M17",
+    "title": "Isometric Ramparts",
+    "score": 82.65,
+    "updatedAt": "2026-11-01T23:11:01.000Z"
   }
 }
