@@ -90,14 +90,14 @@
     {
       "version": "0.7.0",
       "milestone": "M7",
-      "date": "Planned",
-      "title": "Pixel Art Pass",
-      "summary": "Authored stone, lava, cliff and grass tiles; eight bases; 4-direction units and heroes; spell sheets and a canvas pixel HUD.",
-      "note": "Planned. Target: reference-level material, unit identity, spell scale and HUD density.",
-      "screenshot": null,
-      "score": null,
+      "date": "2026-11-01",
+      "title": "Portal, Altar and Sprite Pass",
+      "summary": "Framed stone portals with a white-hot core now anchor the bases, a three-tier brazier-lit altar carries a faceted red crystal, and a broken-wall ruin plus mid-field ruins fill the plaza. Lava was re-keyed to dark basalt plates under broken white-hot seams, the floor ramp darkened, units rebuilt at 48×64 with 3-tone armour and team-banded shields, and the HUD skinned with an armoured portrait and a filled inventory.",
+      "note": "Independent review: 62/100 (M6: 57). Terrain and HUD moved; VFX is still 48, and the ice nova remains a translucent overlay that erases the units beneath it — that is the binding gap for M8.",
+      "screenshot": "visual/m7.png",
+      "score": 62,
       "release": null,
-      "status": "planned"
+      "status": "in-progress"
     },
     {
       "version": "0.9.0",
@@ -124,5 +124,5 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T14:20:48.089Z"
+  "generatedAt": "2026-11-01T15:15:02.648Z"
 }
