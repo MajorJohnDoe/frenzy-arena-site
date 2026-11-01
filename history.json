@@ -102,14 +102,24 @@
     {
       "version": "0.9.0",
       "milestone": "M8",
-      "date": "Planned",
-      "title": "90% Gate",
-      "summary": "Composition, density, palette, animation and final polish on the pixel renderer.",
-      "note": "Planned. Gate: weighted score >= 90 with no category below 80, 60 FPS at 1280x720 while panning.",
-      "screenshot": null,
-      "score": null,
+      "date": "2026-11-01",
+      "title": "Gate Attempt 1: Basalt, Nova and Brass",
+      "summary": "Multi-scale dark basalt lava plates now sit under hot seams, the ice nova is rebuilt as an opaque, dark-outlined 14-shard burst over a scorch pool with stepped frost rings, and the fire is authored four-tone pixel art that casts light onto the ground. Team colour moved off the 2 px sash onto the cloth torso, and a wide bow silhouette makes the archer readable at 1×. The HUD gained a 5-step brass bezel, carved bronze panels, a 2× portrait, 2× icons and framed inventory slots, and a new headless `make probe` tool reports FPS, draw calls and console errors without a browser window.",
+      "note": "Independent review: 67/100 (M7: 62). Layout 62, Terrain 63, Units 66, VFX 63, HUD 82, Pixel art 66. HUD is the first category above 80; the gate needs 90 with no category below 80. The committed capture also absorbs the review's lava value inversion, cast light and connected nova shards, which are not re-scored.",
+      "screenshot": "visual/m8.png",
+      "gallery": [
+        {
+          "src": "visual/m8-closeup.png",
+          "caption": "2× detail of the altar at cam=30,30: opaque shard nova, four-tone flame and pink, teal and olive cloth torsos on the surrounding units."
+        },
+        {
+          "src": "visual/m8-review-capture.png",
+          "caption": "Exact capture the independent 67/100 review measured; the committed m8.png is the same URL with the post-review fixes."
+        }
+      ],
+      "score": 67,
       "release": null,
-      "status": "planned"
+      "status": "in-progress"
     },
     {
       "version": "1.0.0",
@@ -124,5 +134,5 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T15:15:02.648Z"
+  "generatedAt": "2026-11-01T15:52:53.680Z"
 }
