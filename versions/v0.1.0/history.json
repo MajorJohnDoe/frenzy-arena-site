@@ -1,0 +1,80 @@
+{
+  "footer": "Ember Arena — built in the browser with three.js. No Blender on the server.",
+  "latestPlay": "/",
+  "review": "review.html",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "milestone": "M0",
+      "date": "2026-11-01",
+      "title": "Bootstrap",
+      "summary": "The first browser-native arena: eight team portals, a central lava pool, 64 sprite units, a 640×360 pixel-art pass and a HUD shell.",
+      "note": "Independent review: 35/100. A solid pipeline baseline, but the arena is still a small blockout in a black void. M1 focuses on framing, lighting and the 32×32 octagonal layout.",
+      "screenshot": "visual/m0.png",
+      "score": 35,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.1.0",
+      "play": "/",
+      "status": "released"
+    },
+    {
+      "version": "0.2.0",
+      "milestone": "M1",
+      "date": "Next",
+      "title": "Arena Blockout",
+      "summary": "Dense 32×32 octagonal arena with eight radial spawn zones, a larger central lava objective, a terrain apron and a cleaner portal prefab.",
+      "note": "Planned. Focus: composition, value hierarchy and draw-call discipline before adding final VFX.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    },
+    {
+      "version": "0.3.0",
+      "milestone": "M2",
+      "date": "Planned",
+      "title": "Simulation Core",
+      "summary": "Archers and Swordsmen fight with real waves, targeting, projectiles, health bars and death states.",
+      "note": "Planned. Combat logic stays in src/sim/ with deterministic tests.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    },
+    {
+      "version": "0.4.0",
+      "milestone": "M3",
+      "date": "Planned",
+      "title": "Terrain Art Pass",
+      "summary": "Cracked stone, lava crust, crystals, conifers, ruined structures and a stronger dark-fantasy palette.",
+      "note": "Planned. Environment checklist and palette from docs/ART_DIRECTION.md.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    },
+    {
+      "version": "0.5.0",
+      "milestone": "M4",
+      "date": "Planned",
+      "title": "VFX and Feel",
+      "summary": "Portal energy, lava glow, combat bursts, damage text, outlines and a more readable pixel-art presentation.",
+      "note": "Planned. One low-cost composite pass, no heavy GPU effects.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    },
+    {
+      "version": "0.6.0",
+      "milestone": "M5",
+      "date": "Planned",
+      "title": "HUD and Minimap",
+      "summary": "A complete RTS interface: minimap, commander panel, abilities, resources, team slots and match clock.",
+      "note": "Planned. The layout and feel matter as much as the battlefield.",
+      "screenshot": null,
+      "score": null,
+      "release": null,
+      "status": "planned"
+    }
+  ]
+}
