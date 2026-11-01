@@ -80,12 +80,12 @@
       "milestone": "M6",
       "date": "In progress",
       "title": "Pixel-Tilemap Reboot",
-      "summary": "A 2D 2:1 pixel-art tilemap on a 64x64 pannable RTS map: four corner bases, four edge bases, four lava pools, a central plaza and an altar.",
-      "note": "The 3D renderer is retired. Work starts with a 1280x720 pipeline spike, then terrain, bases, units, VFX and a canvas pixel HUD. The timeline keeps every earlier capture.",
-      "screenshot": null,
-      "score": null,
-      "release": null,
-      "status": "in-progress"
+      "summary": "The battlefield is now a 2D 2:1 pixel-art tilemap: a 64×64 pannable map, baked flagstone and Voronoi lava, eight bases, four-direction unit sprites, authored spell sheets and a canvas pixel HUD.",
+      "note": "Independent review: 57/100 (M5: 61 — different medium). The pixel pivot fixed projection, 1:1 sampling, the map and the HUD; the remaining gap is art density, unit silhouettes, VFX scale and the empty plaza centre. 5 draw calls, 83 FPS at 224 units.",
+      "screenshot": "visual/m6.png",
+      "score": 57,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.6.0",
+      "status": "released"
     },
     {
       "version": "0.7.0",
@@ -124,5 +124,5 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T14:07:55.599Z"
+  "generatedAt": "2026-11-01T14:20:48.089Z"
 }
