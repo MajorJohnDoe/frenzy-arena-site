@@ -246,9 +246,39 @@
       "score": 80.35,
       "release": null,
       "status": "released"
+    },
+    {
+      "version": "0.15.0",
+      "milestone": "M15",
+      "date": "2026-11-01",
+      "title": "Pre-Rendered 16-Direction Units",
+      "summary": "Units are no longer four hand-authored facings: a procedural three.js rig (swordsman and archer) bakes to a per-team sprite atlas with 16 headings at 22.5° and idle 4 / walk 8 / attack 5 / death 6 frames, 278 frames per class, so one quad and one texture fetch carry a unit in all eight armies. Team colour is precomposed into every frame, and the swordsman reads as a shield wall while the archer reads as a hooded bowman from the front, the side and the back. The first bake was too dark to ship (Units 79, total 79.65); a value and silhouette pass lifted unit pixels L 53.1 → 76.6 and the melee dark share to 14.7% (M14 17.8%).",
+      "note": "Independent review: 80.10 weighted (M14 80.35). Layout 77, Terrain 79, Units 82, VFX 80, HUD 83, Pixel art 80. Task 023 clears its own bar (Units ≥80, total ≥80) and the 16-heading pipeline is accepted; the −0.25 is review-rounding, since HUD, terrain, lava and VFX are pixel-identical to M14 and the whole delta is the sprite pass. The gate is still blocked on Layout 77 and Terrain 79, both below the 80 floor at 20% weight each, and a perfect Units score could only buy ~1.4 points. The next pass is the ~10 points outside the units: task 024 composition recovery (occupy the outer thirds, clear the north-east squad from the top bar, add rim bases) and task 025 isometric ramparts with the terrain/lava rework, then a re-review. 826 quads and 5 draw calls at 207 units, 55.9 FPS at t=25 and 57.3 at the 255-unit cap on the SwiftShader probe, two cold bakes reporting rig 788eae95 / atlas a13226bd, golden sim hash unchanged 3198708409.",
+      "screenshot": "visual/m15-units.png",
+      "gallery": [
+        {
+          "src": "visual/m15-units-closeup.png",
+          "caption": "2× altar detail at cam=31,31: cowled archers and kite-shield swordsmen, with team capes and hoods reading at 1×."
+        },
+        {
+          "src": "visual/m15-units-west.png",
+          "caption": "West courtyard at cam=14,32: the wall ring and causeway behind marching archers at the design cap."
+        },
+        {
+          "src": "visual/m15-units-sword-sheet.png",
+          "caption": "16-heading swordsman sheet with walk, attack and death rows: kite shield, wide pauldrons and crested helm."
+        },
+        {
+          "src": "visual/m15-units-archer-sheet.png",
+          "caption": "16-heading archer sheet: rounded team cowl, thick bow with a white string and a back-view quiver."
+        }
+      ],
+      "score": 80.1,
+      "release": null,
+      "status": "released"
     }
   ],
-  "generatedAt": "2026-11-01T20:38:48.013Z",
+  "generatedAt": "2026-11-01T21:30:47.928Z",
   "captures": [
     {
       "file": "visual/m9-staging.png",
@@ -256,7 +286,7 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m9-staging-closeup.png",
@@ -264,7 +294,7 @@
       "bytes": 171033,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m8.png",
@@ -272,7 +302,7 @@
       "bytes": 524848,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m8-review-closeup.png",
@@ -280,7 +310,7 @@
       "bytes": 217478,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m8-review-capture.png",
@@ -288,7 +318,7 @@
       "bytes": 616312,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m8-perf.png",
@@ -296,7 +326,7 @@
       "bytes": 322143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m8-perf-closeup.png",
@@ -304,7 +334,7 @@
       "bytes": 192656,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m8-closeup.png",
@@ -312,7 +342,7 @@
       "bytes": 202147,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m7.png",
@@ -320,7 +350,7 @@
       "bytes": 791693,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m7-closeup.png",
@@ -328,7 +358,7 @@
       "bytes": 275412,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m6.png",
@@ -336,7 +366,7 @@
       "bytes": 707649,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m6-ember.png",
@@ -344,7 +374,7 @@
       "bytes": 420767,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m5.png",
@@ -352,7 +382,7 @@
       "bytes": 667478,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m4.png",
@@ -360,7 +390,7 @@
       "bytes": 668213,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m3.png",
@@ -368,7 +398,7 @@
       "bytes": 654748,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m2.png",
@@ -376,7 +406,47 @@
       "bytes": 522598,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
+    },
+    {
+      "file": "visual/m15-units.png",
+      "name": "m15-units.png",
+      "bytes": 562393,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T21:30:34.000Z"
+    },
+    {
+      "file": "visual/m15-units-west.png",
+      "name": "m15-units-west.png",
+      "bytes": 464904,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T21:30:34.000Z"
+    },
+    {
+      "file": "visual/m15-units-sword-sheet.png",
+      "name": "m15-units-sword-sheet.png",
+      "bytes": 75837,
+      "width": 1300,
+      "height": 1850,
+      "takenAt": "2026-11-01T21:30:34.000Z"
+    },
+    {
+      "file": "visual/m15-units-closeup.png",
+      "name": "m15-units-closeup.png",
+      "bytes": 222143,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-01T21:30:34.000Z"
+    },
+    {
+      "file": "visual/m15-units-archer-sheet.png",
+      "name": "m15-units-archer-sheet.png",
+      "bytes": 65100,
+      "width": 1300,
+      "height": 1850,
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m14-1to1.png",
@@ -384,7 +454,7 @@
       "bytes": 548070,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m14-1to1-west.png",
@@ -392,7 +462,7 @@
       "bytes": 461755,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m14-1to1-closeup.png",
@@ -400,7 +470,7 @@
       "bytes": 214421,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m13-units.png",
@@ -408,7 +478,7 @@
       "bytes": 323089,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m13-units-west.png",
@@ -416,7 +486,7 @@
       "bytes": 279154,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m13-units-closeup.png",
@@ -424,7 +494,7 @@
       "bytes": 173309,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m12-atmosphere.png",
@@ -432,7 +502,7 @@
       "bytes": 324034,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m12-atmosphere-west.png",
@@ -440,7 +510,7 @@
       "bytes": 282731,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m12-atmosphere-closeup.png",
@@ -448,7 +518,7 @@
       "bytes": 175927,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m11-framing.png",
@@ -456,7 +526,7 @@
       "bytes": 326835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m11-framing-west.png",
@@ -464,7 +534,7 @@
       "bytes": 278061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m11-framing-north.png",
@@ -472,7 +542,7 @@
       "bytes": 160561,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m11-framing-closeup.png",
@@ -480,7 +550,7 @@
       "bytes": 169496,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m10-step0.png",
@@ -488,7 +558,7 @@
       "bytes": 309820,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m10-footmen.png",
@@ -496,7 +566,7 @@
       "bytes": 331146,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m10-footmen-west.png",
@@ -504,7 +574,7 @@
       "bytes": 288030,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m10-footmen-closeup.png",
@@ -512,7 +582,7 @@
       "bytes": 171814,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m1.png",
@@ -520,7 +590,7 @@
       "bytes": 519162,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
     {
       "file": "visual/m0.png",
@@ -528,7 +598,7 @@
       "bytes": 286922,
       "width": 1236,
       "height": 695,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     }
   ],
   "live": {
@@ -538,11 +608,11 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-01T20:38:31.000Z"
+      "takenAt": "2026-11-01T21:30:34.000Z"
     },
-    "milestone": "M14",
-    "title": "One-to-One World and 7×9 Numerals",
-    "score": 80.35,
-    "updatedAt": "2026-11-01T20:38:31.000Z"
+    "milestone": "M15",
+    "title": "Pre-Rendered 16-Direction Units",
+    "score": 80.1,
+    "updatedAt": "2026-11-01T21:30:34.000Z"
   }
 }
