@@ -132,7 +132,29 @@
       "score": null,
       "release": null,
       "status": "planned"
+    },
+    {
+      "version": "0.10.0",
+      "milestone": "M10",
+      "date": "2026-11-01",
+      "title": "Footmen Frenzy Match Loop",
+      "summary": "Units now spawn from their own barracks, team 0 selects and attack-moves them to the middle, the plaza portals are gone, and a wall ring with one gate per courtyard forces every base-to-base route through the altar. A shared map-geometry source drives both the simulation collision and the pixel tilemap; stone causeways cross the four cardinal lava pools. Every team starts with archers, buys a 150-gold swordsman upgrade, and researches a 200-gold Frenzy charge; the AI runs the same loop so the capture stays dense.",
+      "note": "Independent review: 72/100 (M9: 72), weighted 72.25. Layout 71, Terrain 70, Units 71, VFX 66, HUD 83, Pixel art 69. The loop's core claim is proven: no portals, one dense plaza scrum, readable gate/causeway enclosure in the west detail, and a HUD reporting gold, tier, supply and upgrade/Frenzy costs. What still binds: thinned wings/upper field, flat screen-aligned wall bricks, VFX 66. Captures are at t=25; 331 units, 5 draw calls, 60.0 FPS, console clean.",
+      "screenshot": "visual/m10-footmen.png",
+      "gallery": [
+        {
+          "src": "visual/m10-footmen-west.png",
+          "caption": "West courtyard at cam=14,32: the Ember barracks door, the wall ring and gate, and a stone causeway cutting the cardinal lava pool."
+        },
+        {
+          "src": "visual/m10-footmen-closeup.png",
+          "caption": "2x altar detail at cam=31,31: archers and swordsmen in the central scrum, damage numerals, health bars and the nova."
+        }
+      ],
+      "score": 72,
+      "release": null,
+      "status": "in-progress"
     }
   ],
-  "generatedAt": "2026-11-01T17:17:20.901Z"
+  "generatedAt": "2026-11-01T17:31:15.903Z"
 }
