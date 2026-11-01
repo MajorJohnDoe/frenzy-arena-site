@@ -384,6 +384,89 @@
         color: var(--muted);
         font-size: 12px;
       }
+      .section-note {
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        font-weight: 400;
+      }
+      .live-band {
+        display: grid;
+        grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+        gap: 16px;
+        align-items: center;
+        max-width: 1680px;
+        margin: 0 auto 18px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        background: linear-gradient(180deg, rgba(24, 20, 13, 0.9), rgba(9, 10, 13, 0.9));
+      }
+      .live-band[hidden] {
+        display: none;
+      }
+      .live-band img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background: #07080b;
+        border: 1px solid #241d13;
+        image-rendering: pixelated;
+        cursor: zoom-in;
+      }
+      .live-kicker {
+        color: var(--green);
+        font-size: 10px;
+        letter-spacing: 0.24em;
+      }
+      .live-title {
+        margin-top: 6px;
+        color: var(--gold-bright);
+        font-size: 18px;
+        letter-spacing: 0.06em;
+      }
+      .live-meta {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+      }
+      @media (max-width: 900px) {
+        .live-band {
+          grid-template-columns: 1fr;
+        }
+      }
+      .capture-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        gap: 10px;
+        padding: 14px;
+      }
+      .capture {
+        margin: 0;
+        padding: 6px;
+        border: 1px solid var(--line-soft);
+        background: rgba(7, 8, 11, 0.38);
+      }
+      .capture img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background: #07080b;
+        image-rendering: pixelated;
+        border: 1px solid #241d13;
+        cursor: zoom-in;
+      }
+      .capture figcaption {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 0.06em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
       .lightbox {
         position: fixed;
         inset: 0;
@@ -448,7 +531,7 @@
         <div class="mark">◆</div>
         <div>
           <h1>EMBER ARENA</h1>
-          <div class="sub">VISUAL HISTORY · SCREENSHOTS AND NOTES BY VISUAL MILESTONE</div>
+          <div class="sub">VISUAL HISTORY · EVERY CAPTURE AND EVERY MILESTONE</div>
         </div>
       </div>
       <nav class="nav">
@@ -459,6 +542,15 @@
         >
       </nav>
     </header>
+
+    <section class="live-band" id="live-band" hidden>
+      <img id="live-image" alt="Latest committed capture" />
+      <div>
+        <div class="live-kicker">LIVE · NEWEST COMMITTED CAPTURE</div>
+        <div class="live-title" id="live-title"></div>
+        <div class="live-meta" id="live-meta"></div>
+      </div>
+    </section>
 
     <main class="layout">
       <section class="stage" id="current-stage">
@@ -505,6 +597,13 @@
         <div id="score-chart"></div>
       </div>
       <div class="timeline-list" id="timeline"></div>
+    </section>
+
+    <section class="timeline">
+      <h2 class="section-title">
+        ALL CAPTURES <span class="section-note" id="capture-count"></span>
+      </h2>
+      <div class="capture-grid" id="captures"></div>
     </section>
 
     <footer class="footer">
@@ -664,6 +763,56 @@
         }
       };
 
+      const liveBand = document.getElementById('live-band');
+      const liveImage = document.getElementById('live-image');
+      const liveTitle = document.getElementById('live-title');
+      const liveMeta = document.getElementById('live-meta');
+
+      const renderLive = (live) => {
+        if (!live || !live.capture) {
+          liveBand.hidden = true;
+          return;
+        }
+        liveBand.hidden = false;
+        liveImage.src = live.capture.file;
+        liveImage.alt = live.capture.name;
+        liveImage.addEventListener('click', () => openLightbox(liveImage.src, live.capture.name));
+        liveTitle.textContent = live.milestone
+          ? `${live.milestone} · ${live.title ?? ''} · ${live.score ?? '—'}/100`
+          : live.capture.name;
+        const when = new Date(live.updatedAt);
+        liveMeta.textContent = `${live.capture.name} · ${live.capture.width}x${live.capture.height} · ${when.toLocaleString()}`;
+      };
+
+      const capturesGrid = document.getElementById('captures');
+      const captureCount = document.getElementById('capture-count');
+
+      const renderCaptures = (captures) => {
+        capturesGrid.replaceChildren();
+        if (!Array.isArray(captures) || captures.length === 0) {
+          captureCount.textContent = 'NONE YET';
+          return;
+        }
+        captureCount.textContent = `${captures.length} FILES · NEWEST FIRST`;
+        for (const capture of captures) {
+          const figure = el('figure', 'capture');
+          const img = el('img');
+          img.src = capture.file;
+          img.alt = capture.name;
+          img.loading = 'lazy';
+          img.decoding = 'async';
+          img.addEventListener('click', () => openLightbox(img.src, capture.name));
+          const label = el(
+            'figcaption',
+            '',
+            `${capture.name} · ${capture.width}x${capture.height}`,
+          );
+          label.title = `${capture.name} — ${capture.takenAt}`;
+          figure.append(img, label);
+          capturesGrid.append(figure);
+        }
+      };
+
       const renderScoreChart = (versions) => {
         scoreChart.replaceChildren();
         const scored = versions.filter(
@@ -698,7 +847,9 @@
           const released = versions.filter((entry) => entry.status === 'released');
           const current = released[released.length - 1] || versions[0];
           if (current) renderCurrent(current, data);
+          renderLive(data.live);
           renderTimeline(versions);
+          renderCaptures(data.captures);
           renderScoreChart(versions);
 
           if (data.liveUrl) {
