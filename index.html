@@ -132,6 +132,35 @@
         image-rendering: pixelated;
         cursor: zoom-in;
       }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+        padding: 12px 18px 0;
+      }
+      .gallery:empty {
+        display: none;
+      }
+      .gallery figure {
+        margin: 0;
+        border: 1px solid var(--line-soft);
+        background: rgba(7, 8, 11, 0.5);
+      }
+      .gallery img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        image-rendering: pixelated;
+        cursor: zoom-in;
+      }
+      .gallery figcaption {
+        padding: 6px 8px;
+        color: var(--muted);
+        font-size: 9px;
+        line-height: 1.45;
+        letter-spacing: 0.06em;
+      }
       .stage-body {
         padding: 16px 18px 18px;
       }
@@ -438,6 +467,7 @@
           <span id="current-date"></span>
         </div>
         <div id="current-media"></div>
+        <div id="current-gallery" class="gallery"></div>
         <div class="stage-body">
           <h2 class="stage-title" id="current-title">Loading visual history</h2>
           <p class="stage-summary" id="current-summary"></p>
@@ -497,6 +527,7 @@
     <script>
       const timeline = document.getElementById('timeline');
       const currentMedia = document.getElementById('current-media');
+      const currentGallery = document.getElementById('current-gallery');
       const currentVersion = document.getElementById('current-version');
       const currentDate = document.getElementById('current-date');
       const currentTitle = document.getElementById('current-title');
@@ -577,6 +608,20 @@
           currentMedia.append(
             el('div', 'empty', 'Screenshot will appear when this milestone is captured.'),
           );
+        }
+
+        currentGallery.replaceChildren();
+        const gallery = Array.isArray(entry.gallery) ? entry.gallery : [];
+        for (const item of gallery) {
+          if (!item?.src) continue;
+          const figure = el('figure');
+          const img = el('img');
+          img.src = item.src;
+          img.alt = item.caption || `Detail screenshot for v${entry.version}`;
+          img.addEventListener('click', () => openLightbox(img.src, img.alt));
+          const caption = el('figcaption', '', item.caption || '');
+          figure.append(img, caption);
+          currentGallery.append(figure);
         }
       };
 
