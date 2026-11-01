@@ -1,6 +1,6 @@
 {
   "footer": "Ember Arena — built in the browser with three.js. No Blender on the server.",
-  "latestPlay": "versions/v0.1.0/?site=1",
+  "latestPlay": "versions/v0.1.1/?site=1",
   "review": null,
   "versions": [
     {
@@ -14,6 +14,19 @@
       "score": 35,
       "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.1.0",
       "play": "versions/v0.1.0/?site=1",
+      "status": "released"
+    },
+    {
+      "version": "0.1.1",
+      "milestone": "M0.1",
+      "date": "2026-11-01",
+      "title": "Robustness & Visual History",
+      "summary": "Deterministic simulation contract, architecture/data tests, golden hash, release automation, Dependabot, GLB download fallback and the public visual-history site.",
+      "note": "Visual output is unchanged from M0. This release makes the project safer to iterate on and gives every future milestone a screenshot timeline.",
+      "screenshot": "visual/v0.1.1.png",
+      "score": 35,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.1.1",
+      "play": "versions/v0.1.1/?site=1",
       "status": "released"
     },
     {
@@ -77,9 +90,9 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T12:06:48.508Z",
+  "generatedAt": "2026-11-01T12:14:30.308Z",
   "release": {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "date": "2026-11-01"
   }
 }

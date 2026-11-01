@@ -17,15 +17,28 @@
         --muted: #8e8577;
         --green: #7df06a;
       }
-      * { box-sizing: border-box; }
-      html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); }
+      * {
+        box-sizing: border-box;
+      }
+      html,
       body {
-        font-family: "Courier New", ui-monospace, monospace;
-        letter-spacing: .04em;
+        margin: 0;
+        min-height: 100%;
+        background: var(--bg);
+        color: var(--text);
+      }
+      body {
+        font-family: 'Courier New', ui-monospace, monospace;
+        letter-spacing: 0.04em;
         padding: 0 clamp(14px, 4vw, 56px) 48px;
       }
-      a { color: var(--gold); text-decoration: none; }
-      a:hover { color: var(--gold-bright); }
+      a {
+        color: var(--gold);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--gold-bright);
+      }
       .top {
         display: flex;
         align-items: flex-end;
@@ -36,7 +49,11 @@
         padding: 28px 0 18px;
         border-bottom: 1px solid var(--line-soft);
       }
-      .brand { display: flex; gap: 14px; align-items: center; }
+      .brand {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+      }
       .mark {
         display: grid;
         place-items: center;
@@ -47,24 +64,53 @@
         color: var(--gold-bright);
         font-size: 22px;
       }
-      h1 { margin: 0; color: var(--gold-bright); font-size: clamp(18px, 2.2vw, 30px); letter-spacing: .14em; }
-      .sub { margin-top: 4px; color: var(--muted); font-size: 11px; letter-spacing: .1em; }
-      .nav { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px; letter-spacing: .1em; }
-      .nav a { border-bottom: 1px solid transparent; padding-bottom: 2px; }
-      .nav a:hover { border-color: var(--gold); }
+      h1 {
+        margin: 0;
+        color: var(--gold-bright);
+        font-size: clamp(18px, 2.2vw, 30px);
+        letter-spacing: 0.14em;
+      }
+      .sub {
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 11px;
+        letter-spacing: 0.1em;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+      }
+      .nav a {
+        border-bottom: 1px solid transparent;
+        padding-bottom: 2px;
+      }
+      .nav a:hover {
+        border-color: var(--gold);
+      }
       .layout {
         display: grid;
-        grid-template-columns: minmax(0, 1.55fr) minmax(280px, .85fr);
+        grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.85fr);
         gap: 18px;
         max-width: 1500px;
         margin: 22px auto 0;
       }
-      .stage, .goal, .intro, .timeline {
+      .stage,
+      .goal,
+      .intro,
+      .timeline {
         border: 1px solid var(--line);
-        background: linear-gradient(180deg, rgba(29,26,23,.72), rgba(9,10,14,.94)), var(--panel);
-        box-shadow: inset 0 1px 0 rgba(255,217,120,.06), 0 18px 48px rgba(0,0,0,.35);
+        background:
+          linear-gradient(180deg, rgba(29, 26, 23, 0.72), rgba(9, 10, 14, 0.94)), var(--panel);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 217, 120, 0.06),
+          0 18px 48px rgba(0, 0, 0, 0.35);
       }
-      .stage { overflow: hidden; }
+      .stage {
+        overflow: hidden;
+      }
       .stage-head {
         display: flex;
         justify-content: space-between;
@@ -73,9 +119,11 @@
         border-bottom: 1px solid var(--line-soft);
         color: var(--muted);
         font-size: 10px;
-        letter-spacing: .12em;
+        letter-spacing: 0.12em;
       }
-      .version-badge { color: var(--gold-bright); }
+      .version-badge {
+        color: var(--gold-bright);
+      }
       .shot {
         display: block;
         width: 100%;
@@ -83,20 +131,49 @@
         background: #07080b;
         image-rendering: pixelated;
       }
-      .stage-body { padding: 16px 18px 18px; }
-      .stage-title { margin: 0 0 6px; color: var(--gold-bright); font-size: 18px; }
-      .stage-summary { margin: 0; color: var(--text); font-size: 13px; line-height: 1.65; }
-      .stage-note { margin: 10px 0 0; color: var(--muted); font-size: 11px; line-height: 1.55; }
-      .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+      .stage-body {
+        padding: 16px 18px 18px;
+      }
+      .stage-title {
+        margin: 0 0 6px;
+        color: var(--gold-bright);
+        font-size: 18px;
+      }
+      .stage-summary {
+        margin: 0;
+        color: var(--text);
+        font-size: 13px;
+        line-height: 1.65;
+      }
+      .stage-note {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.55;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
       .pill {
         padding: 5px 8px;
         border: 1px solid var(--line-soft);
         color: var(--muted);
         font-size: 10px;
-        letter-spacing: .08em;
+        letter-spacing: 0.08em;
       }
-      .pill strong { color: var(--gold-bright); font-weight: 700; }
-      .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+      .pill strong {
+        color: var(--gold-bright);
+        font-weight: 700;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
       .btn {
         display: inline-block;
         padding: 8px 11px;
@@ -104,31 +181,62 @@
         background: linear-gradient(180deg, #2a2117, #121116);
         color: var(--text);
         font-size: 10px;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
       }
-      .btn:hover { color: var(--gold-bright); border-color: var(--gold); }
-      .side { display: flex; flex-direction: column; gap: 18px; }
+      .btn:hover {
+        color: var(--gold-bright);
+        border-color: var(--gold);
+      }
+      .side {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
       .section-title {
         margin: 0;
         padding: 11px 13px;
         border-bottom: 1px solid var(--line-soft);
         color: var(--gold);
         font-size: 10px;
-        letter-spacing: .16em;
+        letter-spacing: 0.16em;
       }
-      .goal img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
-      .goal-copy { padding: 12px 13px; color: var(--muted); font-size: 11px; line-height: 1.55; }
-      .intro { padding: 14px 16px; color: var(--muted); font-size: 12px; line-height: 1.65; }
-      .intro strong { color: var(--text); font-weight: 700; }
-      .timeline { max-width: 1500px; margin: 18px auto 0; }
-      .score-block { padding: 14px 16px 4px; border-bottom: 1px solid var(--line-soft); }
+      .goal img {
+        display: block;
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+      }
+      .goal-copy {
+        padding: 12px 13px;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.55;
+      }
+      .intro {
+        padding: 14px 16px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.65;
+      }
+      .intro strong {
+        color: var(--text);
+        font-weight: 700;
+      }
+      .timeline {
+        max-width: 1500px;
+        margin: 18px auto 0;
+      }
+      .score-block {
+        padding: 14px 16px 4px;
+        border-bottom: 1px solid var(--line-soft);
+      }
       .score-head {
         display: flex;
         justify-content: space-between;
         gap: 12px;
         color: var(--muted);
         font-size: 10px;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
         margin-bottom: 10px;
       }
       .score-row {
@@ -156,10 +264,17 @@
         bottom: -2px;
         left: 90%;
         width: 1px;
-        background: rgba(255, 217, 120, .55);
+        background: rgba(255, 217, 120, 0.55);
       }
-      .score-value { text-align: right; color: var(--gold-bright); }
-      .timeline-list { display: grid; gap: 12px; padding: 14px; }
+      .score-value {
+        text-align: right;
+        color: var(--gold-bright);
+      }
+      .timeline-list {
+        display: grid;
+        gap: 12px;
+        padding: 14px;
+      }
       .entry {
         display: grid;
         grid-template-columns: 160px minmax(0, 1fr) auto;
@@ -167,7 +282,7 @@
         align-items: center;
         padding: 10px;
         border: 1px solid var(--line-soft);
-        background: rgba(7,8,11,.38);
+        background: rgba(7, 8, 11, 0.38);
       }
       .entry img {
         display: block;
@@ -186,30 +301,77 @@
         border: 1px dashed #3a2c1b;
         color: #574b3c;
         font-size: 10px;
-        letter-spacing: .12em;
+        letter-spacing: 0.12em;
       }
-      .entry-version { color: var(--gold-bright); font-size: 13px; }
-      .entry-title { margin-top: 3px; color: var(--text); font-size: 12px; }
-      .entry-summary { margin-top: 5px; color: var(--muted); font-size: 11px; line-height: 1.5; }
-      .entry-side { text-align: right; color: var(--muted); font-size: 10px; line-height: 1.6; }
-      .entry-side strong { color: var(--gold-bright); }
+      .entry-version {
+        color: var(--gold-bright);
+        font-size: 13px;
+      }
+      .entry-title {
+        margin-top: 3px;
+        color: var(--text);
+        font-size: 12px;
+      }
+      .entry-summary {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.5;
+      }
+      .entry-side {
+        text-align: right;
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.6;
+      }
+      .entry-side strong {
+        color: var(--gold-bright);
+      }
       .status {
         display: inline-block;
         padding: 2px 6px;
         border: 1px solid var(--line-soft);
         font-size: 9px;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
       }
-      .status.released { color: var(--green); border-color: #2a4a28; }
-      .status.planned { color: var(--muted); }
-      .footer { max-width: 1500px; margin: 20px auto 0; color: var(--muted); font-size: 10px; letter-spacing: .1em; }
-      .empty { padding: 24px; color: var(--muted); font-size: 12px; }
+      .status.released {
+        color: var(--green);
+        border-color: #2a4a28;
+      }
+      .status.planned {
+        color: var(--muted);
+      }
+      .footer {
+        max-width: 1500px;
+        margin: 20px auto 0;
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+      }
+      .empty {
+        padding: 24px;
+        color: var(--muted);
+        font-size: 12px;
+      }
       @media (max-width: 900px) {
-        .layout { grid-template-columns: 1fr; }
-        .top { align-items: flex-start; flex-direction: column; }
-        .entry { grid-template-columns: 110px minmax(0, 1fr); }
-        .entry img, .entry.no-shot .thumb { width: 110px; }
-        .entry-side { grid-column: 2; text-align: left; }
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .top {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .entry {
+          grid-template-columns: 110px minmax(0, 1fr);
+        }
+        .entry img,
+        .entry.no-shot .thumb {
+          width: 110px;
+        }
+        .entry-side {
+          grid-column: 2;
+          text-align: left;
+        }
       }
     </style>
   </head>
@@ -225,7 +387,9 @@
       <nav class="nav">
         <a id="live-link" href="./">LIVE PROTOTYPE</a>
         <a id="review-link" href="./review.html">VISUAL REVIEW</a>
-        <a href="https://github.com/MajorJohnDoe/frenzy-arena" target="_blank" rel="noreferrer">GITHUB</a>
+        <a href="https://github.com/MajorJohnDoe/frenzy-arena" target="_blank" rel="noreferrer"
+          >GITHUB</a
+        >
       </nav>
     </header>
 
@@ -250,12 +414,15 @@
           <h2 class="section-title">GOAL REFERENCE</h2>
           <a href="/review.html"><img src="reference/goal.jpg" alt="Goal reference" /></a>
           <div class="goal-copy">
-            The visual target: a dense dark-fantasy isometric arena with eight factions, lava, portals, crystals, readable combat and a heavy RTS HUD.
+            The visual target: a dense dark-fantasy isometric arena with eight factions, lava,
+            portals, crystals, readable combat and a heavy RTS HUD.
           </div>
         </section>
         <section class="intro">
           <strong>This page is a changelog for the eyes.</strong><br />
-          Each released version keeps its screenshot, a short note about what changed, and the visual score at that point. The goal is to make progress visible without replaying the whole conversation.
+          Each released version keeps its screenshot, a short note about what changed, and the
+          visual score at that point. The goal is to make progress visible without replaying the
+          whole conversation.
         </section>
       </aside>
     </main>
@@ -273,7 +440,9 @@
     </section>
 
     <footer class="footer">
-      <span id="footer-note">Ember Arena — built in the browser with three.js. No Blender on the server.</span>
+      <span id="footer-note"
+        >Ember Arena — built in the browser with three.js. No Blender on the server.</span
+      >
     </footer>
 
     <script>
@@ -329,7 +498,9 @@
           img.alt = `Screenshot for v${entry.version} ${entry.title}`;
           currentMedia.append(img);
         } else {
-          currentMedia.append(el('div', 'empty', 'Screenshot will appear when this milestone is captured.'));
+          currentMedia.append(
+            el('div', 'empty', 'Screenshot will appear when this milestone is captured.'),
+          );
         }
       };
 
@@ -422,12 +593,15 @@
           }
 
           document.getElementById('footer-note').textContent =
-            data.footer || 'Ember Arena — built in the browser with three.js. No Blender on the server.';
+            data.footer ||
+            'Ember Arena — built in the browser with three.js. No Blender on the server.';
         })
         .catch((error) => {
           currentTitle.textContent = 'Could not load history.json';
           currentSummary.textContent = String(error);
-          timeline.replaceChildren(el('div', 'empty', 'Run the page through the Vite dev server or a static server.'));
+          timeline.replaceChildren(
+            el('div', 'empty', 'Run the page through the Vite dev server or a static server.'),
+          );
         });
     </script>
   </body>
