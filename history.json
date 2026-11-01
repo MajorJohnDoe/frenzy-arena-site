@@ -18,26 +18,26 @@
     {
       "version": "0.2.0",
       "milestone": "M1",
-      "date": "Next",
+      "date": "2026-11-01",
       "title": "Arena Blockout",
       "summary": "Dense 32×32 octagonal arena with eight radial spawn zones, a larger central lava objective, a terrain apron and a cleaner portal prefab.",
-      "note": "Planned. Focus: composition, value hierarchy and draw-call discipline before adding final VFX.",
-      "screenshot": null,
-      "score": null,
-      "release": null,
-      "status": "planned"
+      "note": "Independent review: 50/100 (M0: 35). The arena now fills the frame, the octagon and eight team gates are in place, and the HUD has a minimap, commander panel and ability grid. Remaining gaps: floor value, lava scale, unit silhouettes and portal energy.",
+      "screenshot": "visual/m1.png",
+      "score": 50,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.3.0",
+      "status": "released"
     },
     {
       "version": "0.3.0",
       "milestone": "M2",
-      "date": "Planned",
+      "date": "2026-11-01",
       "title": "Simulation Core",
-      "summary": "Archers and Swordsmen fight with real waves, targeting, projectiles, health bars and death states.",
-      "note": "Planned. Combat logic stays in src/sim/ with deterministic tests.",
-      "screenshot": null,
-      "score": null,
-      "release": null,
-      "status": "planned"
+      "summary": "Eight-team combat with waves, spatial-hash targeting, melee, arrows, crits, health bars, death states and a live battlefield HUD.",
+      "note": "Internal estimate ~54/100. 196 units, 164 kills, 60 draw calls and 144 FPS in the in-app browser. The art pass (M3) and VFX (M4) are next.",
+      "screenshot": "visual/m2.png",
+      "score": 54,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.3.0",
+      "status": "released"
     },
     {
       "version": "0.4.0",
@@ -76,5 +76,5 @@
       "status": "planned"
     }
   ],
-  "generatedAt": "2026-11-01T12:30:57.168Z"
+  "generatedAt": "2026-11-01T12:51:11.779Z"
 }
