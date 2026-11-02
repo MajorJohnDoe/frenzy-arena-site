@@ -912,16 +912,21 @@
           const paint = () => {
             if (!image.complete) return;
             const cols = unit.cols ?? 8;
-            const col = state.dir % cols;
-            const row = Math.floor(state.dir / cols);
+            // Baked atlases use a supersampled grid cell and a flat frame list.
+            const grid = unit.gridCell ?? unit.cell;
+            const key = `unit:${unit.name}:idle:${state.dir}:0`;
+            const listed = Array.isArray(unit.keys) ? unit.keys.indexOf(key) : -1;
+            const index = listed >= 0 ? listed : state.dir;
+            const col = index % cols;
+            const row = Math.floor(index / cols);
             ctx.imageSmoothingEnabled = false;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.drawImage(
               image,
-              col * unit.cell.w,
-              row * unit.cell.h,
-              unit.cell.w,
-              unit.cell.h,
+              col * grid.w,
+              row * grid.h,
+              grid.w,
+              grid.h,
               0,
               0,
               canvas.width,
