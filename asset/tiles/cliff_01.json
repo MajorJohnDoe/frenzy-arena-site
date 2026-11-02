@@ -1,0 +1,15 @@
+{
+  "name": "cliff_01",
+  "kind": "tile",
+  "cell": {
+    "w": 64,
+    "h": 64
+  },
+  "anchor": {
+    "x": 32,
+    "y": 16
+  },
+  "image": "cliff_01.png",
+  "source": "cliff_01.blend",
+  "sourceHash": "0cc593141d469008"
+}

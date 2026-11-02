@@ -1,0 +1,15 @@
+{
+  "name": "lava_02",
+  "kind": "tile",
+  "cell": {
+    "w": 64,
+    "h": 32
+  },
+  "anchor": {
+    "x": 32,
+    "y": 16
+  },
+  "image": "lava_02.png",
+  "source": "lava_02.blend",
+  "sourceHash": "ca514dc6ce9cadab"
+}

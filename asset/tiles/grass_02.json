@@ -1,0 +1,15 @@
+{
+  "name": "grass_02",
+  "kind": "tile",
+  "cell": {
+    "w": 64,
+    "h": 32
+  },
+  "anchor": {
+    "x": 32,
+    "y": 16
+  },
+  "image": "grass_02.png",
+  "source": "grass_02.blend",
+  "sourceHash": "f260ea48586c64ef"
+}
