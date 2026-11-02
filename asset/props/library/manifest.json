@@ -1,0 +1,1489 @@
+{
+  "schemaVersion": 1,
+  "library": "library",
+  "projection": {
+    "ortho": true,
+    "azimuthDeg": 45,
+    "elevationDeg": 30,
+    "screenRatio": [
+      2,
+      1
+    ],
+    "axisX": [
+      32,
+      16
+    ],
+    "axisZ": [
+      -32,
+      16
+    ],
+    "cell": [
+      64,
+      32
+    ]
+  },
+  "cell": {
+    "w": 64,
+    "h": 96
+  },
+  "props": [
+    {
+      "name": "altar",
+      "id": "altar",
+      "role": "prop",
+      "label": "Altar",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 120
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 153,
+      "image": "altar.png",
+      "faceMask": "altar.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 88,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "banner:t0",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t0.png",
+      "faceMask": "banner_t0.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 0
+    },
+    {
+      "name": "banner:t1",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t1.png",
+      "faceMask": "banner_t1.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 1
+    },
+    {
+      "name": "banner:t2",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t2.png",
+      "faceMask": "banner_t2.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 2
+    },
+    {
+      "name": "banner:t3",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t3.png",
+      "faceMask": "banner_t3.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 3
+    },
+    {
+      "name": "banner:t4",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t4.png",
+      "faceMask": "banner_t4.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 4
+    },
+    {
+      "name": "banner:t5",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t5.png",
+      "faceMask": "banner_t5.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 5
+    },
+    {
+      "name": "banner:t6",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t6.png",
+      "faceMask": "banner_t6.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 6
+    },
+    {
+      "name": "banner:t7",
+      "id": "banner",
+      "role": "prop",
+      "label": "Banner",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 78
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 64,
+      "h": 95,
+      "image": "banner_t7.png",
+      "faceMask": "banner_t7.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 62,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 7
+    },
+    {
+      "name": "barracks:t0",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t0.png",
+      "faceMask": "barracks_t0.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 0
+    },
+    {
+      "name": "barracks:t1",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t1.png",
+      "faceMask": "barracks_t1.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 1
+    },
+    {
+      "name": "barracks:t2",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t2.png",
+      "faceMask": "barracks_t2.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 2
+    },
+    {
+      "name": "barracks:t3",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t3.png",
+      "faceMask": "barracks_t3.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 3
+    },
+    {
+      "name": "barracks:t4",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t4.png",
+      "faceMask": "barracks_t4.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 4
+    },
+    {
+      "name": "barracks:t5",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t5.png",
+      "faceMask": "barracks_t5.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 5
+    },
+    {
+      "name": "barracks:t6",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t6.png",
+      "faceMask": "barracks_t6.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 6
+    },
+    {
+      "name": "barracks:t7",
+      "id": "barracks",
+      "role": "prop",
+      "label": "Barracks",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 136
+      },
+      "teamMask": true,
+      "material": 1,
+      "w": 128,
+      "h": 169,
+      "image": "barracks_t7.png",
+      "faceMask": "barracks_t7.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 104,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      },
+      "team": 7
+    },
+    {
+      "name": "brazier",
+      "id": "brazier",
+      "role": "prop",
+      "label": "Brazier",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 74
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 91,
+      "image": "brazier.png",
+      "faceMask": "brazier.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 58,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "cart",
+      "id": "cart",
+      "role": "prop",
+      "label": "Cart",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 69
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 102,
+      "image": "cart.png",
+      "faceMask": "cart.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 37,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "chapel",
+      "id": "chapel",
+      "role": "prop",
+      "label": "Chapel",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 124
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 157,
+      "image": "chapel.png",
+      "faceMask": "chapel.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 92,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "conifer:0",
+      "id": "conifer:0",
+      "role": "prop",
+      "label": "Conifer",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 90
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 107,
+      "image": "conifer_0.png",
+      "faceMask": "conifer_0.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 74,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "conifer:1",
+      "id": "conifer:1",
+      "role": "prop",
+      "label": "Pine",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 90
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 107,
+      "image": "conifer_1.png",
+      "faceMask": "conifer_1.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 74,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "crystal:gold",
+      "id": "crystal:gold",
+      "role": "prop",
+      "label": "Crystal - gold",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 62
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 79,
+      "image": "crystal_gold.png",
+      "faceMask": "crystal_gold.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 46,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "crystal:green",
+      "id": "crystal:green",
+      "role": "prop",
+      "label": "Crystal - green",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 62
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 79,
+      "image": "crystal_green.png",
+      "faceMask": "crystal_green.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 46,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "crystal:pink",
+      "id": "crystal:pink",
+      "role": "prop",
+      "label": "Crystal - pink",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 62
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 79,
+      "image": "crystal_pink.png",
+      "faceMask": "crystal_pink.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 46,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "crystal:violet",
+      "id": "crystal:violet",
+      "role": "prop",
+      "label": "Crystal - violet",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 62
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 79,
+      "image": "crystal_violet.png",
+      "faceMask": "crystal_violet.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 46,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "deadTree",
+      "id": "deadTree",
+      "role": "prop",
+      "label": "Dead tree",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 72
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 89,
+      "image": "deadTree.png",
+      "faceMask": "deadTree.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 56,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "debris",
+      "id": "debris",
+      "role": "prop",
+      "label": "Debris",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 46
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 63,
+      "image": "debris.png",
+      "faceMask": "debris.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 30,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "memorial",
+      "id": "memorial",
+      "role": "prop",
+      "label": "Memorial",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 82
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 115,
+      "image": "memorial.png",
+      "faceMask": "memorial.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 50,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "palisade",
+      "id": "palisade",
+      "role": "prop",
+      "label": "Palisade",
+      "footprint": [
+        2,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 48,
+        "y": 65
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 96,
+      "h": 90,
+      "image": "palisade.png",
+      "faceMask": "palisade.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 41,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "pillar",
+      "id": "pillar",
+      "role": "prop",
+      "label": "Pillar",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 76
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 93,
+      "image": "pillar.png",
+      "faceMask": "pillar.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 60,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "portal",
+      "id": "portal",
+      "role": "prop",
+      "label": "Portal",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 116
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 149,
+      "image": "portal.png",
+      "faceMask": "portal.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 84,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "rock",
+      "id": "rock",
+      "role": "prop",
+      "label": "Rock",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 46
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 63,
+      "image": "rock.png",
+      "faceMask": "rock.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 30,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "rubble",
+      "id": "rubble",
+      "role": "prop",
+      "label": "Rubble",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 44
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 61,
+      "image": "rubble.png",
+      "faceMask": "rubble.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 28,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "ruin",
+      "id": "ruin",
+      "role": "prop",
+      "label": "Ruin",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 76
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 109,
+      "image": "ruin.png",
+      "faceMask": "ruin.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 44,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "siege",
+      "id": "siege",
+      "role": "prop",
+      "label": "Siege wreck",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 80
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 113,
+      "image": "siege.png",
+      "faceMask": "siege.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 48,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "supply",
+      "id": "supply",
+      "role": "prop",
+      "label": "Supply wagon",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 90
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 123,
+      "image": "supply.png",
+      "faceMask": "supply.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 58,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "tent",
+      "id": "tent",
+      "role": "prop",
+      "label": "Tent",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 80
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 113,
+      "image": "tent.png",
+      "faceMask": "tent.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 48,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "torch",
+      "id": "torch",
+      "role": "prop",
+      "label": "Torch",
+      "footprint": [
+        1,
+        1
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 32,
+        "y": 72
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 64,
+      "h": 89,
+      "image": "torch.png",
+      "faceMask": "torch.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 56,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "tower",
+      "id": "tower",
+      "role": "prop",
+      "label": "Watchtower",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 64,
+        "y": 142
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 128,
+      "h": 175,
+      "image": "tower.png",
+      "faceMask": "tower.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 110,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    }
+  ],
+  "source": "library.blend",
+  "sourceHash": "00cf9113029bf67b"
+}
