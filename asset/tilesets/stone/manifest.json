@@ -45,8 +45,8 @@
       "name": "cliff_corner_e",
       "role": "cliff",
       "material": 1,
-      "w": 64,
-      "h": 48,
+      "w": 96,
+      "h": 58,
       "image": "cliff_corner_e.png",
       "faceMask": "cliff_corner_e.faces.png",
       "faces": {
@@ -60,14 +60,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 34
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_corner_n",
       "role": "cliff",
       "material": 1,
-      "w": 64,
-      "h": 48,
+      "w": 96,
+      "h": 58,
       "image": "cliff_corner_n.png",
       "faceMask": "cliff_corner_n.faces.png",
       "faces": {
@@ -81,14 +89,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 34
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_face_e",
       "role": "cliff",
       "material": 1,
-      "w": 64,
-      "h": 48,
+      "w": 96,
+      "h": 58,
       "image": "cliff_face_e.png",
       "faceMask": "cliff_face_e.faces.png",
       "faces": {
@@ -102,14 +118,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 34
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_face_n",
       "role": "cliff",
       "material": 1,
-      "w": 64,
-      "h": 48,
+      "w": 96,
+      "h": 58,
       "image": "cliff_face_n.png",
       "faceMask": "cliff_face_n.faces.png",
       "faces": {
@@ -123,14 +147,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 34
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_ramp_e",
       "role": "ramp",
       "material": 1,
-      "w": 64,
-      "h": 48,
+      "w": 96,
+      "h": 58,
       "image": "cliff_ramp_e.png",
       "faceMask": "cliff_ramp_e.faces.png",
       "faces": {
@@ -144,14 +176,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 34
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_ramp_n",
       "role": "ramp",
       "material": 1,
-      "w": 64,
-      "h": 48,
+      "w": 96,
+      "h": 58,
       "image": "cliff_ramp_n.png",
       "faceMask": "cliff_ramp_n.faces.png",
       "faces": {
@@ -165,14 +205,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 34
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_top",
       "role": "cliff",
       "material": 1,
-      "w": 64,
-      "h": 64,
+      "w": 96,
+      "h": 74,
       "image": "cliff_top.png",
       "faceMask": "cliff_top.faces.png",
       "faces": {
@@ -186,14 +234,22 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 50
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "cliff_top_b",
       "role": "cliff",
       "material": 1,
-      "w": 64,
-      "h": 64,
+      "w": 96,
+      "h": 74,
       "image": "cliff_top_b.png",
       "faceMask": "cliff_top_b.faces.png",
       "faces": {
@@ -207,7 +263,15 @@
         "cap": false,
         "plinth": false,
         "contact": true
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 50
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "grass_01",
@@ -573,8 +637,8 @@
       "name": "wall_00",
       "role": "wall",
       "material": 1,
-      "w": 64,
-      "h": 84,
+      "w": 96,
+      "h": 85,
       "image": "wall_00.png",
       "mask": 0,
       "faceMask": "wall_00.faces.png",
@@ -602,14 +666,22 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_01",
       "role": "wall",
       "material": 1,
-      "w": 64,
-      "h": 84,
+      "w": 96,
+      "h": 85,
       "image": "wall_01.png",
       "mask": 1,
       "faceMask": "wall_01.faces.png",
@@ -637,13 +709,21 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_02",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_02.png",
       "mask": 2,
@@ -672,13 +752,21 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_03",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_03.png",
       "mask": 3,
@@ -707,13 +795,21 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_04",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_04.png",
       "mask": 4,
@@ -742,13 +838,21 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_05",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_05.png",
       "mask": 5,
@@ -777,13 +881,21 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_06",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_06.png",
       "mask": 6,
@@ -812,13 +924,21 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_07",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_07.png",
       "mask": 7,
@@ -847,14 +967,22 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_08",
       "role": "wall",
       "material": 1,
-      "w": 64,
-      "h": 84,
+      "w": 96,
+      "h": 85,
       "image": "wall_08.png",
       "mask": 8,
       "faceMask": "wall_08.faces.png",
@@ -882,14 +1010,22 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_09",
       "role": "wall",
       "material": 1,
-      "w": 64,
-      "h": 84,
+      "w": 96,
+      "h": 85,
       "image": "wall_09.png",
       "mask": 9,
       "faceMask": "wall_09.faces.png",
@@ -917,13 +1053,21 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_10",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_10.png",
       "mask": 10,
@@ -952,13 +1096,21 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_11",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_11.png",
       "mask": 11,
@@ -987,13 +1139,21 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_12",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_12.png",
       "mask": 12,
@@ -1022,13 +1182,21 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_13",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_13.png",
       "mask": 13,
@@ -1057,13 +1225,21 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_14",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_14.png",
       "mask": 14,
@@ -1092,13 +1268,21 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_15",
       "role": "wall",
       "material": 1,
-      "w": 64,
+      "w": 96,
       "h": 84,
       "image": "wall_15.png",
       "mask": 15,
@@ -1127,14 +1311,22 @@
             "right": false
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 60
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_gate",
       "role": "gate",
       "material": 1,
-      "w": 64,
-      "h": 118,
+      "w": 96,
+      "h": 119,
       "image": "wall_gate.png",
       "faceMask": "wall_gate.faces.png",
       "faces": {
@@ -1161,14 +1353,22 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 94
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_ruin",
       "role": "ruin",
       "material": 1,
-      "w": 64,
-      "h": 84,
+      "w": 96,
+      "h": 81,
       "image": "wall_ruin.png",
       "faceMask": "wall_ruin.faces.png",
       "faces": {
@@ -1195,14 +1395,22 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 56
+      },
+      "footprint": [
+        1,
+        1
+      ]
     },
     {
       "name": "wall_tower",
       "role": "tower",
       "material": 1,
-      "w": 64,
-      "h": 104,
+      "w": 96,
+      "h": 101,
       "image": "wall_tower.png",
       "faceMask": "wall_tower.faces.png",
       "faces": {
@@ -1229,9 +1437,17 @@
             "right": true
           }
         }
-      }
+      },
+      "anchorPx": {
+        "x": 48,
+        "y": 76
+      },
+      "footprint": [
+        1,
+        1
+      ]
     }
   ],
   "source": "stone.blend",
-  "sourceHash": "2fb76592d0f7e350"
+  "sourceHash": "24dbb94517a075ed"
 }

@@ -41,13 +41,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 120
+        "x": 80,
+        "y": 93
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 153,
+      "w": 160,
+      "h": 126,
       "image": "altar.png",
       "faceMask": "altar.faces.png",
       "faces": {
@@ -77,13 +77,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t0.png",
       "faceMask": "banner_t0.faces.png",
       "faces": {
@@ -114,13 +114,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t1.png",
       "faceMask": "banner_t1.faces.png",
       "faces": {
@@ -151,13 +151,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t2.png",
       "faceMask": "banner_t2.faces.png",
       "faces": {
@@ -188,13 +188,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t3.png",
       "faceMask": "banner_t3.faces.png",
       "faces": {
@@ -225,13 +225,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t4.png",
       "faceMask": "banner_t4.faces.png",
       "faces": {
@@ -262,13 +262,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t5.png",
       "faceMask": "banner_t5.faces.png",
       "faces": {
@@ -299,13 +299,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t6.png",
       "faceMask": "banner_t6.faces.png",
       "faces": {
@@ -336,13 +336,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 78
+        "x": 48,
+        "y": 65
       },
       "teamMask": true,
       "material": 1,
-      "w": 64,
-      "h": 95,
+      "w": 96,
+      "h": 74,
       "image": "banner_t7.png",
       "faceMask": "banner_t7.faces.png",
       "faces": {
@@ -373,13 +373,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t0.png",
       "faceMask": "barracks_t0.faces.png",
       "faces": {
@@ -410,13 +410,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t1.png",
       "faceMask": "barracks_t1.faces.png",
       "faces": {
@@ -447,13 +447,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t2.png",
       "faceMask": "barracks_t2.faces.png",
       "faces": {
@@ -484,13 +484,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t3.png",
       "faceMask": "barracks_t3.faces.png",
       "faces": {
@@ -521,13 +521,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t4.png",
       "faceMask": "barracks_t4.faces.png",
       "faces": {
@@ -558,13 +558,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t5.png",
       "faceMask": "barracks_t5.faces.png",
       "faces": {
@@ -595,13 +595,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t6.png",
       "faceMask": "barracks_t6.faces.png",
       "faces": {
@@ -632,13 +632,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 136
+        "x": 80,
+        "y": 107
       },
       "teamMask": true,
       "material": 1,
-      "w": 128,
-      "h": 169,
+      "w": 160,
+      "h": 139,
       "image": "barracks_t7.png",
       "faceMask": "barracks_t7.faces.png",
       "faces": {
@@ -669,13 +669,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 74
+        "x": 48,
+        "y": 59
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 91,
+      "w": 96,
+      "h": 76,
       "image": "brazier.png",
       "faceMask": "brazier.faces.png",
       "faces": {
@@ -705,13 +705,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 69
+        "x": 80,
+        "y": 54
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 102,
+      "w": 160,
+      "h": 77,
       "image": "cart.png",
       "faceMask": "cart.faces.png",
       "faces": {
@@ -741,13 +741,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 124
+        "x": 80,
+        "y": 94
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 157,
+      "w": 160,
+      "h": 124,
       "image": "chapel.png",
       "faceMask": "chapel.faces.png",
       "faces": {
@@ -777,13 +777,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 90
+        "x": 48,
+        "y": 78
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 107,
+      "w": 96,
+      "h": 88,
       "image": "conifer_0.png",
       "faceMask": "conifer_0.faces.png",
       "faces": {
@@ -813,13 +813,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 90
+        "x": 48,
+        "y": 78
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 107,
+      "w": 96,
+      "h": 88,
       "image": "conifer_1.png",
       "faceMask": "conifer_1.faces.png",
       "faces": {
@@ -849,13 +849,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 62
+        "x": 48,
+        "y": 52
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 79,
+      "w": 96,
+      "h": 69,
       "image": "crystal_gold.png",
       "faceMask": "crystal_gold.faces.png",
       "faces": {
@@ -885,13 +885,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 62
+        "x": 48,
+        "y": 52
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 79,
+      "w": 96,
+      "h": 69,
       "image": "crystal_green.png",
       "faceMask": "crystal_green.faces.png",
       "faces": {
@@ -921,13 +921,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 62
+        "x": 48,
+        "y": 52
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 79,
+      "w": 96,
+      "h": 69,
       "image": "crystal_pink.png",
       "faceMask": "crystal_pink.faces.png",
       "faces": {
@@ -957,13 +957,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 62
+        "x": 48,
+        "y": 52
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 79,
+      "w": 96,
+      "h": 69,
       "image": "crystal_violet.png",
       "faceMask": "crystal_violet.faces.png",
       "faces": {
@@ -993,13 +993,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 72
+        "x": 48,
+        "y": 59
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 89,
+      "w": 96,
+      "h": 69,
       "image": "deadTree.png",
       "faceMask": "deadTree.faces.png",
       "faces": {
@@ -1029,13 +1029,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 46
+        "x": 48,
+        "y": 35
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 63,
+      "w": 96,
+      "h": 47,
       "image": "debris.png",
       "faceMask": "debris.faces.png",
       "faces": {
@@ -1065,13 +1065,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 82
+        "x": 80,
+        "y": 56
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 115,
+      "w": 160,
+      "h": 82,
       "image": "memorial.png",
       "faceMask": "memorial.faces.png",
       "faces": {
@@ -1101,13 +1101,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 48,
-        "y": 65
+        "x": 64,
+        "y": 47
       },
       "teamMask": false,
       "material": 1,
-      "w": 96,
-      "h": 90,
+      "w": 128,
+      "h": 69,
       "image": "palisade.png",
       "faceMask": "palisade.faces.png",
       "faces": {
@@ -1137,13 +1137,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 76
+        "x": 48,
+        "y": 63
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 93,
+      "w": 96,
+      "h": 79,
       "image": "pillar.png",
       "faceMask": "pillar.faces.png",
       "faces": {
@@ -1173,13 +1173,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 116
+        "x": 80,
+        "y": 102
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 149,
+      "w": 160,
+      "h": 133,
       "image": "portal.png",
       "faceMask": "portal.faces.png",
       "faces": {
@@ -1209,13 +1209,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 46
+        "x": 48,
+        "y": 36
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 63,
+      "w": 96,
+      "h": 52,
       "image": "rock.png",
       "faceMask": "rock.faces.png",
       "faces": {
@@ -1245,13 +1245,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 44
+        "x": 48,
+        "y": 37
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 61,
+      "w": 96,
+      "h": 54,
       "image": "rubble.png",
       "faceMask": "rubble.faces.png",
       "faces": {
@@ -1281,13 +1281,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 76
+        "x": 80,
+        "y": 60
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 109,
+      "w": 160,
+      "h": 92,
       "image": "ruin.png",
       "faceMask": "ruin.faces.png",
       "faces": {
@@ -1317,13 +1317,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 80
+        "x": 80,
+        "y": 54
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 113,
+      "w": 160,
+      "h": 72,
       "image": "siege.png",
       "faceMask": "siege.faces.png",
       "faces": {
@@ -1353,13 +1353,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 90
+        "x": 80,
+        "y": 74
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 123,
+      "w": 160,
+      "h": 97,
       "image": "supply.png",
       "faceMask": "supply.faces.png",
       "faces": {
@@ -1389,13 +1389,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 80
+        "x": 80,
+        "y": 70
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 113,
+      "w": 160,
+      "h": 103,
       "image": "tent.png",
       "faceMask": "tent.faces.png",
       "faces": {
@@ -1425,13 +1425,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 32,
-        "y": 72
+        "x": 48,
+        "y": 57
       },
       "teamMask": false,
       "material": 1,
-      "w": 64,
-      "h": 89,
+      "w": 96,
+      "h": 72,
       "image": "torch.png",
       "faceMask": "torch.faces.png",
       "faces": {
@@ -1461,13 +1461,13 @@
         0.5
       ],
       "anchorPx": {
-        "x": 64,
-        "y": 142
+        "x": 80,
+        "y": 119
       },
       "teamMask": false,
       "material": 1,
-      "w": 128,
-      "h": 175,
+      "w": 160,
+      "h": 149,
       "image": "tower.png",
       "faceMask": "tower.faces.png",
       "faces": {
@@ -1485,5 +1485,5 @@
     }
   ],
   "source": "library.blend",
-  "sourceHash": "00cf9113029bf67b"
+  "sourceHash": "0fb073ddcc485e40"
 }
