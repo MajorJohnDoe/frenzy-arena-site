@@ -432,41 +432,79 @@
       "score": 87.4,
       "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.21.0",
       "status": "released"
+    },
+    {
+      "version": "0.22.0",
+      "milestone": "M23",
+      "date": "2026-11-02",
+      "title": "HUD Craft and Blender Terrain Tiles",
+      "summary": "The HUD reflows to a native integer 2× grid: ability icons are 16×16 drawn at 32 px, command glyphs 16×16 inside 34 px plates, items 15×15 at 30 px, the portrait a native 64×64 and the minimap authored at its 184×92 display size, so the 168 px band carries no fractional factor at all — abilities, commands and items each measure a 1.0000 exact-2×2 share, cooldown is a bottom-up sweep over only the remaining 30% of the cycle so icons stay lit at full colour under a 1× timer chip, and the command card shows six plates with hotkey chips (U F A M H S) and a five-tone STOP ring. The terrain moved from a procedural Canvas paint to 16 authored `.blend` tiles — 6 stone, 4 lava, 4 grass and 2 cliff — built by `blender/build_tile.py`, baked through `tools/blender_bake.sh` and composited by `TerrainPainter`, with the Canvas painter retained as the fallback when the Blender atlas is absent.",
+      "note": "Independent review: 88.70 weighted (M21 87.40, +1.30) — Layout 87, Terrain 90, Units 88, VFX 88, HUD 91, Pixel art 87; the 95 gate is still 6.3 points away, with Layout 87 the lowest category. Four re-review passes closed every defect they raised: a stale stone bake, the grass rim/checkerboard, the unverified cliff foot, resampled review crops and a broken lava seam panel. Pass-4 shipped evidence: all 16 tiles render and are distinct in the #assets gallery (four lava variants differ by 24.2–26.2% of pixels), the grass tile-lag high-pass autocorrelation falls 0.597 → 0.066 with a 0.0 L border-to-interior delta, stone chip/fleck features rise 1,902 → 2,072 per 100k floor px with per-variant dark features 39/35/14/38/43/13 → 52/52/28/47/56/32 and pairwise-distinct crack masks, the 3×/4× detail crops are true nearest-neighbour at 1.0000 exact-block uniformity, the HUD band is 0/215,040 px different from M22, and the frame holds 5 draw calls / 908 quads at 207 units with a clean console. Residual, both bounded art tasks rather than architecture: the floor is still below the M21 value and micro-detail envelope (mean L 71.03 vs 72.30, dark share 23.5% vs 21.1%, chip features 2,072 vs 4,008 per 100k), and the lava seam patch stamps the same bright bar in the same spot on all four variants, which is visible at 2× and only a loose ~30 px rhythm at 1×.",
+      "screenshot": "visual/t031-world.png",
+      "gallery": [
+        {
+          "src": "visual/m22-hud.png",
+          "caption": "The scored 168 px HUD band: a native integer 2× grid from minimap to command card, measured at HUD 91."
+        },
+        {
+          "src": "visual/m22-abilities-4x.png",
+          "caption": "4× ability slots: 16×16 icons at 32 px, lit under a partial bottom-up cooldown sweep, with 1× hotkey chips."
+        },
+        {
+          "src": "visual/t031-world.png",
+          "caption": "The scored frame at 1×: the baked-tile floor reading as flagstone under the unchanged units, VFX and HUD."
+        },
+        {
+          "src": "visual/t031-floor-3x.png",
+          "caption": "Nearest 3× floor: authored stone chips, a hairline crack per variant and the 2 px grout with its 1 px catch-light."
+        },
+        {
+          "src": "visual/t031-grass-4x.png",
+          "caption": "Nearest 4× lawn: a rimless four-variant field with broad moss patches and two blade tones, no per-diamond grid."
+        },
+        {
+          "src": "visual/t031-tilesheet.png",
+          "caption": "All 16 baked tiles at 4× — 6 stone, 4 lava, 4 grass, 2 cliff — with the stone and lava seam tests."
+        }
+      ],
+      "score": 88.7,
+      "release": "https://github.com/MajorJohnDoe/frenzy-arena/releases/tag/v0.22.0",
+      "status": "released"
     }
   ],
-  "generatedAt": "2026-11-02T10:24:00.870Z",
+  "generatedAt": "2026-11-02T10:54:17.964Z",
   "captures": [
     {
       "file": "visual/t031-world.png",
       "name": "t031-world.png",
-      "bytes": 675206,
+      "bytes": 687979,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-world-units0.png",
       "name": "t031-world-units0.png",
-      "bytes": 666561,
+      "bytes": 683316,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-wall-3x.png",
       "name": "t031-wall-3x.png",
-      "bytes": 478158,
+      "bytes": 195219,
       "width": 1020,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-tilesheet.png",
       "name": "t031-tilesheet.png",
-      "bytes": 136619,
+      "bytes": 179379,
       "width": 1400,
-      "height": 1900,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "height": 2200,
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-tiles.png",
@@ -474,7 +512,7 @@
       "bytes": 675206,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-lava-units0-3x.png",
@@ -482,23 +520,23 @@
       "bytes": 321599,
       "width": 1080,
       "height": 510,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-lava-3x.png",
       "name": "t031-lava-3x.png",
-      "bytes": 283732,
+      "bytes": 128822,
       "width": 960,
       "height": 510,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-grass-4x.png",
       "name": "t031-grass-4x.png",
-      "bytes": 396297,
-      "width": 1120,
-      "height": 800,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "bytes": 59333,
+      "width": 600,
+      "height": 680,
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-floor-units0-3x.png",
@@ -506,15 +544,23 @@
       "bytes": 537099,
       "width": 1200,
       "height": 750,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-floor-3x.png",
       "name": "t031-floor-3x.png",
-      "bytes": 473329,
-      "width": 960,
-      "height": 660,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "bytes": 258692,
+      "width": 1200,
+      "height": 750,
+      "takenAt": "2026-11-02T10:53:57.000Z"
+    },
+    {
+      "file": "visual/t031-cliff.png",
+      "name": "t031-cliff.png",
+      "bytes": 593462,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t031-cliff-4x.png",
@@ -522,7 +568,7 @@
       "bytes": 287316,
       "width": 1040,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t029-units-2x.png",
@@ -530,7 +576,7 @@
       "bytes": 454643,
       "width": 960,
       "height": 520,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t029-rank-3x.png",
@@ -538,7 +584,7 @@
       "bytes": 381568,
       "width": 690,
       "height": 750,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t029-blender-units.png",
@@ -546,7 +592,7 @@
       "bytes": 603757,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip9.png",
@@ -554,7 +600,7 @@
       "bytes": 603498,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip8.png",
@@ -562,7 +608,7 @@
       "bytes": 603545,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip8-sword8x.png",
@@ -570,7 +616,7 @@
       "bytes": 192139,
       "width": 640,
       "height": 640,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip8-strike7x.png",
@@ -578,7 +624,7 @@
       "bytes": 143359,
       "width": 700,
       "height": 490,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip8-rank3x.png",
@@ -586,7 +632,7 @@
       "bytes": 444989,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip8-melee2x.png",
@@ -594,7 +640,7 @@
       "bytes": 528071,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip7.png",
@@ -602,7 +648,7 @@
       "bytes": 604939,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip7-shield6x.png",
@@ -610,7 +656,7 @@
       "bytes": 114765,
       "width": 480,
       "height": 480,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip7-rank3x.png",
@@ -618,7 +664,7 @@
       "bytes": 447780,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip7-melee2x.png",
@@ -626,7 +672,7 @@
       "bytes": 531996,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip6.png",
@@ -634,7 +680,7 @@
       "bytes": 605252,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip6-rank3x.png",
@@ -642,7 +688,7 @@
       "bytes": 448917,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip6-melee2x.png",
@@ -650,7 +696,7 @@
       "bytes": 533868,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip5.png",
@@ -658,7 +704,7 @@
       "bytes": 605509,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip4.png",
@@ -666,7 +712,7 @@
       "bytes": 602490,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip3.png",
@@ -674,7 +720,7 @@
       "bytes": 605971,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip3-rank3x.png",
@@ -682,7 +728,7 @@
       "bytes": 452324,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip3-melee2x.png",
@@ -690,7 +736,7 @@
       "bytes": 539440,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip2.png",
@@ -698,7 +744,7 @@
       "bytes": 605250,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip13.png",
@@ -706,7 +752,7 @@
       "bytes": 603588,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip12.png",
@@ -714,7 +760,7 @@
       "bytes": 603524,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip12-rank3x.png",
@@ -722,7 +768,7 @@
       "bytes": 444021,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip12-melee2x.png",
@@ -730,7 +776,7 @@
       "bytes": 526327,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip11.png",
@@ -738,7 +784,7 @@
       "bytes": 604346,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip10.png",
@@ -746,7 +792,7 @@
       "bytes": 603345,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip10-strip3x.png",
@@ -754,7 +800,7 @@
       "bytes": 56056,
       "width": 720,
       "height": 156,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip10-rank3x.png",
@@ -762,7 +808,7 @@
       "bytes": 444439,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip1.png",
@@ -770,7 +816,7 @@
       "bytes": 598835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip1-rank3x.png",
@@ -778,7 +824,7 @@
       "bytes": 445401,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-wip1-melee2x.png",
@@ -786,7 +832,7 @@
       "bytes": 536015,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-sword-sheet.png",
@@ -794,7 +840,7 @@
       "bytes": 75288,
       "width": 1280,
       "height": 2400,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-pass3.png",
@@ -802,7 +848,7 @@
       "bytes": 591049,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-p3-sword8x.png",
@@ -810,7 +856,7 @@
       "bytes": 334028,
       "width": 880,
       "height": 880,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-p3-rank4x.png",
@@ -818,7 +864,7 @@
       "bytes": 636076,
       "width": 1040,
       "height": 1040,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-p3-melee2x.png",
@@ -826,7 +872,7 @@
       "bytes": 488066,
       "width": 1120,
       "height": 480,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-p3-archer8x.png",
@@ -834,7 +880,7 @@
       "bytes": 155936,
       "width": 960,
       "height": 960,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t027-cmp-m18-melee.png",
@@ -842,7 +888,7 @@
       "bytes": 497200,
       "width": 1120,
       "height": 480,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-wip4.png",
@@ -850,7 +896,7 @@
       "bytes": 595162,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-west2.png",
@@ -858,7 +904,7 @@
       "bytes": 190050,
       "width": 720,
       "height": 510,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-rank.png",
@@ -866,7 +912,7 @@
       "bytes": 192014,
       "width": 660,
       "height": 510,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-melee.png",
@@ -874,7 +920,7 @@
       "bytes": 266569,
       "width": 780,
       "height": 660,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-hud-right.png",
@@ -882,7 +928,7 @@
       "bytes": 78816,
       "width": 1360,
       "height": 360,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-hud-left.png",
@@ -890,7 +936,7 @@
       "bytes": 91944,
       "width": 1280,
       "height": 360,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-baseline.png",
@@ -898,7 +944,7 @@
       "bytes": 566632,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/t026-archers.png",
@@ -906,7 +952,7 @@
       "bytes": 201595,
       "width": 600,
       "height": 480,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m9-staging.png",
@@ -914,7 +960,7 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m9-staging-closeup.png",
@@ -922,7 +968,7 @@
       "bytes": 171033,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m8.png",
@@ -930,7 +976,7 @@
       "bytes": 524848,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m8-review-closeup.png",
@@ -938,7 +984,7 @@
       "bytes": 217478,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m8-review-capture.png",
@@ -946,7 +992,7 @@
       "bytes": 616312,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m8-perf.png",
@@ -954,7 +1000,7 @@
       "bytes": 322143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m8-perf-closeup.png",
@@ -962,7 +1008,7 @@
       "bytes": 192656,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m8-closeup.png",
@@ -970,7 +1016,7 @@
       "bytes": 202147,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m7.png",
@@ -978,7 +1024,7 @@
       "bytes": 791693,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m7-closeup.png",
@@ -986,7 +1032,7 @@
       "bytes": 275412,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m6.png",
@@ -994,7 +1040,7 @@
       "bytes": 707649,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m6-ember.png",
@@ -1002,7 +1048,7 @@
       "bytes": 420767,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m5.png",
@@ -1010,7 +1056,7 @@
       "bytes": 667478,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m4.png",
@@ -1018,7 +1064,7 @@
       "bytes": 668213,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m3.png",
@@ -1026,7 +1072,7 @@
       "bytes": 654748,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-portrait-4x.png",
@@ -1034,7 +1080,7 @@
       "bytes": 65431,
       "width": 1328,
       "height": 672,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-minimap-4x.png",
@@ -1042,7 +1088,7 @@
       "bytes": 128652,
       "width": 960,
       "height": 496,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-hud.png",
@@ -1050,7 +1096,7 @@
       "bytes": 612993,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-hud-2x.png",
@@ -1058,7 +1104,7 @@
       "bytes": 138166,
       "width": 2560,
       "height": 336,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-crest-4x.png",
@@ -1066,7 +1112,7 @@
       "bytes": 23076,
       "width": 1280,
       "height": 192,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-commands-4x.png",
@@ -1074,7 +1120,7 @@
       "bytes": 76416,
       "width": 1288,
       "height": 672,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m22-abilities-4x.png",
@@ -1082,7 +1128,7 @@
       "bytes": 73827,
       "width": 1304,
       "height": 672,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m20-terrain.png",
@@ -1090,7 +1136,7 @@
       "bytes": 609652,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m20-terrain-wall-3x.png",
@@ -1098,7 +1144,7 @@
       "bytes": 174104,
       "width": 810,
       "height": 525,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m20-terrain-lava-2x.png",
@@ -1106,7 +1152,7 @@
       "bytes": 168881,
       "width": 520,
       "height": 400,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m20-terrain-floor-3x.png",
@@ -1114,7 +1160,7 @@
       "bytes": 219762,
       "width": 840,
       "height": 540,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m2.png",
@@ -1122,7 +1168,7 @@
       "bytes": 522598,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m19-strip-3x.png",
@@ -1130,7 +1176,7 @@
       "bytes": 55266,
       "width": 720,
       "height": 156,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m19-rank-3x.png",
@@ -1138,7 +1184,7 @@
       "bytes": 445580,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m19-nova-2x.png",
@@ -1146,7 +1192,7 @@
       "bytes": 204636,
       "width": 640,
       "height": 440,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m19-melee.png",
@@ -1154,7 +1200,7 @@
       "bytes": 587926,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m19-melee-2x.png",
@@ -1162,7 +1208,7 @@
       "bytes": 474999,
       "width": 1120,
       "height": 480,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m18-west-3x.png",
@@ -1170,7 +1216,7 @@
       "bytes": 197599,
       "width": 720,
       "height": 510,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m18-weight.png",
@@ -1178,7 +1224,7 @@
       "bytes": 595534,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m18-nova-2x.png",
@@ -1186,7 +1232,7 @@
       "bytes": 209530,
       "width": 600,
       "height": 440,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m18-melee-2x.png",
@@ -1194,7 +1240,7 @@
       "bytes": 173297,
       "width": 520,
       "height": 440,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m18-hud.png",
@@ -1202,7 +1248,7 @@
       "bytes": 37178,
       "width": 1280,
       "height": 180,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m17-ramparts.png",
@@ -1210,7 +1256,7 @@
       "bytes": 569929,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m17-ramparts-west.png",
@@ -1218,7 +1264,7 @@
       "bytes": 476019,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m17-ramparts-ring.png",
@@ -1226,7 +1272,7 @@
       "bytes": 502483,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate.png",
@@ -1234,7 +1280,7 @@
       "bytes": 213254,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate-2x.png",
@@ -1242,7 +1288,7 @@
       "bytes": 211166,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m17-isometric-ramparts.png",
@@ -1250,7 +1296,7 @@
       "bytes": 566632,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m16-composition.png",
@@ -1258,7 +1304,7 @@
       "bytes": 553131,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m16-composition-west.png",
@@ -1266,7 +1312,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m16-composition-south.png",
@@ -1274,7 +1320,7 @@
       "bytes": 221455,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m16-composition-east.png",
@@ -1282,7 +1328,7 @@
       "bytes": 489598,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m15-units.png",
@@ -1290,7 +1336,7 @@
       "bytes": 562393,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m15-units-west.png",
@@ -1298,7 +1344,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m15-units-sword-sheet.png",
@@ -1306,7 +1352,7 @@
       "bytes": 75837,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m15-units-closeup.png",
@@ -1314,7 +1360,7 @@
       "bytes": 222143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m15-units-archer-sheet.png",
@@ -1322,7 +1368,7 @@
       "bytes": 65100,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m14-1to1.png",
@@ -1330,7 +1376,7 @@
       "bytes": 548070,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m14-1to1-west.png",
@@ -1338,7 +1384,7 @@
       "bytes": 461755,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m14-1to1-closeup.png",
@@ -1346,7 +1392,7 @@
       "bytes": 214421,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m13-units.png",
@@ -1354,7 +1400,7 @@
       "bytes": 323089,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m13-units-west.png",
@@ -1362,7 +1408,7 @@
       "bytes": 279154,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m13-units-closeup.png",
@@ -1370,7 +1416,7 @@
       "bytes": 173309,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m12-atmosphere.png",
@@ -1378,7 +1424,7 @@
       "bytes": 324034,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m12-atmosphere-west.png",
@@ -1386,7 +1432,7 @@
       "bytes": 282731,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m12-atmosphere-closeup.png",
@@ -1394,7 +1440,7 @@
       "bytes": 175927,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m11-framing.png",
@@ -1402,7 +1448,7 @@
       "bytes": 326835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m11-framing-west.png",
@@ -1410,7 +1456,7 @@
       "bytes": 278061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m11-framing-north.png",
@@ -1418,7 +1464,7 @@
       "bytes": 160561,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m11-framing-closeup.png",
@@ -1426,7 +1472,7 @@
       "bytes": 169496,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m10-step0.png",
@@ -1434,7 +1480,7 @@
       "bytes": 309820,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m10-footmen.png",
@@ -1442,7 +1488,7 @@
       "bytes": 331146,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m10-footmen-west.png",
@@ -1450,7 +1496,7 @@
       "bytes": 288030,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m10-footmen-closeup.png",
@@ -1458,7 +1504,7 @@
       "bytes": 171814,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m1.png",
@@ -1466,7 +1512,7 @@
       "bytes": 519162,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
     {
       "file": "visual/m0.png",
@@ -1474,7 +1520,7 @@
       "bytes": 286922,
       "width": 1236,
       "height": 695,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     }
   ],
   "assets": {
@@ -2462,7 +2508,7 @@
         },
         "image": "grass_01.png",
         "source": "grass_01.blend",
-        "sourceHash": "a4c237530af1d0ba",
+        "sourceHash": "6a48906d2f164aa6",
         "file": "asset/tiles/grass_01.png"
       },
       {
@@ -2478,8 +2524,40 @@
         },
         "image": "grass_02.png",
         "source": "grass_02.blend",
-        "sourceHash": "f260ea48586c64ef",
+        "sourceHash": "71971a01bb8be05a",
         "file": "asset/tiles/grass_02.png"
+      },
+      {
+        "name": "grass_03",
+        "kind": "tile",
+        "cell": {
+          "w": 64,
+          "h": 32
+        },
+        "anchor": {
+          "x": 32,
+          "y": 16
+        },
+        "image": "grass_03.png",
+        "source": "grass_03.blend",
+        "sourceHash": "6ee16bcbf0c58ca7",
+        "file": "asset/tiles/grass_03.png"
+      },
+      {
+        "name": "grass_04",
+        "kind": "tile",
+        "cell": {
+          "w": 64,
+          "h": 32
+        },
+        "anchor": {
+          "x": 32,
+          "y": 16
+        },
+        "image": "grass_04.png",
+        "source": "grass_04.blend",
+        "sourceHash": "bdb3fe27a47f2349",
+        "file": "asset/tiles/grass_04.png"
       },
       {
         "name": "lava_01",
@@ -2558,7 +2636,7 @@
         },
         "image": "stone_01.png",
         "source": "stone_01.blend",
-        "sourceHash": "8b17ea0bea376aba",
+        "sourceHash": "434baa27cd8b69ec",
         "file": "asset/tiles/stone_01.png"
       },
       {
@@ -2574,7 +2652,7 @@
         },
         "image": "stone_02.png",
         "source": "stone_02.blend",
-        "sourceHash": "67e79eb1d696ab7e",
+        "sourceHash": "1a81701cc7ec299e",
         "file": "asset/tiles/stone_02.png"
       },
       {
@@ -2590,7 +2668,7 @@
         },
         "image": "stone_03.png",
         "source": "stone_03.blend",
-        "sourceHash": "23d97da3929aeecf",
+        "sourceHash": "0a24bba36e46bef3",
         "file": "asset/tiles/stone_03.png"
       },
       {
@@ -2606,7 +2684,7 @@
         },
         "image": "stone_04.png",
         "source": "stone_04.blend",
-        "sourceHash": "84ed681802dc36dd",
+        "sourceHash": "cc59aede16e470b0",
         "file": "asset/tiles/stone_04.png"
       },
       {
@@ -2622,7 +2700,7 @@
         },
         "image": "stone_05.png",
         "source": "stone_05.blend",
-        "sourceHash": "1a036c19f9035cfc",
+        "sourceHash": "139c659253aec3ed",
         "file": "asset/tiles/stone_05.png"
       },
       {
@@ -2638,7 +2716,7 @@
         },
         "image": "stone_06.png",
         "source": "stone_06.blend",
-        "sourceHash": "f90c12fb59489615",
+        "sourceHash": "f808197e5cad65f7",
         "file": "asset/tiles/stone_06.png"
       }
     ],
@@ -2648,14 +2726,14 @@
     "capture": {
       "file": "visual/t031-world.png",
       "name": "t031-world.png",
-      "bytes": 675206,
+      "bytes": 687979,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T10:23:43.000Z"
+      "takenAt": "2026-11-02T10:53:57.000Z"
     },
-    "milestone": "M21",
-    "title": "Terrain Value",
-    "score": 87.4,
-    "updatedAt": "2026-11-02T10:23:43.000Z"
+    "milestone": "M23",
+    "title": "HUD Craft and Blender Terrain Tiles",
+    "score": 88.7,
+    "updatedAt": "2026-11-02T10:53:57.000Z"
   }
 }
