@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "family": "stone",
+  "cell": {
+    "w": 64,
+    "h": 32
+  },
+  "materials": [
+    {
+      "id": 1,
+      "name": "stone",
+      "walkable": true,
+      "group": "solid"
+    },
+    {
+      "id": 4,
+      "name": "grass",
+      "walkable": true,
+      "group": "solid"
+    }
+  ],
+  "cells": [
+    {
+      "name": "grass_01",
+      "role": "base",
+      "material": 4,
+      "image": "grass_01.png"
+    },
+    {
+      "name": "grass_02",
+      "role": "base",
+      "material": 4,
+      "image": "grass_02.png"
+    },
+    {
+      "name": "grass_03",
+      "role": "base",
+      "material": 4,
+      "image": "grass_03.png"
+    },
+    {
+      "name": "grass_04",
+      "role": "base",
+      "material": 4,
+      "image": "grass_04.png"
+    },
+    {
+      "name": "grass_over_stone_01",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_01.png",
+      "baseMaterial": 1,
+      "mask": 1
+    },
+    {
+      "name": "grass_over_stone_02",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_02.png",
+      "baseMaterial": 1,
+      "mask": 2
+    },
+    {
+      "name": "grass_over_stone_03",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_03.png",
+      "baseMaterial": 1,
+      "mask": 3
+    },
+    {
+      "name": "grass_over_stone_04",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_04.png",
+      "baseMaterial": 1,
+      "mask": 4
+    },
+    {
+      "name": "grass_over_stone_05",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_05.png",
+      "baseMaterial": 1,
+      "mask": 5
+    },
+    {
+      "name": "grass_over_stone_06",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_06.png",
+      "baseMaterial": 1,
+      "mask": 6
+    },
+    {
+      "name": "grass_over_stone_07",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_07.png",
+      "baseMaterial": 1,
+      "mask": 7
+    },
+    {
+      "name": "grass_over_stone_08",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_08.png",
+      "baseMaterial": 1,
+      "mask": 8
+    },
+    {
+      "name": "grass_over_stone_09",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_09.png",
+      "baseMaterial": 1,
+      "mask": 9
+    },
+    {
+      "name": "grass_over_stone_10",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_10.png",
+      "baseMaterial": 1,
+      "mask": 10
+    },
+    {
+      "name": "grass_over_stone_11",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_11.png",
+      "baseMaterial": 1,
+      "mask": 11
+    },
+    {
+      "name": "grass_over_stone_12",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_12.png",
+      "baseMaterial": 1,
+      "mask": 12
+    },
+    {
+      "name": "grass_over_stone_13",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_13.png",
+      "baseMaterial": 1,
+      "mask": 13
+    },
+    {
+      "name": "grass_over_stone_14",
+      "role": "overlay",
+      "material": 4,
+      "image": "grass_over_stone_14.png",
+      "baseMaterial": 1,
+      "mask": 14
+    },
+    {
+      "name": "stone_01",
+      "role": "base",
+      "material": 1,
+      "image": "stone_01.png"
+    },
+    {
+      "name": "stone_02",
+      "role": "base",
+      "material": 1,
+      "image": "stone_02.png"
+    },
+    {
+      "name": "stone_03",
+      "role": "base",
+      "material": 1,
+      "image": "stone_03.png"
+    },
+    {
+      "name": "stone_04",
+      "role": "base",
+      "material": 1,
+      "image": "stone_04.png"
+    },
+    {
+      "name": "stone_05",
+      "role": "base",
+      "material": 1,
+      "image": "stone_05.png"
+    },
+    {
+      "name": "stone_06",
+      "role": "base",
+      "material": 1,
+      "image": "stone_06.png"
+    },
+    {
+      "name": "stone_over_grass_01",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_01.png",
+      "baseMaterial": 4,
+      "mask": 1
+    },
+    {
+      "name": "stone_over_grass_02",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_02.png",
+      "baseMaterial": 4,
+      "mask": 2
+    },
+    {
+      "name": "stone_over_grass_03",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_03.png",
+      "baseMaterial": 4,
+      "mask": 3
+    },
+    {
+      "name": "stone_over_grass_04",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_04.png",
+      "baseMaterial": 4,
+      "mask": 4
+    },
+    {
+      "name": "stone_over_grass_05",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_05.png",
+      "baseMaterial": 4,
+      "mask": 5
+    },
+    {
+      "name": "stone_over_grass_06",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_06.png",
+      "baseMaterial": 4,
+      "mask": 6
+    },
+    {
+      "name": "stone_over_grass_07",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_07.png",
+      "baseMaterial": 4,
+      "mask": 7
+    },
+    {
+      "name": "stone_over_grass_08",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_08.png",
+      "baseMaterial": 4,
+      "mask": 8
+    },
+    {
+      "name": "stone_over_grass_09",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_09.png",
+      "baseMaterial": 4,
+      "mask": 9
+    },
+    {
+      "name": "stone_over_grass_10",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_10.png",
+      "baseMaterial": 4,
+      "mask": 10
+    },
+    {
+      "name": "stone_over_grass_11",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_11.png",
+      "baseMaterial": 4,
+      "mask": 11
+    },
+    {
+      "name": "stone_over_grass_12",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_12.png",
+      "baseMaterial": 4,
+      "mask": 12
+    },
+    {
+      "name": "stone_over_grass_13",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_13.png",
+      "baseMaterial": 4,
+      "mask": 13
+    },
+    {
+      "name": "stone_over_grass_14",
+      "role": "overlay",
+      "material": 1,
+      "image": "stone_over_grass_14.png",
+      "baseMaterial": 4,
+      "mask": 14
+    }
+  ],
+  "source": "stone.blend",
+  "sourceHash": "788ec6dce557f4e1"
+}
