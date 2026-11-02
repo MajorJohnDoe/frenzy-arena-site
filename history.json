@@ -654,17 +654,82 @@
       "score": null,
       "release": null,
       "status": "in-progress"
+    },
+    {
+      "version": "0.30.2",
+      "milestone": "M31",
+      "kind": "patch",
+      "date": "2026-11-02",
+      "title": "Occlusion Order",
+      "summary": "Walls, props, units and corpses now share one depth list, so a soldier is drawn over the masonry in front of him and clipped by the masonry behind him instead of every wall beating every unit. The terrain bitmap was cut back to the floor, its decals and its light bake; authored walls are one sprite per tile, packed from the sixteen stone family wall cells into the same atlas key space as the props. Procedural ramparts, gate jambs, the gate leaf and the gate passage are ordinary sorted sprites, and nothing solid is baked into the floor any more.",
+      "note": "No score change: the independent review remains 85.45, still 9.55 short of the 95 gate, so the next step is a larger art-direction pass over floor, prop and VFX craft, not another ordering fix. The sort costs about 3% median frame rate (44.1 to 42.7 FPS at 211 units, 808 to 924 quads, 5 draw calls), inside the 8% budget with the banded fallback unused.",
+      "screenshot": "visual/t046-occlusion-wall.png",
+      "gallery": [
+        {
+          "src": "visual/t046-occlusion-wall-3x.png",
+          "caption": "3x interior wall: a brazier and its cast pool sit behind the run while the front rank draws over the masonry, so the tower, capstone rim and unit order all resolve in one frame."
+        },
+        {
+          "src": "visual/t046-occlusion-hut-3x.png",
+          "caption": "3x courtyard edge: soldiers straddle the low wall and the siege wreck, the one behind cut at the waist by the stone while the one in front stands whole against it."
+        },
+        {
+          "src": "visual/t046-occlusion-unit-3x.png",
+          "caption": "3x gatehouse inner face: the melee line is clipped by the rampart's inner face at the gate passage, with the same-depth soldiers in front of it left complete."
+        }
+      ],
+      "highlights": [
+        "One depth list for walls, props, units and corpses",
+        "16 stone wall cells packed into the prop atlas",
+        "Terrain bitmap reduced to floor, decals and light bake",
+        "924 quads / 5 draw calls / median 42.7 FPS at 211 units"
+      ],
+      "score": null,
+      "release": null,
+      "status": "in-progress"
     }
   ],
-  "generatedAt": "2026-11-02T16:37:39.015Z",
+  "generatedAt": "2026-11-02T17:11:11.269Z",
   "captures": [
+    {
+      "file": "visual/t046-occlusion-wall.png",
+      "name": "t046-occlusion-wall.png",
+      "bytes": 829051,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-02T17:10:38.000Z"
+    },
+    {
+      "file": "visual/t046-occlusion-wall-3x.png",
+      "name": "t046-occlusion-wall-3x.png",
+      "bytes": 287868,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-02T17:10:38.000Z"
+    },
+    {
+      "file": "visual/t046-occlusion-unit-3x.png",
+      "name": "t046-occlusion-unit-3x.png",
+      "bytes": 289335,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-02T17:10:38.000Z"
+    },
+    {
+      "file": "visual/t046-occlusion-hut-3x.png",
+      "name": "t046-occlusion-hut-3x.png",
+      "bytes": 308215,
+      "width": 1280,
+      "height": 720,
+      "takenAt": "2026-11-02T17:10:38.000Z"
+    },
     {
       "file": "visual/t045-world.png",
       "name": "t045-world.png",
       "bytes": 880337,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-wallkit.png",
@@ -672,7 +737,7 @@
       "bytes": 137156,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-wallkit-run.png",
@@ -680,7 +745,7 @@
       "bytes": 77951,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-wall-base-3x.png",
@@ -688,7 +753,7 @@
       "bytes": 273232,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-volume.png",
@@ -696,7 +761,7 @@
       "bytes": 115261,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-tiles.png",
@@ -704,7 +769,7 @@
       "bytes": 92885,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-props.png",
@@ -712,7 +777,7 @@
       "bytes": 112902,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-editor.png",
@@ -720,7 +785,7 @@
       "bytes": 603358,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-cliff.png",
@@ -728,7 +793,7 @@
       "bytes": 260817,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t045-building-2x2.png",
@@ -736,7 +801,7 @@
       "bytes": 262278,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t044-world.png",
@@ -744,7 +809,7 @@
       "bytes": 594517,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t044-walls-zoom.png",
@@ -752,7 +817,7 @@
       "bytes": 530463,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t044-wallkit-sheet.png",
@@ -760,7 +825,7 @@
       "bytes": 133861,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t044-wallkit-detail.png",
@@ -768,7 +833,7 @@
       "bytes": 79594,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t044-volume.png",
@@ -776,7 +841,7 @@
       "bytes": 112946,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t043-world.png",
@@ -784,7 +849,7 @@
       "bytes": 800996,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t043-world-clean.png",
@@ -792,7 +857,7 @@
       "bytes": 754640,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t043-walls-zoom.png",
@@ -800,7 +865,7 @@
       "bytes": 207012,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t043-wallkit-sheet.png",
@@ -808,7 +873,7 @@
       "bytes": 130073,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t043-wallkit-detail.png",
@@ -816,7 +881,7 @@
       "bytes": 59919,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t043-volume.png",
@@ -824,7 +889,7 @@
       "bytes": 101216,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-world.png",
@@ -832,7 +897,7 @@
       "bytes": 825850,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-wall-3x.png",
@@ -840,7 +905,7 @@
       "bytes": 191382,
       "width": 900,
       "height": 660,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-second-map.png",
@@ -848,7 +913,7 @@
       "bytes": 751477,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-props-3x.png",
@@ -856,7 +921,7 @@
       "bytes": 175778,
       "width": 960,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-melee-3x.png",
@@ -864,7 +929,7 @@
       "bytes": 143624,
       "width": 900,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-lava-3x.png",
@@ -872,7 +937,7 @@
       "bytes": 154135,
       "width": 900,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-hero.png",
@@ -880,7 +945,7 @@
       "bytes": 854644,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-ground-3x.png",
@@ -888,7 +953,7 @@
       "bytes": 195191,
       "width": 1020,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-editor.png",
@@ -896,7 +961,7 @@
       "bytes": 552371,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-cliff.png",
@@ -904,7 +969,7 @@
       "bytes": 119061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t042-clean.png",
@@ -912,7 +977,7 @@
       "bytes": 863547,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t041-world.png",
@@ -920,7 +985,7 @@
       "bytes": 821086,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t041-units.png",
@@ -928,7 +993,7 @@
       "bytes": 53874,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t041-map.png",
@@ -936,7 +1001,7 @@
       "bytes": 828727,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t040-rank.png",
@@ -944,7 +1009,7 @@
       "bytes": 70495,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t040-hero-attack-6x.png",
@@ -952,7 +1017,7 @@
       "bytes": 85489,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t040-hero-6x.png",
@@ -960,7 +1025,7 @@
       "bytes": 87140,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-world.png",
@@ -968,7 +1033,7 @@
       "bytes": 832347,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-team-3x.png",
@@ -976,7 +1041,7 @@
       "bytes": 58622,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-props-sheet.png",
@@ -984,7 +1049,7 @@
       "bytes": 87046,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-props-3x.png",
@@ -992,7 +1057,7 @@
       "bytes": 58638,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-editor.png",
@@ -1000,7 +1065,7 @@
       "bytes": 566220,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-courtyard.png",
@@ -1008,7 +1073,7 @@
       "bytes": 770714,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t039-banner-3x.png",
@@ -1016,7 +1081,7 @@
       "bytes": 52510,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t038-world.png",
@@ -1024,7 +1089,7 @@
       "bytes": 772179,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t038-transitions-3x.png",
@@ -1032,7 +1097,7 @@
       "bytes": 67612,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t038-field.png",
@@ -1040,7 +1105,7 @@
       "bytes": 615797,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t038-editor.png",
@@ -1048,7 +1113,7 @@
       "bytes": 435597,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t037-world.png",
@@ -1056,7 +1121,7 @@
       "bytes": 794473,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t037-world-clean.png",
@@ -1064,7 +1129,7 @@
       "bytes": 751144,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t037-editor.png",
@@ -1072,7 +1137,7 @@
       "bytes": 554492,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t037-editor-check.png",
@@ -1080,7 +1145,7 @@
       "bytes": 508492,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-world.png",
@@ -1088,7 +1153,7 @@
       "bytes": 770294,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-world-units0.png",
@@ -1096,7 +1161,7 @@
       "bytes": 776455,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-world-light.png",
@@ -1104,7 +1169,7 @@
       "bytes": 764666,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-world-light-units0.png",
@@ -1112,7 +1177,7 @@
       "bytes": 769209,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-world-family.png",
@@ -1120,7 +1185,7 @@
       "bytes": 764559,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-walls-capstones-3x.png",
@@ -1128,7 +1193,7 @@
       "bytes": 53612,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-walls-3x.png",
@@ -1136,7 +1201,7 @@
       "bytes": 53183,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-wall-sheet.png",
@@ -1144,7 +1209,7 @@
       "bytes": 93742,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-wall-plan-capstones.png",
@@ -1152,7 +1217,7 @@
       "bytes": 95441,
       "width": 1280,
       "height": 900,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-grass-field.png",
@@ -1160,7 +1225,7 @@
       "bytes": 681773,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-family.png",
@@ -1168,7 +1233,7 @@
       "bytes": 103695,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-autotile.png",
@@ -1176,7 +1241,7 @@
       "bytes": 248459,
       "width": 1280,
       "height": 2200,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-autotile-detail.png",
@@ -1184,7 +1249,7 @@
       "bytes": 98908,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t036-autotile-3x.png",
@@ -1192,7 +1257,7 @@
       "bytes": 78984,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t034-cam-e.png",
@@ -1200,7 +1265,7 @@
       "bytes": 752318,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t034-cam-d.png",
@@ -1208,7 +1273,7 @@
       "bytes": 744609,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t034-cam-c.png",
@@ -1216,7 +1281,7 @@
       "bytes": 752926,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t034-cam-b.png",
@@ -1224,7 +1289,7 @@
       "bytes": 749898,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t034-cam-a.png",
@@ -1232,7 +1297,7 @@
       "bytes": 752926,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-world.png",
@@ -1240,7 +1305,7 @@
       "bytes": 752926,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-tiles.png",
@@ -1248,7 +1313,7 @@
       "bytes": 195249,
       "width": 1280,
       "height": 2400,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-lava-3x.png",
@@ -1256,7 +1321,7 @@
       "bytes": 130946,
       "width": 900,
       "height": 480,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-floor-3x.png",
@@ -1264,7 +1329,7 @@
       "bytes": 183444,
       "width": 960,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-compare-stone.png",
@@ -1272,7 +1337,7 @@
       "bytes": 127213,
       "width": 1280,
       "height": 900,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-compare-lava.png",
@@ -1280,7 +1345,7 @@
       "bytes": 114768,
       "width": 1280,
       "height": 900,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-clean.png",
@@ -1288,7 +1353,7 @@
       "bytes": 754172,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t033-before-clean.png",
@@ -1296,7 +1361,7 @@
       "bytes": 685273,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t032-world.png",
@@ -1304,7 +1369,7 @@
       "bytes": 703192,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t032-units-sheet.png",
@@ -1312,7 +1377,7 @@
       "bytes": 94147,
       "width": 1280,
       "height": 1400,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t032-sword-idle-6x.png",
@@ -1320,7 +1385,7 @@
       "bytes": 36771,
       "width": 576,
       "height": 816,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t032-rank-4x.png",
@@ -1328,7 +1393,7 @@
       "bytes": 147344,
       "width": 1200,
       "height": 800,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t032-melee-4x.png",
@@ -1336,7 +1401,7 @@
       "bytes": 117338,
       "width": 1200,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t032-archer-idle-6x.png",
@@ -1344,7 +1409,7 @@
       "bytes": 33230,
       "width": 576,
       "height": 816,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-world.png",
@@ -1352,7 +1417,7 @@
       "bytes": 687979,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-world-units0.png",
@@ -1360,7 +1425,7 @@
       "bytes": 683316,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-wall-3x.png",
@@ -1368,7 +1433,7 @@
       "bytes": 195219,
       "width": 1020,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-tilesheet.png",
@@ -1376,7 +1441,7 @@
       "bytes": 179379,
       "width": 1400,
       "height": 2200,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-tiles.png",
@@ -1384,7 +1449,7 @@
       "bytes": 675206,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-lava-units0-3x.png",
@@ -1392,7 +1457,7 @@
       "bytes": 321599,
       "width": 1080,
       "height": 510,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-lava-3x.png",
@@ -1400,7 +1465,7 @@
       "bytes": 128822,
       "width": 960,
       "height": 510,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-grass-4x.png",
@@ -1408,7 +1473,7 @@
       "bytes": 59333,
       "width": 600,
       "height": 680,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-floor-units0-3x.png",
@@ -1416,7 +1481,7 @@
       "bytes": 537099,
       "width": 1200,
       "height": 750,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-floor-3x.png",
@@ -1424,7 +1489,7 @@
       "bytes": 258692,
       "width": 1200,
       "height": 750,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-cliff.png",
@@ -1432,7 +1497,7 @@
       "bytes": 593462,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t031-cliff-4x.png",
@@ -1440,7 +1505,7 @@
       "bytes": 287316,
       "width": 1040,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t029-units-2x.png",
@@ -1448,7 +1513,7 @@
       "bytes": 454643,
       "width": 960,
       "height": 520,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t029-rank-3x.png",
@@ -1456,7 +1521,7 @@
       "bytes": 381568,
       "width": 690,
       "height": 750,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t029-blender-units.png",
@@ -1464,7 +1529,7 @@
       "bytes": 603757,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip9.png",
@@ -1472,7 +1537,7 @@
       "bytes": 603498,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip8.png",
@@ -1480,7 +1545,7 @@
       "bytes": 603545,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip8-sword8x.png",
@@ -1488,7 +1553,7 @@
       "bytes": 192139,
       "width": 640,
       "height": 640,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip8-strike7x.png",
@@ -1496,7 +1561,7 @@
       "bytes": 143359,
       "width": 700,
       "height": 490,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip8-rank3x.png",
@@ -1504,7 +1569,7 @@
       "bytes": 444989,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip8-melee2x.png",
@@ -1512,7 +1577,7 @@
       "bytes": 528071,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip7.png",
@@ -1520,7 +1585,7 @@
       "bytes": 604939,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip7-shield6x.png",
@@ -1528,7 +1593,7 @@
       "bytes": 114765,
       "width": 480,
       "height": 480,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip7-rank3x.png",
@@ -1536,7 +1601,7 @@
       "bytes": 447780,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip7-melee2x.png",
@@ -1544,7 +1609,7 @@
       "bytes": 531996,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip6.png",
@@ -1552,7 +1617,7 @@
       "bytes": 605252,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip6-rank3x.png",
@@ -1560,7 +1625,7 @@
       "bytes": 448917,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip6-melee2x.png",
@@ -1568,7 +1633,7 @@
       "bytes": 533868,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip5.png",
@@ -1576,7 +1641,7 @@
       "bytes": 605509,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip4.png",
@@ -1584,7 +1649,7 @@
       "bytes": 602490,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip3.png",
@@ -1592,7 +1657,7 @@
       "bytes": 605971,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip3-rank3x.png",
@@ -1600,7 +1665,7 @@
       "bytes": 452324,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip3-melee2x.png",
@@ -1608,7 +1673,7 @@
       "bytes": 539440,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip2.png",
@@ -1616,7 +1681,7 @@
       "bytes": 605250,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip13.png",
@@ -1624,7 +1689,7 @@
       "bytes": 603588,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip12.png",
@@ -1632,7 +1697,7 @@
       "bytes": 603524,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip12-rank3x.png",
@@ -1640,7 +1705,7 @@
       "bytes": 444021,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip12-melee2x.png",
@@ -1648,7 +1713,7 @@
       "bytes": 526327,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip11.png",
@@ -1656,7 +1721,7 @@
       "bytes": 604346,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip10.png",
@@ -1664,7 +1729,7 @@
       "bytes": 603345,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip10-strip3x.png",
@@ -1672,7 +1737,7 @@
       "bytes": 56056,
       "width": 720,
       "height": 156,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip10-rank3x.png",
@@ -1680,7 +1745,7 @@
       "bytes": 444439,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip1.png",
@@ -1688,7 +1753,7 @@
       "bytes": 598835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip1-rank3x.png",
@@ -1696,7 +1761,7 @@
       "bytes": 445401,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-wip1-melee2x.png",
@@ -1704,7 +1769,7 @@
       "bytes": 536015,
       "width": 1040,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-sword-sheet.png",
@@ -1712,7 +1777,7 @@
       "bytes": 75288,
       "width": 1280,
       "height": 2400,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-pass3.png",
@@ -1720,7 +1785,7 @@
       "bytes": 591049,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-p3-sword8x.png",
@@ -1728,7 +1793,7 @@
       "bytes": 334028,
       "width": 880,
       "height": 880,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-p3-rank4x.png",
@@ -1736,7 +1801,7 @@
       "bytes": 636076,
       "width": 1040,
       "height": 1040,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-p3-melee2x.png",
@@ -1744,7 +1809,7 @@
       "bytes": 488066,
       "width": 1120,
       "height": 480,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-p3-archer8x.png",
@@ -1752,7 +1817,7 @@
       "bytes": 155936,
       "width": 960,
       "height": 960,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t027-cmp-m18-melee.png",
@@ -1760,7 +1825,7 @@
       "bytes": 497200,
       "width": 1120,
       "height": 480,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-wip4.png",
@@ -1768,7 +1833,7 @@
       "bytes": 595162,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-west2.png",
@@ -1776,7 +1841,7 @@
       "bytes": 190050,
       "width": 720,
       "height": 510,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-rank.png",
@@ -1784,7 +1849,7 @@
       "bytes": 192014,
       "width": 660,
       "height": 510,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-melee.png",
@@ -1792,7 +1857,7 @@
       "bytes": 266569,
       "width": 780,
       "height": 660,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-hud-right.png",
@@ -1800,7 +1865,7 @@
       "bytes": 78816,
       "width": 1360,
       "height": 360,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-hud-left.png",
@@ -1808,7 +1873,7 @@
       "bytes": 91944,
       "width": 1280,
       "height": 360,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-baseline.png",
@@ -1816,7 +1881,7 @@
       "bytes": 566632,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/t026-archers.png",
@@ -1824,7 +1889,7 @@
       "bytes": 201595,
       "width": 600,
       "height": 480,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m9-staging.png",
@@ -1832,7 +1897,7 @@
       "bytes": 307193,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m9-staging-closeup.png",
@@ -1840,7 +1905,7 @@
       "bytes": 171033,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m8.png",
@@ -1848,7 +1913,7 @@
       "bytes": 524848,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m8-review-closeup.png",
@@ -1856,7 +1921,7 @@
       "bytes": 217478,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m8-review-capture.png",
@@ -1864,7 +1929,7 @@
       "bytes": 616312,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m8-perf.png",
@@ -1872,7 +1937,7 @@
       "bytes": 322143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m8-perf-closeup.png",
@@ -1880,7 +1945,7 @@
       "bytes": 192656,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m8-closeup.png",
@@ -1888,7 +1953,7 @@
       "bytes": 202147,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m7.png",
@@ -1896,7 +1961,7 @@
       "bytes": 791693,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m7-closeup.png",
@@ -1904,7 +1969,7 @@
       "bytes": 275412,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m6.png",
@@ -1912,7 +1977,7 @@
       "bytes": 707649,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m6-ember.png",
@@ -1920,7 +1985,7 @@
       "bytes": 420767,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m5.png",
@@ -1928,7 +1993,7 @@
       "bytes": 667478,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m4.png",
@@ -1936,7 +2001,7 @@
       "bytes": 668213,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m3.png",
@@ -1944,7 +2009,7 @@
       "bytes": 654748,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-portrait-4x.png",
@@ -1952,7 +2017,7 @@
       "bytes": 65431,
       "width": 1328,
       "height": 672,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-minimap-4x.png",
@@ -1960,7 +2025,7 @@
       "bytes": 128652,
       "width": 960,
       "height": 496,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-hud.png",
@@ -1968,7 +2033,7 @@
       "bytes": 612993,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-hud-2x.png",
@@ -1976,7 +2041,7 @@
       "bytes": 138166,
       "width": 2560,
       "height": 336,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-crest-4x.png",
@@ -1984,7 +2049,7 @@
       "bytes": 23076,
       "width": 1280,
       "height": 192,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-commands-4x.png",
@@ -1992,7 +2057,7 @@
       "bytes": 76416,
       "width": 1288,
       "height": 672,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m22-abilities-4x.png",
@@ -2000,7 +2065,7 @@
       "bytes": 73827,
       "width": 1304,
       "height": 672,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m20-terrain.png",
@@ -2008,7 +2073,7 @@
       "bytes": 609652,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m20-terrain-wall-3x.png",
@@ -2016,7 +2081,7 @@
       "bytes": 174104,
       "width": 810,
       "height": 525,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m20-terrain-lava-2x.png",
@@ -2024,7 +2089,7 @@
       "bytes": 168881,
       "width": 520,
       "height": 400,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m20-terrain-floor-3x.png",
@@ -2032,7 +2097,7 @@
       "bytes": 219762,
       "width": 840,
       "height": 540,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m2.png",
@@ -2040,7 +2105,7 @@
       "bytes": 522598,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m19-strip-3x.png",
@@ -2048,7 +2113,7 @@
       "bytes": 55266,
       "width": 720,
       "height": 156,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m19-rank-3x.png",
@@ -2056,7 +2121,7 @@
       "bytes": 445580,
       "width": 1260,
       "height": 600,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m19-nova-2x.png",
@@ -2064,7 +2129,7 @@
       "bytes": 204636,
       "width": 640,
       "height": 440,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m19-melee.png",
@@ -2072,7 +2137,7 @@
       "bytes": 587926,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m19-melee-2x.png",
@@ -2080,7 +2145,7 @@
       "bytes": 474999,
       "width": 1120,
       "height": 480,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m18-west-3x.png",
@@ -2088,7 +2153,7 @@
       "bytes": 197599,
       "width": 720,
       "height": 510,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m18-weight.png",
@@ -2096,7 +2161,7 @@
       "bytes": 595534,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m18-nova-2x.png",
@@ -2104,7 +2169,7 @@
       "bytes": 209530,
       "width": 600,
       "height": 440,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m18-melee-2x.png",
@@ -2112,7 +2177,7 @@
       "bytes": 173297,
       "width": 520,
       "height": 440,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m18-hud.png",
@@ -2120,7 +2185,7 @@
       "bytes": 37178,
       "width": 1280,
       "height": 180,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m17-ramparts.png",
@@ -2128,7 +2193,7 @@
       "bytes": 569929,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m17-ramparts-west.png",
@@ -2136,7 +2201,7 @@
       "bytes": 476019,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m17-ramparts-ring.png",
@@ -2144,7 +2209,7 @@
       "bytes": 502483,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate.png",
@@ -2152,7 +2217,7 @@
       "bytes": 213254,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m17-ramparts-gate-2x.png",
@@ -2160,7 +2225,7 @@
       "bytes": 211166,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m17-isometric-ramparts.png",
@@ -2168,7 +2233,7 @@
       "bytes": 566632,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m16-composition.png",
@@ -2176,7 +2241,7 @@
       "bytes": 553131,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m16-composition-west.png",
@@ -2184,7 +2249,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m16-composition-south.png",
@@ -2192,7 +2257,7 @@
       "bytes": 221455,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m16-composition-east.png",
@@ -2200,7 +2265,7 @@
       "bytes": 489598,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m15-units.png",
@@ -2208,7 +2273,7 @@
       "bytes": 562393,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m15-units-west.png",
@@ -2216,7 +2281,7 @@
       "bytes": 464904,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m15-units-sword-sheet.png",
@@ -2224,7 +2289,7 @@
       "bytes": 75837,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m15-units-closeup.png",
@@ -2232,7 +2297,7 @@
       "bytes": 222143,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m15-units-archer-sheet.png",
@@ -2240,7 +2305,7 @@
       "bytes": 65100,
       "width": 1300,
       "height": 1850,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m14-1to1.png",
@@ -2248,7 +2313,7 @@
       "bytes": 548070,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m14-1to1-west.png",
@@ -2256,7 +2321,7 @@
       "bytes": 461755,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m14-1to1-closeup.png",
@@ -2264,7 +2329,7 @@
       "bytes": 214421,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m13-units.png",
@@ -2272,7 +2337,7 @@
       "bytes": 323089,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m13-units-west.png",
@@ -2280,7 +2345,7 @@
       "bytes": 279154,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m13-units-closeup.png",
@@ -2288,7 +2353,7 @@
       "bytes": 173309,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m12-atmosphere.png",
@@ -2296,7 +2361,7 @@
       "bytes": 324034,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m12-atmosphere-west.png",
@@ -2304,7 +2369,7 @@
       "bytes": 282731,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m12-atmosphere-closeup.png",
@@ -2312,7 +2377,7 @@
       "bytes": 175927,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m11-framing.png",
@@ -2320,7 +2385,7 @@
       "bytes": 326835,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m11-framing-west.png",
@@ -2328,7 +2393,7 @@
       "bytes": 278061,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m11-framing-north.png",
@@ -2336,7 +2401,7 @@
       "bytes": 160561,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m11-framing-closeup.png",
@@ -2344,7 +2409,7 @@
       "bytes": 169496,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m10-step0.png",
@@ -2352,7 +2417,7 @@
       "bytes": 309820,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m10-footmen.png",
@@ -2360,7 +2425,7 @@
       "bytes": 331146,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m10-footmen-west.png",
@@ -2368,7 +2433,7 @@
       "bytes": 288030,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m10-footmen-closeup.png",
@@ -2376,7 +2441,7 @@
       "bytes": 171814,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m1.png",
@@ -2384,7 +2449,7 @@
       "bytes": 519162,
       "width": 1296,
       "height": 729,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     {
       "file": "visual/m0.png",
@@ -2392,7 +2457,7 @@
       "bytes": 286922,
       "width": 1236,
       "height": 695,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     }
   ],
   "assets": {
@@ -4084,16 +4149,16 @@
   },
   "live": {
     "capture": {
-      "file": "visual/t045-world.png",
-      "name": "t045-world.png",
-      "bytes": 880337,
+      "file": "visual/t046-occlusion-wall.png",
+      "name": "t046-occlusion-wall.png",
+      "bytes": 829051,
       "width": 1280,
       "height": 720,
-      "takenAt": "2026-11-02T16:36:48.000Z"
+      "takenAt": "2026-11-02T17:10:38.000Z"
     },
     "milestone": "M31",
     "title": "Hero Map and the Single Feeling Review",
     "score": 85.45,
-    "updatedAt": "2026-11-02T16:36:48.000Z"
+    "updatedAt": "2026-11-02T17:10:38.000Z"
   }
 }
