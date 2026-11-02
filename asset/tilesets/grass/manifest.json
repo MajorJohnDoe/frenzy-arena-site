@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "family": "grass",
+  "cell": {
+    "w": 64,
+    "h": 32
+  },
+  "projection": {
+    "ortho": true,
+    "azimuthDeg": 45,
+    "elevationDeg": 30,
+    "screenRatio": [
+      2,
+      1
+    ],
+    "axisX": [
+      32,
+      16
+    ],
+    "axisZ": [
+      -32,
+      16
+    ],
+    "cell": [
+      64,
+      32
+    ]
+  },
+  "materials": [
+    {
+      "id": 4,
+      "name": "grass",
+      "walkable": true,
+      "group": "solid"
+    }
+  ],
+  "cells": [
+    {
+      "name": "grass_blades_fan",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_blades_fan.png"
+    },
+    {
+      "name": "grass_blades_tall",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_blades_tall.png"
+    },
+    {
+      "name": "grass_clover",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_clover.png"
+    },
+    {
+      "name": "grass_flowers_blue",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_flowers_blue.png"
+    },
+    {
+      "name": "grass_flowers_gold",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_flowers_gold.png"
+    },
+    {
+      "name": "grass_flowers_white",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_flowers_white.png"
+    },
+    {
+      "name": "grass_moss",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_moss.png"
+    },
+    {
+      "name": "grass_reeds",
+      "role": "decal",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "grass_reeds.png"
+    },
+    {
+      "name": "lawn_01",
+      "role": "base",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "lawn_01.png"
+    },
+    {
+      "name": "lawn_02",
+      "role": "base",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "lawn_02.png"
+    },
+    {
+      "name": "lawn_03",
+      "role": "base",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "lawn_03.png"
+    },
+    {
+      "name": "lawn_04",
+      "role": "base",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "lawn_04.png"
+    },
+    {
+      "name": "lawn_05",
+      "role": "base",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "lawn_05.png"
+    },
+    {
+      "name": "lawn_06",
+      "role": "base",
+      "material": 4,
+      "w": 64,
+      "h": 32,
+      "image": "lawn_06.png"
+    }
+  ],
+  "source": "grass.blend",
+  "sourceHash": "8e51fa22ff30c4cf"
+}
