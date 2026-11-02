@@ -1,0 +1,16 @@
+{
+  "name": "sample-knight",
+  "kind": "unit",
+  "dirs": 16,
+  "cols": 8,
+  "cell": {
+    "w": 48,
+    "h": 68
+  },
+  "atlas": "atlas.png",
+  "anchor": {
+    "x": 24,
+    "y": 62
+  },
+  "source": "sample-knight.blend"
+}

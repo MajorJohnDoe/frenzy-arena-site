@@ -390,6 +390,68 @@
         letter-spacing: 0.14em;
         font-weight: 400;
       }
+      .asset-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+        padding: 14px;
+      }
+      .asset-card {
+        display: grid;
+        gap: 8px;
+        padding: 10px;
+        border: 1px solid var(--line-soft);
+        background: rgba(7, 8, 11, 0.38);
+      }
+      .asset-stage {
+        display: grid;
+        place-items: center;
+        padding: 8px;
+        background: repeating-conic-gradient(#14161c 0% 25%, #101217 0% 50%) 50% / 16px 16px;
+        border: 1px solid #241d13;
+      }
+      .asset-stage canvas,
+      .asset-stage img {
+        display: block;
+        image-rendering: pixelated;
+        max-width: 100%;
+      }
+      .asset-name {
+        color: var(--gold-bright);
+        font-size: 11px;
+        letter-spacing: 0.12em;
+      }
+      .asset-meta {
+        color: var(--muted);
+        font-size: 10px;
+        letter-spacing: 0.08em;
+      }
+      .asset-card input[type='range'] {
+        width: 100%;
+        accent-color: var(--gold);
+      }
+      .asset-empty {
+        padding: 18px 14px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .site-nav {
+        display: flex;
+        gap: 18px;
+        max-width: 1680px;
+        margin: 0 auto 14px;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+      }
+      .site-nav a {
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      .site-nav a:hover {
+        color: var(--gold-bright);
+        border-bottom-color: var(--gold);
+      }
       .live-band {
         display: grid;
         grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
@@ -543,6 +605,13 @@
       </nav>
     </header>
 
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#current-stage">TOP</a>
+      <a href="#timeline">TIMELINE</a>
+      <a href="#captures">CAPTURES</a>
+      <a href="#assets">ASSETS</a>
+    </nav>
+
     <section class="live-band" id="live-band" hidden>
       <img id="live-image" alt="Latest committed capture" />
       <div>
@@ -599,11 +668,23 @@
       <div class="timeline-list" id="timeline"></div>
     </section>
 
-    <section class="timeline">
+    <section class="timeline" id="captures">
       <h2 class="section-title">
         ALL CAPTURES <span class="section-note" id="capture-count"></span>
       </h2>
       <div class="capture-grid" id="captures"></div>
+    </section>
+
+    <section class="timeline" id="assets">
+      <h2 class="section-title">
+        ASSET GALLERY <span class="section-note" id="asset-count"></span>
+      </h2>
+      <p class="note" style="padding: 0 14px">
+        Authored in Blender as <code>.blend</code>, baked headlessly to sprite atlases. Drag a
+        slider to turn a model; the preview spins on its own until you touch it.
+      </p>
+      <div class="asset-grid" id="asset-units"></div>
+      <div class="asset-grid" id="asset-parts"></div>
     </section>
 
     <footer class="footer">
@@ -784,6 +865,99 @@
         liveMeta.textContent = `${live.capture.name} · ${live.capture.width}x${live.capture.height} · ${when.toLocaleString()}`;
       };
 
+      const assetUnits = document.getElementById('asset-units');
+      const assetParts = document.getElementById('asset-parts');
+      const assetCount = document.getElementById('asset-count');
+      const spinners = [];
+
+      const renderAssets = (assets) => {
+        assetUnits.replaceChildren();
+        assetParts.replaceChildren();
+        const units = assets?.units ?? [];
+        const parts = [...(assets?.tiles ?? []), ...(assets?.props ?? [])];
+        assetCount.textContent = `${units.length} UNITS · ${parts.length} TILES/PROPS`;
+        if (units.length === 0) {
+          assetUnits.append(el('div', 'asset-empty', 'No baked units yet.'));
+          assetUnits.append(
+            el('div', 'asset-empty', 'Author blender/units/<name>.blend, then run make assets.'),
+          );
+        }
+        for (const unit of units) {
+          const card = el('figure', 'asset-card');
+          const stage = el('div', 'asset-stage');
+          const canvas = document.createElement('canvas');
+          const scale = 2;
+          canvas.width = unit.cell.w * scale;
+          canvas.height = unit.cell.h * scale;
+          stage.append(canvas);
+          const name = el('figcaption', 'asset-name', unit.name);
+          const meta = el(
+            'div',
+            'asset-meta',
+            `${unit.dirs} directions · ${unit.cell.w}x${unit.cell.h} · ${unit.source ?? 'blend'}`,
+          );
+          const slider = document.createElement('input');
+          slider.type = 'range';
+          slider.min = '0';
+          slider.max = String(Math.max(0, unit.dirs - 1));
+          slider.value = '0';
+          slider.setAttribute('aria-label', `Turn ${unit.name}`);
+          card.append(stage, name, meta, slider);
+          assetUnits.append(card);
+
+          const image = new Image();
+          image.src = unit.atlas;
+          const ctx = canvas.getContext('2d');
+          const state = { dir: Math.floor(unit.dirs / 2), image, unit, ctx, canvas, manual: false };
+          const paint = () => {
+            if (!image.complete) return;
+            const cols = unit.cols ?? 8;
+            const col = state.dir % cols;
+            const row = Math.floor(state.dir / cols);
+            ctx.imageSmoothingEnabled = false;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(
+              image,
+              col * unit.cell.w,
+              row * unit.cell.h,
+              unit.cell.w,
+              unit.cell.h,
+              0,
+              0,
+              canvas.width,
+              canvas.height,
+            );
+          };
+          image.addEventListener('load', paint);
+          slider.addEventListener('input', () => {
+            state.dir = Number(slider.value);
+            state.manual = true;
+            paint();
+          });
+          spinners.push({ state, paint });
+        }
+        for (const part of parts) {
+          const card = el('figure', 'asset-card');
+          const stage = el('div', 'asset-stage');
+          const img = new Image();
+          img.src = part.file;
+          img.alt = part.name;
+          img.loading = 'lazy';
+          img.style.width = '100%';
+          stage.append(img);
+          card.append(stage, el('figcaption', 'asset-name', part.name));
+          assetParts.append(card);
+        }
+      };
+
+      window.setInterval(() => {
+        for (const spinner of spinners) {
+          if (spinner.state.manual) continue;
+          spinner.state.dir = (spinner.state.dir + 1) % (spinner.state.unit.dirs || 1);
+          spinner.paint();
+        }
+      }, 130);
+
       const capturesGrid = document.getElementById('captures');
       const captureCount = document.getElementById('capture-count');
 
@@ -850,6 +1024,7 @@
           renderLive(data.live);
           renderTimeline(versions);
           renderCaptures(data.captures);
+          renderAssets(data.assets);
           renderScoreChart(versions);
 
           if (data.liveUrl) {
