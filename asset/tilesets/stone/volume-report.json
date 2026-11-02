@@ -1,6 +1,6 @@
 {
   "family": "stone",
-  "sourceHash": "346c64bd20b5ac58",
+  "sourceHash": "2fb76592d0f7e350",
   "projection": {
     "ortho": true,
     "azimuthDeg": 45,
@@ -47,7 +47,17 @@
         "right": 465,
         "outline": 158
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_corner_n",
@@ -73,7 +83,17 @@
         "right": 465,
         "outline": 158
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_face_e",
@@ -99,7 +119,17 @@
         "right": 465,
         "outline": 158
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_face_n",
@@ -125,7 +155,17 @@
         "right": 465,
         "outline": 158
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_ramp_e",
@@ -151,7 +191,17 @@
         "right": 465,
         "outline": 165
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_ramp_n",
@@ -177,7 +227,17 @@
         "right": 465,
         "outline": 165
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_top",
@@ -203,7 +263,17 @@
         "right": 961,
         "outline": 190
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "cliff_top_b",
@@ -229,508 +299,939 @@
         "right": 961,
         "outline": 190
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": null
     },
     {
       "cell": "wall_00",
       "width": 64,
-      "height": 75,
-      "opaque": 4471,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4932,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 96.34,
-        "left": 72.9,
-        "right": 43.6,
+        "top": 93.88,
+        "left": 71.7,
+        "right": 52.02,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.44,
-        "leftRight": 29.3
+        "topLeft": 22.18,
+        "leftRight": 19.68
       },
-      "outlinePixels": 243,
+      "outlinePixels": 259,
       "outlineRatio": 0.05,
       "facePixels": {
-        "top": 1006,
-        "left": 1617,
-        "right": 1605,
-        "outline": 243
+        "top": 1344,
+        "left": 1675,
+        "right": 1654,
+        "outline": 259
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 4
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_01",
       "width": 64,
-      "height": 75,
-      "opaque": 4471,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4932,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 96.34,
-        "left": 72.86,
-        "right": 43.21,
+        "top": 93.9,
+        "left": 71.5,
+        "right": 52.19,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.48,
-        "leftRight": 29.65
+        "topLeft": 22.4,
+        "leftRight": 19.31
       },
-      "outlinePixels": 243,
+      "outlinePixels": 259,
       "outlineRatio": 0.05,
       "facePixels": {
-        "top": 1006,
-        "left": 1617,
-        "right": 1605,
-        "outline": 243
+        "top": 1349,
+        "left": 1670,
+        "right": 1654,
+        "outline": 259
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 4
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_02",
       "width": 64,
-      "height": 75,
-      "opaque": 4444,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4924,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 95.56,
-        "left": 72.27,
-        "right": 42.23,
+        "top": 91.96,
+        "left": 65.74,
+        "right": 45.77,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.29,
-        "leftRight": 30.04
+        "topLeft": 26.22,
+        "leftRight": 19.97
       },
-      "outlinePixels": 239,
-      "outlineRatio": 0.05,
+      "outlinePixels": 214,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1065,
-        "left": 1545,
-        "right": 1595,
-        "outline": 239
+        "top": 1345,
+        "left": 1687,
+        "right": 418,
+        "outline": 214
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_03",
       "width": 64,
-      "height": 75,
-      "opaque": 4444,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4924,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 95.56,
-        "left": 72.16,
-        "right": 42.19,
+        "top": 91.96,
+        "left": 65.61,
+        "right": 45.65,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.4,
-        "leftRight": 29.97
+        "topLeft": 26.35,
+        "leftRight": 19.96
       },
-      "outlinePixels": 239,
-      "outlineRatio": 0.05,
+      "outlinePixels": 214,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1065,
-        "left": 1545,
-        "right": 1595,
-        "outline": 239
+        "top": 1345,
+        "left": 1687,
+        "right": 418,
+        "outline": 214
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_04",
       "width": 64,
-      "height": 75,
-      "opaque": 4427,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4880,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 93.33,
-        "left": 73.71,
-        "right": 42.93,
+        "top": 92.13,
+        "left": 60.25,
+        "right": 49.16,
         "outline": 11
       },
       "delta": {
-        "topLeft": 19.62,
-        "leftRight": 30.78
+        "topLeft": 31.88,
+        "leftRight": 11.09
       },
-      "outlinePixels": 238,
-      "outlineRatio": 0.05,
+      "outlinePixels": 212,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1033,
-        "left": 1613,
-        "right": 1543,
-        "outline": 238
+        "top": 1294,
+        "left": 436,
+        "right": 1675,
+        "outline": 212
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 4
+      },
+      "exposed": {
+        "left": false,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_05",
       "width": 64,
-      "height": 75,
-      "opaque": 4427,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4880,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 93.33,
-        "left": 73.64,
-        "right": 42.96,
+        "top": 92.13,
+        "left": 60.1,
+        "right": 49.15,
         "outline": 11
       },
       "delta": {
-        "topLeft": 19.69,
-        "leftRight": 30.68
+        "topLeft": 32.03,
+        "leftRight": 10.95
       },
-      "outlinePixels": 238,
-      "outlineRatio": 0.05,
+      "outlinePixels": 213,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1033,
-        "left": 1613,
-        "right": 1543,
-        "outline": 238
+        "top": 1294,
+        "left": 438,
+        "right": 1675,
+        "outline": 213
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 4
+      },
+      "exposed": {
+        "left": false,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_06",
       "width": 64,
-      "height": 75,
-      "opaque": 4400,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4872,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 90.87,
-        "left": 72.32,
-        "right": 41.78,
+        "top": 90.27,
+        "left": 51.69,
+        "right": 41.99,
         "outline": 11
       },
       "delta": {
-        "topLeft": 18.55,
-        "leftRight": 30.54
+        "topLeft": 38.58,
+        "leftRight": 9.7
       },
-      "outlinePixels": 234,
-      "outlineRatio": 0.05,
+      "outlinePixels": 166,
+      "outlineRatio": 0.03,
       "facePixels": {
-        "top": 1230,
-        "left": 1468,
-        "right": 1468,
-        "outline": 234
+        "top": 1580,
+        "left": 297,
+        "right": 302,
+        "outline": 166
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": false,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_07",
       "width": 64,
-      "height": 75,
-      "opaque": 4400,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4872,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 90.87,
-        "left": 72.33,
-        "right": 41.4,
+        "top": 90.27,
+        "left": 51.69,
+        "right": 42.15,
         "outline": 11
       },
       "delta": {
-        "topLeft": 18.54,
-        "leftRight": 30.93
+        "topLeft": 38.58,
+        "leftRight": 9.54
       },
-      "outlinePixels": 234,
-      "outlineRatio": 0.05,
+      "outlinePixels": 166,
+      "outlineRatio": 0.03,
       "facePixels": {
-        "top": 1230,
-        "left": 1468,
-        "right": 1468,
-        "outline": 234
+        "top": 1580,
+        "left": 297,
+        "right": 302,
+        "outline": 166
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": false,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_08",
       "width": 64,
-      "height": 75,
-      "opaque": 4471,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4932,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 96.34,
-        "left": 72.89,
-        "right": 43.33,
+        "top": 93.9,
+        "left": 71.7,
+        "right": 52.13,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.45,
-        "leftRight": 29.56
+        "topLeft": 22.2,
+        "leftRight": 19.57
       },
-      "outlinePixels": 243,
+      "outlinePixels": 259,
       "outlineRatio": 0.05,
       "facePixels": {
-        "top": 1006,
-        "left": 1617,
-        "right": 1605,
-        "outline": 243
+        "top": 1349,
+        "left": 1670,
+        "right": 1654,
+        "outline": 259
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 4
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_09",
       "width": 64,
-      "height": 75,
-      "opaque": 4471,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4932,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 96.34,
-        "left": 72.87,
-        "right": 43.44,
+        "top": 93.9,
+        "left": 71.47,
+        "right": 52.05,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.47,
-        "leftRight": 29.43
+        "topLeft": 22.43,
+        "leftRight": 19.42
       },
-      "outlinePixels": 243,
+      "outlinePixels": 259,
       "outlineRatio": 0.05,
       "facePixels": {
-        "top": 1006,
-        "left": 1617,
-        "right": 1605,
-        "outline": 243
+        "top": 1349,
+        "left": 1670,
+        "right": 1654,
+        "outline": 259
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 4
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_10",
       "width": 64,
-      "height": 75,
-      "opaque": 4444,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4924,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 95.56,
-        "left": 72.26,
-        "right": 42.79,
+        "top": 91.96,
+        "left": 65.76,
+        "right": 45.48,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.3,
-        "leftRight": 29.47
+        "topLeft": 26.2,
+        "leftRight": 20.28
       },
-      "outlinePixels": 239,
-      "outlineRatio": 0.05,
+      "outlinePixels": 214,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1065,
-        "left": 1545,
-        "right": 1595,
-        "outline": 239
+        "top": 1345,
+        "left": 1687,
+        "right": 418,
+        "outline": 214
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_11",
       "width": 64,
-      "height": 75,
-      "opaque": 4444,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4924,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 95.56,
-        "left": 72.15,
-        "right": 42.29,
+        "top": 91.96,
+        "left": 65.76,
+        "right": 45.6,
         "outline": 11
       },
       "delta": {
-        "topLeft": 23.41,
-        "leftRight": 29.86
+        "topLeft": 26.2,
+        "leftRight": 20.16
       },
-      "outlinePixels": 239,
-      "outlineRatio": 0.05,
+      "outlinePixels": 214,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1065,
-        "left": 1545,
-        "right": 1595,
-        "outline": 239
+        "top": 1345,
+        "left": 1687,
+        "right": 418,
+        "outline": 214
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 0
+      },
+      "exposed": {
+        "left": true,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_12",
       "width": 64,
-      "height": 75,
-      "opaque": 4427,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4880,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 93.33,
-        "left": 73.7,
-        "right": 43.39,
+        "top": 92.13,
+        "left": 60.18,
+        "right": 49.14,
         "outline": 11
       },
       "delta": {
-        "topLeft": 19.63,
-        "leftRight": 30.31
+        "topLeft": 31.95,
+        "leftRight": 11.04
       },
-      "outlinePixels": 238,
-      "outlineRatio": 0.05,
+      "outlinePixels": 213,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1033,
-        "left": 1613,
-        "right": 1543,
-        "outline": 238
+        "top": 1294,
+        "left": 436,
+        "right": 1675,
+        "outline": 213
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 4
+      },
+      "exposed": {
+        "left": false,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_13",
       "width": 64,
-      "height": 75,
-      "opaque": 4427,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4880,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 93.33,
-        "left": 73.66,
-        "right": 43.09,
+        "top": 92.13,
+        "left": 60.03,
+        "right": 49.2,
         "outline": 11
       },
       "delta": {
-        "topLeft": 19.67,
-        "leftRight": 30.57
+        "topLeft": 32.1,
+        "leftRight": 10.83
       },
-      "outlinePixels": 238,
-      "outlineRatio": 0.05,
+      "outlinePixels": 213,
+      "outlineRatio": 0.04,
       "facePixels": {
-        "top": 1033,
-        "left": 1613,
-        "right": 1543,
-        "outline": 238
+        "top": 1294,
+        "left": 436,
+        "right": 1675,
+        "outline": 213
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 4
+      },
+      "exposed": {
+        "left": false,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_14",
       "width": 64,
-      "height": 75,
-      "opaque": 4400,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4872,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 90.87,
-        "left": 72.35,
-        "right": 41.38,
+        "top": 90.27,
+        "left": 52.04,
+        "right": 42.4,
         "outline": 11
       },
       "delta": {
-        "topLeft": 18.52,
-        "leftRight": 30.97
+        "topLeft": 38.23,
+        "leftRight": 9.64
       },
-      "outlinePixels": 234,
-      "outlineRatio": 0.05,
+      "outlinePixels": 166,
+      "outlineRatio": 0.03,
       "facePixels": {
-        "top": 1230,
-        "left": 1468,
-        "right": 1468,
-        "outline": 234
+        "top": 1580,
+        "left": 294,
+        "right": 302,
+        "outline": 166
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": false,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_15",
       "width": 64,
-      "height": 75,
-      "opaque": 4400,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4872,
+      "silhouetteHeight": 84,
       "meanL": {
-        "top": 90.87,
-        "left": 72.23,
-        "right": 41.39,
+        "top": 90.27,
+        "left": 51.77,
+        "right": 42.32,
         "outline": 11
       },
       "delta": {
-        "topLeft": 18.64,
-        "leftRight": 30.84
+        "topLeft": 38.5,
+        "leftRight": 9.45
       },
-      "outlinePixels": 234,
-      "outlineRatio": 0.05,
+      "outlinePixels": 166,
+      "outlineRatio": 0.03,
       "facePixels": {
-        "top": 1230,
-        "left": 1468,
-        "right": 1468,
-        "outline": 234
+        "top": 1580,
+        "left": 296,
+        "right": 302,
+        "outline": 166
       },
-      "toneOrder": true
+      "courses": {
+        "left": 0,
+        "right": 0
+      },
+      "exposed": {
+        "left": false,
+        "right": false
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": false,
+        "continuous": true,
+        "exposed": {
+          "left": false,
+          "right": false
+        }
+      }
     },
     {
       "cell": "wall_gate",
       "width": 64,
-      "height": 109,
-      "opaque": 6660,
-      "silhouetteHeight": 109,
+      "height": 118,
+      "opaque": 7511,
+      "silhouetteHeight": 118,
       "meanL": {
-        "top": 78.72,
-        "left": 63.57,
-        "right": 42.37,
+        "top": 100.25,
+        "left": 64.74,
+        "right": 49.5,
         "outline": 11
       },
       "delta": {
-        "topLeft": 15.15,
-        "leftRight": 21.2
+        "topLeft": 35.51,
+        "leftRight": 15.24
       },
-      "outlinePixels": 366,
+      "outlinePixels": 379,
       "outlineRatio": 0.05,
       "facePixels": {
-        "top": 268,
-        "left": 2679,
-        "right": 3347,
-        "outline": 366
+        "top": 509,
+        "left": 2387,
+        "right": 3572,
+        "outline": 379
       },
-      "toneOrder": true
+      "courses": {
+        "left": 6,
+        "right": 6
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_ruin",
       "width": 64,
-      "height": 75,
-      "opaque": 4329,
-      "silhouetteHeight": 75,
+      "height": 84,
+      "opaque": 4700,
+      "silhouetteHeight": 79,
       "meanL": {
-        "top": 99.01,
-        "left": 71.58,
-        "right": 45.45,
+        "top": 95.15,
+        "left": 71.54,
+        "right": 53.8,
         "outline": 11
       },
       "delta": {
-        "topLeft": 27.43,
-        "leftRight": 26.13
+        "topLeft": 23.61,
+        "leftRight": 17.74
       },
-      "outlinePixels": 247,
+      "outlinePixels": 262,
       "outlineRatio": 0.06,
       "facePixels": {
-        "top": 1026,
-        "left": 1473,
-        "right": 1583,
-        "outline": 247
+        "top": 1342,
+        "left": 1467,
+        "right": 1629,
+        "outline": 262
       },
-      "toneOrder": true
+      "courses": {
+        "left": 4,
+        "right": 4
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": false,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     },
     {
       "cell": "wall_tower",
       "width": 64,
-      "height": 91,
-      "opaque": 5824,
-      "silhouetteHeight": 91,
+      "height": 104,
+      "opaque": 6610,
+      "silhouetteHeight": 104,
       "meanL": {
-        "top": 102.75,
-        "left": 74.15,
-        "right": 41.66,
+        "top": 95.59,
+        "left": 73.42,
+        "right": 52.68,
         "outline": 11
       },
       "delta": {
-        "topLeft": 28.6,
-        "leftRight": 32.49
+        "topLeft": 22.17,
+        "leftRight": 20.74
       },
-      "outlinePixels": 306,
+      "outlinePixels": 323,
       "outlineRatio": 0.05,
       "facePixels": {
-        "top": 635,
-        "left": 2434,
-        "right": 2449,
-        "outline": 306
+        "top": 1525,
+        "left": 2377,
+        "right": 2385,
+        "outline": 323
       },
-      "toneOrder": true
+      "courses": {
+        "left": 5,
+        "right": 5
+      },
+      "exposed": {
+        "left": true,
+        "right": true
+      },
+      "rightFaceInRange": true,
+      "toneOrder": true,
+      "masonry": {
+        "coursePx": 6,
+        "jointPx": 1,
+        "staggered": true,
+        "capstones": 5,
+        "capstonePx": 5,
+        "quoin": true,
+        "continuous": true,
+        "exposed": {
+          "left": true,
+          "right": true
+        }
+      }
     }
   ],
   "summary": {
     "cells": 27,
     "toneOrder": 27,
-    "minDeltaTopLeft": 15.15,
-    "minDeltaLeftRight": 21.2,
-    "meanOutlineRatio": 0.0585
+    "rightFaceInRange": 27,
+    "minCoursesLeft": 4,
+    "minCoursesRight": 4,
+    "minDeltaTopLeft": 19.99,
+    "minDeltaLeftRight": 15.24,
+    "meanOutlineRatio": 0.0526
   }
 }
