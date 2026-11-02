@@ -1,0 +1,736 @@
+{
+  "family": "stone",
+  "sourceHash": "346c64bd20b5ac58",
+  "projection": {
+    "ortho": true,
+    "azimuthDeg": 45,
+    "elevationDeg": 30,
+    "screenRatio": [
+      2,
+      1
+    ],
+    "axisX": [
+      32,
+      16
+    ],
+    "axisZ": [
+      -32,
+      16
+    ],
+    "cell": [
+      64,
+      32
+    ]
+  },
+  "cells": [
+    {
+      "cell": "cliff_corner_e",
+      "width": 64,
+      "height": 48,
+      "opaque": 2048,
+      "silhouetteHeight": 47,
+      "meanL": {
+        "top": 97.82,
+        "left": 77.83,
+        "right": 48.97,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 19.99,
+        "leftRight": 28.86
+      },
+      "outlinePixels": 158,
+      "outlineRatio": 0.08,
+      "facePixels": {
+        "top": 960,
+        "left": 465,
+        "right": 465,
+        "outline": 158
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_corner_n",
+      "width": 64,
+      "height": 48,
+      "opaque": 2048,
+      "silhouetteHeight": 47,
+      "meanL": {
+        "top": 97.98,
+        "left": 77.56,
+        "right": 48.96,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 20.42,
+        "leftRight": 28.6
+      },
+      "outlinePixels": 158,
+      "outlineRatio": 0.08,
+      "facePixels": {
+        "top": 960,
+        "left": 465,
+        "right": 465,
+        "outline": 158
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_face_e",
+      "width": 64,
+      "height": 48,
+      "opaque": 2048,
+      "silhouetteHeight": 47,
+      "meanL": {
+        "top": 99.88,
+        "left": 77.78,
+        "right": 48.96,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 22.1,
+        "leftRight": 28.82
+      },
+      "outlinePixels": 158,
+      "outlineRatio": 0.08,
+      "facePixels": {
+        "top": 960,
+        "left": 465,
+        "right": 465,
+        "outline": 158
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_face_n",
+      "width": 64,
+      "height": 48,
+      "opaque": 2048,
+      "silhouetteHeight": 47,
+      "meanL": {
+        "top": 100.1,
+        "left": 77.78,
+        "right": 48.93,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 22.32,
+        "leftRight": 28.85
+      },
+      "outlinePixels": 158,
+      "outlineRatio": 0.08,
+      "facePixels": {
+        "top": 960,
+        "left": 465,
+        "right": 465,
+        "outline": 158
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_ramp_e",
+      "width": 64,
+      "height": 48,
+      "opaque": 1920,
+      "silhouetteHeight": 47,
+      "meanL": {
+        "top": 100.76,
+        "left": 77.61,
+        "right": 48.97,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.15,
+        "leftRight": 28.64
+      },
+      "outlinePixels": 165,
+      "outlineRatio": 0.09,
+      "facePixels": {
+        "top": 616,
+        "left": 674,
+        "right": 465,
+        "outline": 165
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_ramp_n",
+      "width": 64,
+      "height": 48,
+      "opaque": 1920,
+      "silhouetteHeight": 47,
+      "meanL": {
+        "top": 100.76,
+        "left": 77.61,
+        "right": 48.93,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.15,
+        "leftRight": 28.68
+      },
+      "outlinePixels": 165,
+      "outlineRatio": 0.09,
+      "facePixels": {
+        "top": 616,
+        "left": 674,
+        "right": 465,
+        "outline": 165
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_top",
+      "width": 64,
+      "height": 64,
+      "opaque": 3072,
+      "silhouetteHeight": 63,
+      "meanL": {
+        "top": 100.11,
+        "left": 77.58,
+        "right": 48.99,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 22.53,
+        "leftRight": 28.59
+      },
+      "outlinePixels": 190,
+      "outlineRatio": 0.06,
+      "facePixels": {
+        "top": 960,
+        "left": 961,
+        "right": 961,
+        "outline": 190
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "cliff_top_b",
+      "width": 64,
+      "height": 64,
+      "opaque": 3072,
+      "silhouetteHeight": 63,
+      "meanL": {
+        "top": 99.89,
+        "left": 77.58,
+        "right": 48.99,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 22.31,
+        "leftRight": 28.59
+      },
+      "outlinePixels": 190,
+      "outlineRatio": 0.06,
+      "facePixels": {
+        "top": 960,
+        "left": 961,
+        "right": 961,
+        "outline": 190
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_00",
+      "width": 64,
+      "height": 75,
+      "opaque": 4471,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 96.34,
+        "left": 72.9,
+        "right": 43.6,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.44,
+        "leftRight": 29.3
+      },
+      "outlinePixels": 243,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1006,
+        "left": 1617,
+        "right": 1605,
+        "outline": 243
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_01",
+      "width": 64,
+      "height": 75,
+      "opaque": 4471,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 96.34,
+        "left": 72.86,
+        "right": 43.21,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.48,
+        "leftRight": 29.65
+      },
+      "outlinePixels": 243,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1006,
+        "left": 1617,
+        "right": 1605,
+        "outline": 243
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_02",
+      "width": 64,
+      "height": 75,
+      "opaque": 4444,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 95.56,
+        "left": 72.27,
+        "right": 42.23,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.29,
+        "leftRight": 30.04
+      },
+      "outlinePixels": 239,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1065,
+        "left": 1545,
+        "right": 1595,
+        "outline": 239
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_03",
+      "width": 64,
+      "height": 75,
+      "opaque": 4444,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 95.56,
+        "left": 72.16,
+        "right": 42.19,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.4,
+        "leftRight": 29.97
+      },
+      "outlinePixels": 239,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1065,
+        "left": 1545,
+        "right": 1595,
+        "outline": 239
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_04",
+      "width": 64,
+      "height": 75,
+      "opaque": 4427,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 93.33,
+        "left": 73.71,
+        "right": 42.93,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 19.62,
+        "leftRight": 30.78
+      },
+      "outlinePixels": 238,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1033,
+        "left": 1613,
+        "right": 1543,
+        "outline": 238
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_05",
+      "width": 64,
+      "height": 75,
+      "opaque": 4427,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 93.33,
+        "left": 73.64,
+        "right": 42.96,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 19.69,
+        "leftRight": 30.68
+      },
+      "outlinePixels": 238,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1033,
+        "left": 1613,
+        "right": 1543,
+        "outline": 238
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_06",
+      "width": 64,
+      "height": 75,
+      "opaque": 4400,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 90.87,
+        "left": 72.32,
+        "right": 41.78,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 18.55,
+        "leftRight": 30.54
+      },
+      "outlinePixels": 234,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1230,
+        "left": 1468,
+        "right": 1468,
+        "outline": 234
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_07",
+      "width": 64,
+      "height": 75,
+      "opaque": 4400,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 90.87,
+        "left": 72.33,
+        "right": 41.4,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 18.54,
+        "leftRight": 30.93
+      },
+      "outlinePixels": 234,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1230,
+        "left": 1468,
+        "right": 1468,
+        "outline": 234
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_08",
+      "width": 64,
+      "height": 75,
+      "opaque": 4471,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 96.34,
+        "left": 72.89,
+        "right": 43.33,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.45,
+        "leftRight": 29.56
+      },
+      "outlinePixels": 243,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1006,
+        "left": 1617,
+        "right": 1605,
+        "outline": 243
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_09",
+      "width": 64,
+      "height": 75,
+      "opaque": 4471,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 96.34,
+        "left": 72.87,
+        "right": 43.44,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.47,
+        "leftRight": 29.43
+      },
+      "outlinePixels": 243,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1006,
+        "left": 1617,
+        "right": 1605,
+        "outline": 243
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_10",
+      "width": 64,
+      "height": 75,
+      "opaque": 4444,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 95.56,
+        "left": 72.26,
+        "right": 42.79,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.3,
+        "leftRight": 29.47
+      },
+      "outlinePixels": 239,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1065,
+        "left": 1545,
+        "right": 1595,
+        "outline": 239
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_11",
+      "width": 64,
+      "height": 75,
+      "opaque": 4444,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 95.56,
+        "left": 72.15,
+        "right": 42.29,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 23.41,
+        "leftRight": 29.86
+      },
+      "outlinePixels": 239,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1065,
+        "left": 1545,
+        "right": 1595,
+        "outline": 239
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_12",
+      "width": 64,
+      "height": 75,
+      "opaque": 4427,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 93.33,
+        "left": 73.7,
+        "right": 43.39,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 19.63,
+        "leftRight": 30.31
+      },
+      "outlinePixels": 238,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1033,
+        "left": 1613,
+        "right": 1543,
+        "outline": 238
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_13",
+      "width": 64,
+      "height": 75,
+      "opaque": 4427,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 93.33,
+        "left": 73.66,
+        "right": 43.09,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 19.67,
+        "leftRight": 30.57
+      },
+      "outlinePixels": 238,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1033,
+        "left": 1613,
+        "right": 1543,
+        "outline": 238
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_14",
+      "width": 64,
+      "height": 75,
+      "opaque": 4400,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 90.87,
+        "left": 72.35,
+        "right": 41.38,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 18.52,
+        "leftRight": 30.97
+      },
+      "outlinePixels": 234,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1230,
+        "left": 1468,
+        "right": 1468,
+        "outline": 234
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_15",
+      "width": 64,
+      "height": 75,
+      "opaque": 4400,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 90.87,
+        "left": 72.23,
+        "right": 41.39,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 18.64,
+        "leftRight": 30.84
+      },
+      "outlinePixels": 234,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 1230,
+        "left": 1468,
+        "right": 1468,
+        "outline": 234
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_gate",
+      "width": 64,
+      "height": 109,
+      "opaque": 6660,
+      "silhouetteHeight": 109,
+      "meanL": {
+        "top": 78.72,
+        "left": 63.57,
+        "right": 42.37,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 15.15,
+        "leftRight": 21.2
+      },
+      "outlinePixels": 366,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 268,
+        "left": 2679,
+        "right": 3347,
+        "outline": 366
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_ruin",
+      "width": 64,
+      "height": 75,
+      "opaque": 4329,
+      "silhouetteHeight": 75,
+      "meanL": {
+        "top": 99.01,
+        "left": 71.58,
+        "right": 45.45,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 27.43,
+        "leftRight": 26.13
+      },
+      "outlinePixels": 247,
+      "outlineRatio": 0.06,
+      "facePixels": {
+        "top": 1026,
+        "left": 1473,
+        "right": 1583,
+        "outline": 247
+      },
+      "toneOrder": true
+    },
+    {
+      "cell": "wall_tower",
+      "width": 64,
+      "height": 91,
+      "opaque": 5824,
+      "silhouetteHeight": 91,
+      "meanL": {
+        "top": 102.75,
+        "left": 74.15,
+        "right": 41.66,
+        "outline": 11
+      },
+      "delta": {
+        "topLeft": 28.6,
+        "leftRight": 32.49
+      },
+      "outlinePixels": 306,
+      "outlineRatio": 0.05,
+      "facePixels": {
+        "top": 635,
+        "left": 2434,
+        "right": 2449,
+        "outline": 306
+      },
+      "toneOrder": true
+    }
+  ],
+  "summary": {
+    "cells": 27,
+    "toneOrder": 27,
+    "minDeltaTopLeft": 15.15,
+    "minDeltaLeftRight": 21.2,
+    "meanOutlineRatio": 0.0585
+  }
+}

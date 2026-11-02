@@ -5,6 +5,27 @@
     "w": 64,
     "h": 32
   },
+  "projection": {
+    "ortho": true,
+    "azimuthDeg": 45,
+    "elevationDeg": 30,
+    "screenRatio": [
+      2,
+      1
+    ],
+    "axisX": [
+      32,
+      16
+    ],
+    "axisZ": [
+      -32,
+      16
+    ],
+    "cell": [
+      64,
+      32
+    ]
+  },
   "materials": [
     {
       "id": 1,
@@ -25,48 +46,126 @@
       "role": "cliff",
       "material": 1,
       "w": 64,
-      "h": 32,
-      "image": "cliff_corner_e.png"
+      "h": 48,
+      "image": "cliff_corner_e.png",
+      "faceMask": "cliff_corner_e.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 16,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_corner_n",
       "role": "cliff",
       "material": 1,
       "w": 64,
-      "h": 32,
-      "image": "cliff_corner_n.png"
+      "h": 48,
+      "image": "cliff_corner_n.png",
+      "faceMask": "cliff_corner_n.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 16,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_face_e",
       "role": "cliff",
       "material": 1,
       "w": 64,
-      "h": 32,
-      "image": "cliff_face_e.png"
+      "h": 48,
+      "image": "cliff_face_e.png",
+      "faceMask": "cliff_face_e.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 16,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_face_n",
       "role": "cliff",
       "material": 1,
       "w": 64,
-      "h": 32,
-      "image": "cliff_face_n.png"
+      "h": 48,
+      "image": "cliff_face_n.png",
+      "faceMask": "cliff_face_n.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 16,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_ramp_e",
       "role": "ramp",
       "material": 1,
       "w": 64,
-      "h": 32,
-      "image": "cliff_ramp_e.png"
+      "h": 48,
+      "image": "cliff_ramp_e.png",
+      "faceMask": "cliff_ramp_e.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 16,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_ramp_n",
       "role": "ramp",
       "material": 1,
       "w": 64,
-      "h": 32,
-      "image": "cliff_ramp_n.png"
+      "h": 48,
+      "image": "cliff_ramp_n.png",
+      "faceMask": "cliff_ramp_n.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 16,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_top",
@@ -74,7 +173,20 @@
       "material": 1,
       "w": 64,
       "h": 64,
-      "image": "cliff_top.png"
+      "image": "cliff_top.png",
+      "faceMask": "cliff_top.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 32,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "cliff_top_b",
@@ -82,7 +194,20 @@
       "material": 1,
       "w": 64,
       "h": 64,
-      "image": "cliff_top_b.png"
+      "image": "cliff_top_b.png",
+      "faceMask": "cliff_top_b.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 32,
+        "cap": false,
+        "plinth": false,
+        "contact": true
+      }
     },
     {
       "name": "grass_01",
@@ -451,7 +576,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_00.png",
-      "mask": 0
+      "mask": 0,
+      "faceMask": "wall_00.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_01",
@@ -460,7 +598,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_01.png",
-      "mask": 1
+      "mask": 1,
+      "faceMask": "wall_01.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_02",
@@ -469,7 +620,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_02.png",
-      "mask": 2
+      "mask": 2,
+      "faceMask": "wall_02.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_03",
@@ -478,7 +642,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_03.png",
-      "mask": 3
+      "mask": 3,
+      "faceMask": "wall_03.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_04",
@@ -487,7 +664,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_04.png",
-      "mask": 4
+      "mask": 4,
+      "faceMask": "wall_04.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_05",
@@ -496,7 +686,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_05.png",
-      "mask": 5
+      "mask": 5,
+      "faceMask": "wall_05.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_06",
@@ -505,7 +708,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_06.png",
-      "mask": 6
+      "mask": 6,
+      "faceMask": "wall_06.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_07",
@@ -514,7 +730,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_07.png",
-      "mask": 7
+      "mask": 7,
+      "faceMask": "wall_07.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_08",
@@ -523,7 +752,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_08.png",
-      "mask": 8
+      "mask": 8,
+      "faceMask": "wall_08.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_09",
@@ -532,7 +774,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_09.png",
-      "mask": 9
+      "mask": 9,
+      "faceMask": "wall_09.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_10",
@@ -541,7 +796,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_10.png",
-      "mask": 10
+      "mask": 10,
+      "faceMask": "wall_10.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_11",
@@ -550,7 +818,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_11.png",
-      "mask": 11
+      "mask": 11,
+      "faceMask": "wall_11.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_12",
@@ -559,7 +840,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_12.png",
-      "mask": 12
+      "mask": 12,
+      "faceMask": "wall_12.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_13",
@@ -568,7 +862,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_13.png",
-      "mask": 13
+      "mask": 13,
+      "faceMask": "wall_13.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_14",
@@ -577,7 +884,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_14.png",
-      "mask": 14
+      "mask": 14,
+      "faceMask": "wall_14.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_15",
@@ -586,7 +906,20 @@
       "w": 64,
       "h": 75,
       "image": "wall_15.png",
-      "mask": 15
+      "mask": 15,
+      "faceMask": "wall_15.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_gate",
@@ -594,7 +927,20 @@
       "material": 1,
       "w": 64,
       "h": 109,
-      "image": "wall_gate.png"
+      "image": "wall_gate.png",
+      "faceMask": "wall_gate.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 76,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_ruin",
@@ -602,7 +948,20 @@
       "material": 1,
       "w": 64,
       "h": 75,
-      "image": "wall_ruin.png"
+      "image": "wall_ruin.png",
+      "faceMask": "wall_ruin.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 42,
+        "cap": false,
+        "plinth": true,
+        "contact": true
+      }
     },
     {
       "name": "wall_tower",
@@ -610,9 +969,22 @@
       "material": 1,
       "w": 64,
       "h": 91,
-      "image": "wall_tower.png"
+      "image": "wall_tower.png",
+      "faceMask": "wall_tower.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 58,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
     }
   ],
   "source": "stone.blend",
-  "sourceHash": "70b2d8e9f408f121"
+  "sourceHash": "346c64bd20b5ac58"
 }
