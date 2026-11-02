@@ -19,7 +19,7 @@
   },
   "base": "base.png",
   "accent": "accent.png",
-  "atlas": "base.png",
+  "atlas": "atlas.png",
   "states": {
     "idle": 4,
     "walk": 8,
@@ -307,5 +307,17 @@
     "unit:archer:death:0:5"
   ],
   "source": "archer.blend",
-  "sourceHash": "75ee188bb609259e"
+  "sourceHash": "75ee188bb609259e",
+  "composited": true,
+  "accentAtlas": "accent-atlas.png",
+  "atlasCell": {
+    "w": 48,
+    "h": 68
+  },
+  "paletteHash": "1e42cbe955dd8b08",
+  "inputHash": "2dafa7c5b819bf39",
+  "atlasHash": "fe99179311a66fe6",
+  "atlasFrames": 278,
+  "atlasCols": 16,
+  "atlasRows": 18
 }

@@ -19,7 +19,7 @@
   },
   "base": "base.png",
   "accent": "accent.png",
-  "atlas": "base.png",
+  "atlas": "atlas.png",
   "states": {
     "idle": 4,
     "walk": 8,
@@ -307,5 +307,17 @@
     "unit:swordsman:death:0:5"
   ],
   "source": "swordsman.blend",
-  "sourceHash": "b12adb6590943d37"
+  "sourceHash": "b12adb6590943d37",
+  "composited": true,
+  "accentAtlas": "accent-atlas.png",
+  "atlasCell": {
+    "w": 48,
+    "h": 68
+  },
+  "paletteHash": "1e42cbe955dd8b08",
+  "inputHash": "583e10dcea354c8a",
+  "atlasHash": "5b221e0c27752ece",
+  "atlasFrames": 278,
+  "atlasCols": 16,
+  "atlasRows": 18
 }

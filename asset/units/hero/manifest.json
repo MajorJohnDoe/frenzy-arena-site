@@ -19,7 +19,7 @@
   },
   "base": "base.png",
   "accent": "accent.png",
-  "atlas": "base.png",
+  "atlas": "atlas.png",
   "states": {
     "idle": 4,
     "walk": 8,
@@ -307,5 +307,17 @@
     "unit:hero:death:0:5"
   ],
   "source": "hero.blend",
-  "sourceHash": "a84be8a07bf2b3f7"
+  "sourceHash": "a84be8a07bf2b3f7",
+  "composited": true,
+  "accentAtlas": "accent-atlas.png",
+  "atlasCell": {
+    "w": 48,
+    "h": 68
+  },
+  "paletteHash": "1e42cbe955dd8b08",
+  "inputHash": "cf212f17696669c5",
+  "atlasHash": "2c7f33ca58c5c11a",
+  "atlasFrames": 278,
+  "atlasCols": 16,
+  "atlasRows": 18
 }
