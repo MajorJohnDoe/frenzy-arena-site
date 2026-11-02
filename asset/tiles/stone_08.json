@@ -1,0 +1,15 @@
+{
+  "name": "stone_08",
+  "kind": "tile",
+  "cell": {
+    "w": 64,
+    "h": 32
+  },
+  "anchor": {
+    "x": 32,
+    "y": 16
+  },
+  "image": "stone_08.png",
+  "source": "stone_08.blend",
+  "sourceHash": "3f37b1b3f9096d09"
+}
