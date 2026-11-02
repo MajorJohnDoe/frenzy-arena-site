@@ -21,33 +21,107 @@
   ],
   "cells": [
     {
+      "name": "cliff_corner_e",
+      "role": "cliff",
+      "material": 1,
+      "w": 64,
+      "h": 32,
+      "image": "cliff_corner_e.png"
+    },
+    {
+      "name": "cliff_corner_n",
+      "role": "cliff",
+      "material": 1,
+      "w": 64,
+      "h": 32,
+      "image": "cliff_corner_n.png"
+    },
+    {
+      "name": "cliff_face_e",
+      "role": "cliff",
+      "material": 1,
+      "w": 64,
+      "h": 32,
+      "image": "cliff_face_e.png"
+    },
+    {
+      "name": "cliff_face_n",
+      "role": "cliff",
+      "material": 1,
+      "w": 64,
+      "h": 32,
+      "image": "cliff_face_n.png"
+    },
+    {
+      "name": "cliff_ramp_e",
+      "role": "ramp",
+      "material": 1,
+      "w": 64,
+      "h": 32,
+      "image": "cliff_ramp_e.png"
+    },
+    {
+      "name": "cliff_ramp_n",
+      "role": "ramp",
+      "material": 1,
+      "w": 64,
+      "h": 32,
+      "image": "cliff_ramp_n.png"
+    },
+    {
+      "name": "cliff_top",
+      "role": "cliff",
+      "material": 1,
+      "w": 64,
+      "h": 64,
+      "image": "cliff_top.png"
+    },
+    {
+      "name": "cliff_top_b",
+      "role": "cliff",
+      "material": 1,
+      "w": 64,
+      "h": 64,
+      "image": "cliff_top_b.png"
+    },
+    {
       "name": "grass_01",
       "role": "base",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_01.png"
     },
     {
       "name": "grass_02",
       "role": "base",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_02.png"
     },
     {
       "name": "grass_03",
       "role": "base",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_03.png"
     },
     {
       "name": "grass_04",
       "role": "base",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_04.png"
     },
     {
       "name": "grass_over_stone_01",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_01.png",
       "baseMaterial": 1,
       "mask": 1
@@ -56,6 +130,8 @@
       "name": "grass_over_stone_02",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_02.png",
       "baseMaterial": 1,
       "mask": 2
@@ -64,6 +140,8 @@
       "name": "grass_over_stone_03",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_03.png",
       "baseMaterial": 1,
       "mask": 3
@@ -72,6 +150,8 @@
       "name": "grass_over_stone_04",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_04.png",
       "baseMaterial": 1,
       "mask": 4
@@ -80,6 +160,8 @@
       "name": "grass_over_stone_05",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_05.png",
       "baseMaterial": 1,
       "mask": 5
@@ -88,6 +170,8 @@
       "name": "grass_over_stone_06",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_06.png",
       "baseMaterial": 1,
       "mask": 6
@@ -96,6 +180,8 @@
       "name": "grass_over_stone_07",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_07.png",
       "baseMaterial": 1,
       "mask": 7
@@ -104,6 +190,8 @@
       "name": "grass_over_stone_08",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_08.png",
       "baseMaterial": 1,
       "mask": 8
@@ -112,6 +200,8 @@
       "name": "grass_over_stone_09",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_09.png",
       "baseMaterial": 1,
       "mask": 9
@@ -120,6 +210,8 @@
       "name": "grass_over_stone_10",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_10.png",
       "baseMaterial": 1,
       "mask": 10
@@ -128,6 +220,8 @@
       "name": "grass_over_stone_11",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_11.png",
       "baseMaterial": 1,
       "mask": 11
@@ -136,6 +230,8 @@
       "name": "grass_over_stone_12",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_12.png",
       "baseMaterial": 1,
       "mask": 12
@@ -144,6 +240,8 @@
       "name": "grass_over_stone_13",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_13.png",
       "baseMaterial": 1,
       "mask": 13
@@ -152,6 +250,8 @@
       "name": "grass_over_stone_14",
       "role": "overlay",
       "material": 4,
+      "w": 64,
+      "h": 32,
       "image": "grass_over_stone_14.png",
       "baseMaterial": 1,
       "mask": 14
@@ -160,42 +260,56 @@
       "name": "stone_01",
       "role": "base",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_01.png"
     },
     {
       "name": "stone_02",
       "role": "base",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_02.png"
     },
     {
       "name": "stone_03",
       "role": "base",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_03.png"
     },
     {
       "name": "stone_04",
       "role": "base",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_04.png"
     },
     {
       "name": "stone_05",
       "role": "base",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_05.png"
     },
     {
       "name": "stone_06",
       "role": "base",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_06.png"
     },
     {
       "name": "stone_over_grass_01",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_01.png",
       "baseMaterial": 4,
       "mask": 1
@@ -204,6 +318,8 @@
       "name": "stone_over_grass_02",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_02.png",
       "baseMaterial": 4,
       "mask": 2
@@ -212,6 +328,8 @@
       "name": "stone_over_grass_03",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_03.png",
       "baseMaterial": 4,
       "mask": 3
@@ -220,6 +338,8 @@
       "name": "stone_over_grass_04",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_04.png",
       "baseMaterial": 4,
       "mask": 4
@@ -228,6 +348,8 @@
       "name": "stone_over_grass_05",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_05.png",
       "baseMaterial": 4,
       "mask": 5
@@ -236,6 +358,8 @@
       "name": "stone_over_grass_06",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_06.png",
       "baseMaterial": 4,
       "mask": 6
@@ -244,6 +368,8 @@
       "name": "stone_over_grass_07",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_07.png",
       "baseMaterial": 4,
       "mask": 7
@@ -252,6 +378,8 @@
       "name": "stone_over_grass_08",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_08.png",
       "baseMaterial": 4,
       "mask": 8
@@ -260,6 +388,8 @@
       "name": "stone_over_grass_09",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_09.png",
       "baseMaterial": 4,
       "mask": 9
@@ -268,6 +398,8 @@
       "name": "stone_over_grass_10",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_10.png",
       "baseMaterial": 4,
       "mask": 10
@@ -276,6 +408,8 @@
       "name": "stone_over_grass_11",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_11.png",
       "baseMaterial": 4,
       "mask": 11
@@ -284,6 +418,8 @@
       "name": "stone_over_grass_12",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_12.png",
       "baseMaterial": 4,
       "mask": 12
@@ -292,6 +428,8 @@
       "name": "stone_over_grass_13",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_13.png",
       "baseMaterial": 4,
       "mask": 13
@@ -300,11 +438,181 @@
       "name": "stone_over_grass_14",
       "role": "overlay",
       "material": 1,
+      "w": 64,
+      "h": 32,
       "image": "stone_over_grass_14.png",
       "baseMaterial": 4,
       "mask": 14
+    },
+    {
+      "name": "wall_00",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_00.png",
+      "mask": 0
+    },
+    {
+      "name": "wall_01",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_01.png",
+      "mask": 1
+    },
+    {
+      "name": "wall_02",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_02.png",
+      "mask": 2
+    },
+    {
+      "name": "wall_03",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_03.png",
+      "mask": 3
+    },
+    {
+      "name": "wall_04",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_04.png",
+      "mask": 4
+    },
+    {
+      "name": "wall_05",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_05.png",
+      "mask": 5
+    },
+    {
+      "name": "wall_06",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_06.png",
+      "mask": 6
+    },
+    {
+      "name": "wall_07",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_07.png",
+      "mask": 7
+    },
+    {
+      "name": "wall_08",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_08.png",
+      "mask": 8
+    },
+    {
+      "name": "wall_09",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_09.png",
+      "mask": 9
+    },
+    {
+      "name": "wall_10",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_10.png",
+      "mask": 10
+    },
+    {
+      "name": "wall_11",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_11.png",
+      "mask": 11
+    },
+    {
+      "name": "wall_12",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_12.png",
+      "mask": 12
+    },
+    {
+      "name": "wall_13",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_13.png",
+      "mask": 13
+    },
+    {
+      "name": "wall_14",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_14.png",
+      "mask": 14
+    },
+    {
+      "name": "wall_15",
+      "role": "wall",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_15.png",
+      "mask": 15
+    },
+    {
+      "name": "wall_gate",
+      "role": "gate",
+      "material": 1,
+      "w": 64,
+      "h": 109,
+      "image": "wall_gate.png"
+    },
+    {
+      "name": "wall_ruin",
+      "role": "ruin",
+      "material": 1,
+      "w": 64,
+      "h": 75,
+      "image": "wall_ruin.png"
+    },
+    {
+      "name": "wall_tower",
+      "role": "tower",
+      "material": 1,
+      "w": 64,
+      "h": 91,
+      "image": "wall_tower.png"
     }
   ],
   "source": "stone.blend",
-  "sourceHash": "910a59ea28f741ea"
+  "sourceHash": "94a400bfdc206f9b"
 }
