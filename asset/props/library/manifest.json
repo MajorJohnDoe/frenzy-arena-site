@@ -742,12 +742,12 @@
       ],
       "anchorPx": {
         "x": 80,
-        "y": 94
+        "y": 98
       },
       "teamMask": false,
       "material": 1,
       "w": 160,
-      "h": 124,
+      "h": 128,
       "image": "chapel.png",
       "faceMask": "chapel.faces.png",
       "faces": {
@@ -757,7 +757,7 @@
         "outline": 3
       },
       "volume": {
-        "bodyPx": 92,
+        "bodyPx": 94,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -850,12 +850,12 @@
       ],
       "anchorPx": {
         "x": 48,
-        "y": 52
+        "y": 59
       },
       "teamMask": false,
       "material": 1,
       "w": 96,
-      "h": 69,
+      "h": 77,
       "image": "crystal_gold.png",
       "faceMask": "crystal_gold.faces.png",
       "faces": {
@@ -865,7 +865,7 @@
         "outline": 3
       },
       "volume": {
-        "bodyPx": 46,
+        "bodyPx": 54,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -886,12 +886,12 @@
       ],
       "anchorPx": {
         "x": 48,
-        "y": 52
+        "y": 59
       },
       "teamMask": false,
       "material": 1,
       "w": 96,
-      "h": 69,
+      "h": 77,
       "image": "crystal_green.png",
       "faceMask": "crystal_green.faces.png",
       "faces": {
@@ -901,7 +901,7 @@
         "outline": 3
       },
       "volume": {
-        "bodyPx": 46,
+        "bodyPx": 54,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -922,12 +922,12 @@
       ],
       "anchorPx": {
         "x": 48,
-        "y": 52
+        "y": 59
       },
       "teamMask": false,
       "material": 1,
       "w": 96,
-      "h": 69,
+      "h": 77,
       "image": "crystal_pink.png",
       "faceMask": "crystal_pink.faces.png",
       "faces": {
@@ -937,7 +937,7 @@
         "outline": 3
       },
       "volume": {
-        "bodyPx": 46,
+        "bodyPx": 54,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -958,12 +958,12 @@
       ],
       "anchorPx": {
         "x": 48,
-        "y": 52
+        "y": 59
       },
       "teamMask": false,
       "material": 1,
       "w": 96,
-      "h": 69,
+      "h": 77,
       "image": "crystal_violet.png",
       "faceMask": "crystal_violet.faces.png",
       "faces": {
@@ -973,7 +973,7 @@
         "outline": 3
       },
       "volume": {
-        "bodyPx": 46,
+        "bodyPx": 54,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -1046,6 +1046,42 @@
       },
       "volume": {
         "bodyPx": 30,
+        "cap": true,
+        "plinth": true,
+        "contact": true
+      }
+    },
+    {
+      "name": "house",
+      "id": "house",
+      "role": "prop",
+      "label": "House",
+      "footprint": [
+        2,
+        2
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "anchorPx": {
+        "x": 80,
+        "y": 94
+      },
+      "teamMask": false,
+      "material": 1,
+      "w": 160,
+      "h": 122,
+      "image": "house.png",
+      "faceMask": "house.faces.png",
+      "faces": {
+        "top": 0,
+        "left": 1,
+        "right": 2,
+        "outline": 3
+      },
+      "volume": {
+        "bodyPx": 94,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -1395,7 +1431,7 @@
       "teamMask": false,
       "material": 1,
       "w": 160,
-      "h": 103,
+      "h": 110,
       "image": "tent.png",
       "faceMask": "tent.faces.png",
       "faces": {
@@ -1405,7 +1441,7 @@
         "outline": 3
       },
       "volume": {
-        "bodyPx": 48,
+        "bodyPx": 50,
         "cap": true,
         "plinth": true,
         "contact": true
@@ -1485,5 +1521,5 @@
     }
   ],
   "source": "library.blend",
-  "sourceHash": "0fb073ddcc485e40"
+  "sourceHash": "82dab6026ce98bf3"
 }
