@@ -307,7 +307,7 @@
     "unit:archer:death:0:5"
   ],
   "source": "archer.blend",
-  "sourceHash": "75ee188bb609259e",
+  "sourceHash": "4acc0cb67557b4e2",
   "composited": true,
   "accentAtlas": "accent-atlas.png",
   "atlasCell": {
@@ -315,8 +315,8 @@
     "h": 68
   },
   "paletteHash": "1e42cbe955dd8b08",
-  "inputHash": "2dafa7c5b819bf39",
-  "atlasHash": "fe99179311a66fe6",
+  "inputHash": "12eba6549ba9a2a2",
+  "atlasHash": "7a37883573205a91",
   "atlasFrames": 278,
   "atlasCols": 16,
   "atlasRows": 18

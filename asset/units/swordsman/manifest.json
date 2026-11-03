@@ -307,7 +307,7 @@
     "unit:swordsman:death:0:5"
   ],
   "source": "swordsman.blend",
-  "sourceHash": "b12adb6590943d37",
+  "sourceHash": "4aa2155cd4f0b2c6",
   "composited": true,
   "accentAtlas": "accent-atlas.png",
   "atlasCell": {
@@ -315,8 +315,8 @@
     "h": 68
   },
   "paletteHash": "1e42cbe955dd8b08",
-  "inputHash": "583e10dcea354c8a",
-  "atlasHash": "5b221e0c27752ece",
+  "inputHash": "ef8343398529b771",
+  "atlasHash": "c4dca3c085ae2f7f",
   "atlasFrames": 278,
   "atlasCols": 16,
   "atlasRows": 18
